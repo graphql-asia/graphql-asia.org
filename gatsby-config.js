@@ -10,12 +10,12 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: 'GraphQL Asia',
-        short_name: 'starter',
+        short_name: 'GraphQL Asia',
         start_url: '/',
         background_color: '#E535AB',
         theme_color: '#E535AB',
         display: 'minimal-ui',
-        icon: 'src/assets/images/website-icon.png', // This path is relative to the root of the site.
+        icon: 'src/assets/images/icon.png', // This path is relative to the root of the site.
       },
     },
     'gatsby-plugin-sass',
