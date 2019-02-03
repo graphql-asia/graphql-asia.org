@@ -8,14 +8,18 @@ const BannerSpeakers = (props) => (
             </header>
             <div className="content">
                 <p>
-                GraphQL Asia celebrates one of the most exciting technologies to have emerged in recent times and the engineers and technologists who have contributed to its development, with a particular focus on the Asian GraphQL community.
+                Our first set of speakers include the co-creator of GraphQL - 
+                <br/>
+                Lee Byron and some of the earliest adopters of GraphQL, who are using it at massive scale in their respective organisations. 
+                <br/><br/>
+                We will be announcing the full speaker line-up soon!
                 </p>
             </div>
-            <div className="content">
+            {/* <div className="content">
                 <p>
                 Learn from experts responsible for GraphQL’s incredible tooling, speak to architects who have implemented GraphQL at their own organisations, and forge connections with the forward-looking engineers who have made GraphQL the tech to watch in 2019.
                 </p>
-            </div>
+            </div> */}
         </div>
     </section>
 )
