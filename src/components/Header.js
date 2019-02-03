@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import GraphlQLAsiaLogo from '../assets/images/GraphlQLAsiaLogo.png'
+import Menu from './Menu'
 const Header = (props) => (
     <header id="header" className="alt">        
         <Link to="/" className="logo">
@@ -14,7 +15,8 @@ const Header = (props) => (
             <strong>GraphQL Asia</strong>
         </Link>
         <nav>
-            <a className="menu-link" onClick={props.onToggleMenu} href="javascript:;">Menu</a>
+            <Menu />
+            {/* <a className="menu-link" onClick={props.onToggleMenu} href="javascript:;">Menu</a> */}
         </nav>
     </header>
 )
