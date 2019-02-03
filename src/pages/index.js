@@ -42,21 +42,21 @@ class HomeIndex extends React.Component {
                         <article style={{backgroundImage: `url(${pic02})`}}>
                             <header className="major">
                                 <h3>Tickets</h3>
-                                <p>feugiat amet tempus</p>
+                                <p>Get your ticket now</p>
                             </header>
                             <Link to="/tickets" className="link primary"></Link>
                         </article>
                         <article style={{backgroundImage: `url(${pic04})`}}>
                             <header className="major">
                                 <h3>Sponsor</h3>
-                                <p>Lorem etiam nullam</p>
+                                <p>Be part of this unique conference</p>
                             </header>
                             <Link to="/landing" className="link primary"></Link>
                         </article>
                         <article style={{backgroundImage: `url(${pic03})`}}>
                             <header className="major">
                                 <h3>Venue</h3>
-                                <p>Nisl sed aliquam</p>
+                                <p>Join us in Bengaluru!</p>
                             </header>
                             <Link to="/venue" className="link primary"></Link>
                         </article>
@@ -83,6 +83,7 @@ class HomeIndex extends React.Component {
                             <p>GraphQL Asia is brought to you by Hasura and BrikL.</p>
                             <ul className="actions">
                                 <li>
+                                    <a href="https://www.brikl.io">
                                     <img style={{
                                         background: 'white',
                                         height: '150px',
@@ -90,8 +91,10 @@ class HomeIndex extends React.Component {
                                         objectFit: 'contain',
                                         padding: '.5em'
                                     }} src={BrikLogo} alt="BrikL" />
+                                    </a>
                                 </li>
                                 <li>
+                                    <a href="https://hasura.io/">
                                     <img style={{
                                         background: 'white',
                                         height: '150px',
@@ -99,6 +102,7 @@ class HomeIndex extends React.Component {
                                         objectFit: 'contain',
                                         padding: '.5em'
                                     }} src={HasuraLogo} alt="Hasura" />
+                                    </a>
                                 </li>
                             </ul>
                         </div>
