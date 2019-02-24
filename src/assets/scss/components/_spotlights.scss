@@ -8,15 +8,27 @@
 
 	.spotlights {
 		border-top: 0 !important;
-
+		
 		& + * {
 			border-top: 0 !important;
+		}
+
+		&:after {
+			content: "";
+			display: table;
+			clear: both;
 		}
 
 		> section {
 			@include vendor('display', 'flex');
 			@include vendor('flex-direction', 'row');
 			background-color: desaturate(lighten(_palette(bg-alt), 2), 1);
+			width: 50%;
+			float: left;
+
+			ul, h3 {
+				text-align: left;
+			}
 
 			> .image {
 				background-position: center center;
@@ -57,13 +69,19 @@
 					margin: 0 auto;
 					max-width: 100%;
 					width: _size(inner);
+					text-align: right;
 				}
 			}
 
 			&:nth-child(2n) {
 				@include vendor('flex-direction', 'row-reverse');
 				background-color: desaturate(lighten(_palette(bg-alt), 4), 2);
-
+				ul, h3 {
+					text-align: right;
+				}
+				header {
+					margin-left: auto;
+				}
 				> .content {
 					@include vendor('align-items', 'flex-end');
 				}
@@ -111,6 +129,8 @@
 
 		@include breakpoint(small) {
 			> section {
+				width: 100%;
+				float: none;
 				> .content {
 					@include padding(3em, 1.5em);
 				}
