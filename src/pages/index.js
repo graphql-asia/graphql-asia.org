@@ -10,6 +10,7 @@ import pic03 from '../assets/images/BLR_Chancery_Pavilion_facade1_dbr92l.jpg'
 import pic04 from '../assets/images/sponsor.jpg' //https://unsplash.com/photos/Dnkr_lmdKi8
 // import pic05 from '../assets/images/pic05.jpg'
 // import pic06 from '../assets/images/pic06.jpg'
+import Img from "gatsby-image"
 
 import BrikLogo from "../assets/images/brikl-logo.png"
 import HasuraLogo from "../assets/images/hasura-logo.png"
@@ -93,6 +94,7 @@ class HomeIndex extends React.Component {
                                         objectFit: 'contain',
                                         padding: '.5em'
                                     }} src={BrikLogo} alt="BrikL" />
+                                    {/* <Img fixed={this.props.data.file.childImageSharp.fixed} /> */}
                                     </a>
                                 </li>
                                 <li>
@@ -119,3 +121,16 @@ class HomeIndex extends React.Component {
 }
 
 export default HomeIndex
+export const query = graphql`
+  query {
+    file(relativePath: { eq: "../assets/images/brikl-logo.png" }) {
+      childImageSharp {
+        # Specify the image processing specifications right in the query.
+        # Makes it trivial to update as your page's design changes.
+        fixed(width: 150, height: 150) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+  }
+`
