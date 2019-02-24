@@ -39,12 +39,12 @@ const Speakers = (props) => (
                     speakerDescription={''}
                     speakerPosition={'Co-Creator of GraphQL, Senior Software Engineer, Robinhood'}
                 />    
-                <Speaker 
+                {/* <Speaker 
                     speakerPicture={JeyandranVenugopal}
                     speakerName={'Jeyandran Venugopal'}
                     speakerDescription={''}
                     speakerPosition={'CTO, Myntra'}
-                />       
+                />        */}
                 <Speaker 
                     speakerPicture={SashaSolomon}
                     speakerName={'Sasha Solomon'}
