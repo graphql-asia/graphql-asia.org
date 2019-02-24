@@ -83,7 +83,9 @@ class HomeIndex extends React.Component {
                             <p>GraphQL Asia is brought to you by Hasura and BrikL.</p>
                             <ul className="actions">
                                 <li>
-                                    <a href="https://www.brikl.io">
+                                    <a style={{
+                                        border:'none'
+                                    }} href="https://www.brikl.io">
                                     <img style={{
                                         background: 'white',
                                         height: '150px',
@@ -94,7 +96,9 @@ class HomeIndex extends React.Component {
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://hasura.io/">
+                                    <a style={{
+                                        border:'none'
+                                    }} href="https://hasura.io/">
                                     <img style={{
                                         background: 'white',
                                         height: '150px',
