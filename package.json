@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-forty-v2",
-  "description": "Gatsby Starter - Forty V2",
+  "name": "graphql-asia.org",
+  "description": "GraphQL Asia Website",
   "version": "1.0.0",
-  "author": "Hunter Chang",
+  "author": "Tobias Meixner",
   "dependencies": {
     "gatsby": "^2.0.76",
     "gatsby-plugin-manifest": "^2.0.9",
@@ -28,8 +28,11 @@
   "devDependencies": {
     "prettier": "^1.14.2"
   },
+  "resolutions": {
+    "terser": "3.14.1"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/graphql-asia/graphql-asia.org"
   }
 }
