@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import Banner from '../components/Banner'
+import Sponsors from '../components/Sponsors'
 
 import pic01 from '../assets/images/conference-stage.jpg' // https://unsplash.com/photos/bzdhc5b3Bxs
 import pic02 from '../assets/images/ticket.jpg' // https://unsplash.com/photos/yB5cYEq7y2U
@@ -10,9 +11,7 @@ import pic03 from '../assets/images/BLR_Chancery_Pavilion_facade1_dbr92l.jpg'
 import pic04 from '../assets/images/sponsor.jpg' //https://unsplash.com/photos/Dnkr_lmdKi8
 // import pic05 from '../assets/images/pic05.jpg'
 // import pic06 from '../assets/images/pic06.jpg'
-
-import BrikLogo from "../assets/images/brikl-logo.png"
-import HasuraLogo from "../assets/images/hasura-logo.png"
+import Img from "gatsby-image"
 
 class HomeIndex extends React.Component {
     render() {
@@ -51,7 +50,7 @@ class HomeIndex extends React.Component {
                                 <h3>Sponsor</h3>
                                 <p>Be part of this unique conference</p>
                             </header>
-                            <Link to="/landing" className="link primary"></Link>
+                            <Link to="/sponsor" className="link primary"></Link>
                         </article>
                         <article style={{backgroundImage: `url(${pic03})`}}>
                             <header className="major">
@@ -74,37 +73,16 @@ class HomeIndex extends React.Component {
                             </header>
                             <Link to="/landing" className="link primary"></Link>
                         </article> */}
-                    </section>
+                    </section>                    
                     <section id="two">
                         <div className="inner">
                             <header className="major">
-                                <h2>Organisers</h2>
+                                <h2>Sponsors</h2>
                             </header>
-                            <p>GraphQL Asia is brought to you by Hasura and BrikL.</p>
-                            <ul className="actions">
-                                <li>
-                                    <a href="https://www.brikl.io">
-                                    <img style={{
-                                        background: 'white',
-                                        height: '150px',
-                                        width: '150px',
-                                        objectFit: 'contain',
-                                        padding: '.5em'
-                                    }} src={BrikLogo} alt="BrikL" />
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://hasura.io/">
-                                    <img style={{
-                                        background: 'white',
-                                        height: '150px',
-                                        width: '150px',
-                                        objectFit: 'contain',
-                                        padding: '.5em'
-                                    }} src={HasuraLogo} alt="Hasura" />
-                                    </a>
-                                </li>
-                            </ul>
+                            <Sponsors />     
+                            <p>
+                            <Link to="/sponsor">Become a sponsor</Link>                 
+                            </p>
                         </div>
                     </section>
                 </div>
@@ -115,3 +93,16 @@ class HomeIndex extends React.Component {
 }
 
 export default HomeIndex
+export const query = graphql`
+  query {
+    file(relativePath: { eq: "../assets/images/brikl-logo.png" }) {
+      childImageSharp {
+        # Specify the image processing specifications right in the query.
+        # Makes it trivial to update as your page's design changes.
+        fixed(width: 150, height: 150) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+  }
+`

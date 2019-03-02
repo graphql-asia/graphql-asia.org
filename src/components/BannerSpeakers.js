@@ -4,7 +4,7 @@ const BannerSpeakers = (props) => (
     <section id="banner" className="style2">
         <div className="inner">
             <header className="major">
-                <h1>Featured speakers</h1>
+                <h1>Our speakers</h1>
             </header>
             <div className="content">
                 <p>
@@ -12,7 +12,7 @@ const BannerSpeakers = (props) => (
                 <br/>
                 Lee Byron and some of the earliest adopters of GraphQL, who are using it at massive scale in their respective organisations. 
                 <br/><br/>
-                We will be announcing the full speaker line-up soon!
+                We will be announcing the final agenda soon!
                 </p>
             </div>
             {/* <div className="content">

@@ -3,8 +3,9 @@ import React from 'react'
 const Contact = (props) => (
     <section id="contact">
         <div className="inner">
-            <section>
-                <form method="post" action="#">
+            <section id="contact-us">
+                <h3>Contact us</h3>
+                <form name="contact" method="POST" data-netlify="true">
                     <div className="field half first">
                         <label htmlFor="name">Name</label>
                         <input type="text" name="name" id="name" />
@@ -17,6 +18,7 @@ const Contact = (props) => (
                         <label htmlFor="message">Message</label>
                         <textarea name="message" id="message" rows="6"></textarea>
                     </div>
+                    <div data-netlify-recaptcha="true"></div>
                     <ul className="actions">
                         <li><input type="submit" value="Send Message" className="special" /></li>
                         <li><input type="reset" value="Clear" /></li>
