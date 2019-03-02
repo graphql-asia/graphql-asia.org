@@ -3,7 +3,7 @@ import React from 'react'
 const Contact = (props) => (
     <section id="contact">
         <div className="inner">
-            <section>
+            <section id="contact-us">
                 <h3>Contact us</h3>
                 <form name="contact" method="POST" data-netlify="true">
                     <div className="field half first">

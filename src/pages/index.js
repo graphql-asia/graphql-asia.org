@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import Banner from '../components/Banner'
+import Sponsors from '../components/Sponsors'
 
 import pic01 from '../assets/images/conference-stage.jpg' // https://unsplash.com/photos/bzdhc5b3Bxs
 import pic02 from '../assets/images/ticket.jpg' // https://unsplash.com/photos/yB5cYEq7y2U
@@ -11,9 +12,6 @@ import pic04 from '../assets/images/sponsor.jpg' //https://unsplash.com/photos/D
 // import pic05 from '../assets/images/pic05.jpg'
 // import pic06 from '../assets/images/pic06.jpg'
 import Img from "gatsby-image"
-
-import BrikLogo from "../assets/images/brikl-logo.png"
-import HasuraLogo from "../assets/images/hasura-logo.png"
 
 class HomeIndex extends React.Component {
     render() {
@@ -52,7 +50,7 @@ class HomeIndex extends React.Component {
                                 <h3>Sponsor</h3>
                                 <p>Be part of this unique conference</p>
                             </header>
-                            <Link to="/landing" className="link primary"></Link>
+                            <Link to="/sponsor" className="link primary"></Link>
                         </article>
                         <article style={{backgroundImage: `url(${pic03})`}}>
                             <header className="major">
@@ -75,42 +73,16 @@ class HomeIndex extends React.Component {
                             </header>
                             <Link to="/landing" className="link primary"></Link>
                         </article> */}
-                    </section>
+                    </section>                    
                     <section id="two">
                         <div className="inner">
                             <header className="major">
-                                <h2>Organisers</h2>
+                                <h2>Sponsors</h2>
                             </header>
-                            <p>GraphQL Asia is brought to you by Hasura and BrikL.</p>
-                            <ul className="actions">
-                                <li>
-                                    <a style={{
-                                        border:'none'
-                                    }} href="https://www.brikl.io">
-                                    <img style={{
-                                        background: 'white',
-                                        height: '150px',
-                                        width: '150px',
-                                        objectFit: 'contain',
-                                        padding: '.5em'
-                                    }} src={BrikLogo} alt="BrikL" />
-                                    {/* <Img fixed={this.props.data.file.childImageSharp.fixed} /> */}
-                                    </a>
-                                </li>
-                                <li>
-                                    <a style={{
-                                        border:'none'
-                                    }} href="https://hasura.io/">
-                                    <img style={{
-                                        background: 'white',
-                                        height: '150px',
-                                        width: '150px',
-                                        objectFit: 'contain',
-                                        padding: '.5em'
-                                    }} src={HasuraLogo} alt="Hasura" />
-                                    </a>
-                                </li>
-                            </ul>
+                            <Sponsors />     
+                            <p>
+                            <Link to="/sponsor">Become a sponsor</Link>                 
+                            </p>
                         </div>
                     </section>
                 </div>

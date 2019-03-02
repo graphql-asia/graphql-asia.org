@@ -1,26 +1,30 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
-
-import pic11 from '../assets/images/pic11.jpg'
+import pic03 from '../assets/images/BLR_Chancery_Pavilion_facade1_dbr92l.jpg'
 
 const Venue = (props) => (
     <Layout>
         <Helmet>
-            <title>Venue</title>
-            <meta name="description" content="Venue" />
+            <title>Venue - GraphQL Asia</title>
+            <meta name="description" content="Join us in Bengaluru at GraphQL Asia at Chancery Pavillion, Residency Road!" />
         </Helmet>
 
         <div id="main" className="alt">
             <section id="one">
                 <div className="inner">
                     <header className="major">
-                        <h1>Venue</h1>
+                        <h1>Join us in Bengaluru!</h1>
+                        <p>The conference will take place in Chancery Pavillion, Residency Road.</p>
                     </header>
-                    <span className="image main"><img src={pic11} alt="" /></span>
-                    <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
-                    <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+
+                    <span className="image medium"><img src={pic03} alt="Chancery Pavillion" /></span>
+                    <p>Named the most dynamic city by the World Economic Forum in 2017, Bengaluru is home to the 3rd highest number of tech startups globally, including unicorns such as Flipkart, Ola & Swiggy as well as several large MNCs and enterprises.</p>
+                    <p>The conference will be held in Chancery Pavillion, one of Bangalore's 5-star hotels, located in the heart of Bangalore.</p>
+                    <p>If you would like to stay at the hotel, please do reach out to the bookings team with your conference ticket for a <strong>special conference discount!</strong></p>
+                    <p>
+                    There are also several hotels in the area where you can get a room. Do check out <a href="https://www.oyorooms.com/search?adults=1&checkin=11%2F04%2F2019&checkout=14%2F04%2F2019&children=0&city=Bangalore&country=india&employee_id=null&guests=1&latitude=12.9723384&location=Residency%20Road%2C%20Bangalore%20Urban%2C%20Karnataka&longitude=77.60859970000001&page=1&rooms=1&searchType=locality&src=null">Oyo Rooms</a> for a variety of options.
+                    </p>
                 </div>
             </section>
         </div>

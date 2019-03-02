@@ -8,7 +8,8 @@
 
 	.spotlights {
 		border-top: 0 !important;
-		
+		width: 50%;
+		float: left;
 		& + * {
 			border-top: 0 !important;
 		}
@@ -20,16 +21,22 @@
 		}
 
 		> section {
+			height: 300px;
 			@include vendor('display', 'flex');
 			@include vendor('flex-direction', 'row');
 			background-color: desaturate(lighten(_palette(bg-alt), 2), 1);
-			width: 50%;
-			float: left;
-
-			ul, h3 {
+			
+			p{
+				color: rgba(255,255,255,.5);
+				font-size: 80%;
+			}
+			ul, h3, p, h4 {
 				text-align: left;
 			}
-
+			.talkTitle{
+				text-align: left;
+				font-size: 80%;
+			}
 			> .image {
 				background-position: center center;
 				background-size: cover;
@@ -38,11 +45,18 @@
 				position: relative;
 				width: 30%;
 
-				img {
+				img, .placeholder {
 					border-radius: 0;
 					display: block;
 					width: 100%;
+					object-fit: cover;
+					height: 100%;
 				}
+				.placeholder{
+					background-color: grey;
+				}
+				
+
 
 				&:before {
 					background: transparentize(_palette(bg), 0.1);
@@ -76,7 +90,7 @@
 			&:nth-child(2n) {
 				@include vendor('flex-direction', 'row-reverse');
 				background-color: desaturate(lighten(_palette(bg-alt), 4), 2);
-				ul, h3 {
+				ul, h3,.talkTitle, p, h4 {
 					text-align: right;
 				}
 				header {
@@ -84,7 +98,7 @@
 				}
 				> .content {
 					@include vendor('align-items', 'flex-end');
-				}
+				}				
 			}
 		}
 
@@ -112,23 +126,44 @@
 			}
 		}
 
-		@include breakpoint(medium) {
+		@include breakpoint(medium) {	
+			width: 100%;
+			float: none;	
 			> section {
-				display: block;
+				height: auto;
+				display: block;				
 
 				> .image {
 					width: 100%;
+					height: 200px;
+					img{
+						width: 100%;
+						max-width: 200px;						
+						max-height: 200px;	
+						object-fit: contain;
+						height: 100%;
+						margin: 0 auto;
+					}
 				}
 
 				> .content {
-					@include padding(4em, 3em);
-					width: 100%;
+					@include padding(4em, 3em);	
+					width: 100%;														
+				}				
+				header {
+					margin: auto!important;
+				}
+				ul, h3,.talkTitle, p, h4 {
+					text-align: center!important;
 				}
 			}
 		}
 
 		@include breakpoint(small) {
+			width: 100%;
+			float: none;			
 			> section {
+				height: auto;
 				width: 100%;
 				float: none;
 				> .content {

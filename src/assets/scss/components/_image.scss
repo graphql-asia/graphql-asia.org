@@ -10,7 +10,12 @@
 		border: 0;
 		display: inline-block;
 		position: relative;
-
+		&.medium img{
+			width: 600px;
+			max-width: 100%;
+			height: auto;
+		}
+		
 		img {
 			display: block;
 		}

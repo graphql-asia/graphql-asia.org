@@ -4,16 +4,20 @@ import { Link } from 'gatsby'
 import GraphlQLAsiaLogo from '../assets/images/GraphlQLAsiaLogo.png'
 import Menu from './Menu'
 const Header = (props) => (
-    <header id="header" className="alt">        
+    <header id="header" className="">        
+        <span>GraphQL</span>
         <Link to="/" className="logo">
+            
             <img style={{
-                width: '55px',
-                height: '55px',
+                width: '100%',
+                height: '100%',
                 display: 'inline',
-                verticalAlign: 'middle'
-            }} src={GraphlQLAsiaLogo} alt="GraphQL Asia Logo" />
-            <strong>GraphQL Asia</strong>
+                verticalAlign: 'middle',                                             
+                objectFit: 'contain',
+                padding: '.5vh'
+            }} src={GraphlQLAsiaLogo} alt="GraphQL Asia Logo" />              
         </Link>
+        <span>Asia</span>          
         <nav>
             <Menu />
             {/* <a className="menu-link" onClick={props.onToggleMenu} href="javascript:;">Menu</a> */}

@@ -8,6 +8,12 @@
 	#newmenu{
 		width: 100%;
 		display: flex;
+		.open, .close{
+			display: none;
+			@include breakpoint(small) {
+				display: block;
+			}
+		}
 		ul{
 			display: flex;
 			li{
@@ -15,7 +21,13 @@
 				font-family: _font(family-fixed);
 				flex: 1
 			}
-		}		
+		}	
+		@include breakpoint(xsmall) {
+			ul,li{
+				padding-right: .15em;
+				padding-left: .15em;
+			}
+		}	
 	}
 		
 		

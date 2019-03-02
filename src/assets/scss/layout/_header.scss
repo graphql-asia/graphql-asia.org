@@ -12,6 +12,9 @@
 	}
 
 	#header {
+		> span {
+			display: none;
+		}
 		@include vendor('display', 'flex');
 		background-color: _palette(bg-alt);
 		box-shadow: 0 0 0.25em 0 rgba(0,0,0,0.15);
@@ -22,7 +25,7 @@
 		letter-spacing: _font(letter-spacing-alt);
 		line-height: 3.25em;
 		margin: 0;
-		position: fixed;
+		position: fixed!important;
 		text-transform: uppercase;
 		top: 0;
 		width: 100%;
@@ -35,6 +38,7 @@
 			height: inherit;
 			line-height: inherit;
 			padding: 0 1.5em;
+			background: white;						
 
 			strong {
 				@include vendor('transition', (
@@ -182,12 +186,22 @@
 		@include breakpoint(small) {
 			height: 2.75em;
 			line-height: 2.75em;
-
+			> span {
+				display: block;
+				margin: 0 auto;
+				text-align: center;
+				font-family: _font(family);
+			}
 			.logo {
-				padding: 0 1em;
+				margin: 0 auto;
 			}
 
 			nav {
+				position: fixed;
+				bottom: 0;
+				background: _palette(bg-alt);
+				width: 100%;
+				text-align: center;
 				a {
 					padding: 0 0.5em;
 
@@ -216,6 +230,7 @@
 
 		@include breakpoint(xsmall) {
 			.logo {
+				max-width: 100px;
 				span {
 					display: none;
 				}
@@ -223,12 +238,14 @@
 
 			nav {
 				a {
+					font-size: 50%;	
+					padding: 0;					
 					&.menu-link {
 						overflow: hidden;
 						padding-right: 0 !important;
 						text-indent: 5em;
 						white-space: nowrap;
-						width: 5em;
+						width: 5em;						
 
 						&:before, &:after {
 							right: 0;
