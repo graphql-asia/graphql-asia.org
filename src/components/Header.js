@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
-import GraphlQLAsiaLogo from '../assets/images/GraphlQLAsiaLogo.png'
+import GraphlQLAsiaLogo from '../assets/images/GraphlQLAsiaLogo.jpg'
 import Menu from './Menu'
 const Header = (props) => (
     <header id="header" className="">        

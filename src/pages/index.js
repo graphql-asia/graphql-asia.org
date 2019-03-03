@@ -6,7 +6,7 @@ import Banner from '../components/Banner'
 import Sponsors from '../components/Sponsors'
 import Img from "gatsby-image"
 import { graphql } from 'gatsby'
-
+import graphqlconfLogo from '../assets/images/graphqlconf-logo-color.png'
 
 class HomeIndex extends React.Component {
     render() {
@@ -75,6 +75,34 @@ class HomeIndex extends React.Component {
                             <Sponsors />     
                             <p>
                             <Link to="/sponsor">Become a sponsor</Link>                 
+                            </p>
+                        </div>
+                    </section>
+                    <section id="two">
+                        <div className="inner">
+                            <header className="major">
+                                <h2>Partners</h2>
+                            </header>         
+                            <div>      
+                              <h3>GraphQL Conf, Berlin, June 20-21 2019</h3>
+                              <ul className="actions">
+                                  <li>
+                                      <a style={{
+                                          border:'none'
+                                      }} href="https://www.graphqlconf.org/">
+                                      <img style={{
+                                          background: 'white',
+                                          height: '150px',
+                                          width: '150px',
+                                          objectFit: 'contain',
+                                          padding: '.5em'
+                                      }} src={graphqlconfLogo} alt="Graphql Conf" />                                    
+                                      </a>
+                                  </li>
+                              </ul>
+                            </div>
+                            <p>
+                            <a href="#contact-us">Interested to partner with us? Contact us</a>
                             </p>
                         </div>
                     </section>
