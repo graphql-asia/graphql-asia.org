@@ -8,11 +8,11 @@ const BannerSpeakers = (props) => (
             </header>
             <div className="content">
                 <p>
-                Our first set of speakers include the co-creator of GraphQL - 
+                Our speakers include the co-creator of GraphQL - 
                 <br/>
                 Lee Byron and some of the earliest adopters of GraphQL, who are using it at massive scale in their respective organisations. 
                 <br/><br/>
-                We will be announcing the final agenda soon!
+                More speakers to be announced soon.
                 </p>
             </div>
             {/* <div className="content">

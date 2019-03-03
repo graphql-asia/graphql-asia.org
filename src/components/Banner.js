@@ -9,7 +9,10 @@ const Banner = (props) => (
             <div className="content">                
                 <p>12th &amp; 13th April, Bangalore, India</p>
                 <ul className="actions">
-                    <li><a href="#one" className="button next scrolly">Read more</a></li>
+                    <li>
+                        <a className="button next scrolly" target="_blank" rel="noopener noreferrer" href="https://www.townscript.com/e/graphql-asia-020103/booking">Tickets</a>
+                        {/* <a href="#one" className="button next scrolly">Read more</a> */}
+                    </li>
                 </ul>
             </div>
         </div>
