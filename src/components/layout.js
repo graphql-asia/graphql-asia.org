@@ -1,9 +1,7 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-
+import Helmet from 'react-helmet'
 import '../assets/scss/main.scss'
 import Header from './Header'
-import Menu from './Menu'
 import Contact from './Contact'
 import Footer from './Footer'
 
@@ -29,6 +27,14 @@ class Layout extends React.Component {
 
         return (
             <div className={`body ${this.state.isMenuVisible ? 'is-menu-visible' : ''}`}>
+                <Helmet
+                    title="GraphQL Asia - Conference"
+                    meta={[
+                        { name: 'description', content: 'GraphQL Asia is going to be the first Asian GraphQL conference, with 2 full days of everything GraphQL. Location: Bangalore, India Date: April 12-13, 2019' },
+                        { name: 'keywords', content: 'GraphQL, Asia, Conference, Tech, Event, India, Bangalore' },
+                        { name: 'google-site-verification', content: '0swMWogAzErcNEr2q0dVwCn9zI16r0fMi37eb7S-jz8' },
+                    ]}
+                ></Helmet>
                 <div id="wrapper">
                     <Header onToggleMenu={this.handleToggleMenu} />
                     {children}
