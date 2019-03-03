@@ -109,7 +109,7 @@ const Speakers = (props) => (
           speakerPicture={props.data.MadhuJahagirdar.childImageSharp.fluid}
           speakerName={'Madhu Jahagirdar'}
           speakerDescription={''}
-          speakerPosition={'Principal Architec, Philips'}
+          speakerPosition={'Principal Architect, Philips'}
           talkTitle={'How GraphQL adds strategic value at every stage of the digital transformation process - stories from Philips Healthcare'}
           twitter={'madhujahagirdar'}
         />
@@ -121,7 +121,6 @@ const Speakers = (props) => (
           talkTitle={'Notes from a year of GraphQL'}
           twitter={'HashNuke'}
         />
-
 
 
         <Speaker
@@ -271,7 +270,7 @@ const Speakers = (props) => (
       </section>
     </div>
 
-  </Layout>
+  </Layout >
 )
 
 export default Speakers
