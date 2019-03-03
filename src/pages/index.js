@@ -43,7 +43,8 @@ class HomeIndex extends React.Component {
                                 <h3>Tickets</h3>
                                 <p>Get your ticket now</p>
                             </header>
-                            <Link to="/tickets" className="link primary"></Link>
+                            <a className="link primary" target="_blank" rel="noopener noreferrer" href="https://www.townscript.com/e/graphql-asia-020103/booking"></a>
+                            {/* <Link to="/tickets" className="link primary"></Link> */}
                         </article>
                         <article style={{backgroundImage: `url(${pic04})`}}>
                             <header className="major">
