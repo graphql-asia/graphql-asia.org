@@ -4,14 +4,9 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import Banner from '../components/Banner'
 import Sponsors from '../components/Sponsors'
-
-import pic01 from '../assets/images/conference-stage.jpg' // https://unsplash.com/photos/bzdhc5b3Bxs
-import pic02 from '../assets/images/ticket.jpg' // https://unsplash.com/photos/yB5cYEq7y2U
-import pic03 from '../assets/images/BLR_Chancery_Pavilion_facade1_dbr92l.jpg'
-import pic04 from '../assets/images/sponsor.jpg' //https://unsplash.com/photos/Dnkr_lmdKi8
-// import pic05 from '../assets/images/pic05.jpg'
-// import pic06 from '../assets/images/pic06.jpg'
 import Img from "gatsby-image"
+import { graphql } from 'gatsby'
+
 
 class HomeIndex extends React.Component {
     render() {
@@ -25,55 +20,51 @@ class HomeIndex extends React.Component {
                         { name: 'keywords', content: 'GraphQL, Asia, Conference, Tech, Event, India, Bangalore' },
                     ]}
                 >
-                </Helmet>
-
-                <Banner />
-
+                </Helmet>                
+                <Banner bannerImage={this.props.data.bannerImage.childImageSharp.fluid} />
                 <div id="main">
                     <section id="one" className="tiles">
-                        <article style={{backgroundImage: `url(${pic01})`}}>
+                        <article>
                             <header className="major">
                                 <h3>Speakers</h3>
                                 <p>Our line up</p>
                             </header>
                             <Link to="/speakers" className="link primary"></Link>
+                            <div className="homeBanner">
+                                <Img fluid={this.props.data.speakerStageImage.childImageSharp.fluid} />
+                            </div>
                         </article>
-                        <article style={{backgroundImage: `url(${pic02})`}}>
+                        <article>
                             <header className="major">
                                 <h3>Tickets</h3>
                                 <p>Get your ticket now</p>
                             </header>
                             <a className="link primary" target="_blank" rel="noopener noreferrer" href="https://www.townscript.com/e/graphql-asia-020103/booking"></a>
                             {/* <Link to="/tickets" className="link primary"></Link> */}
+                            <div className="homeBanner">
+                                <Img fluid={this.props.data.ticketImage.childImageSharp.fluid} />
+                            </div>
                         </article>
-                        <article style={{backgroundImage: `url(${pic04})`}}>
+                        <article>
                             <header className="major">
                                 <h3>Sponsor</h3>
                                 <p>Be part of this unique conference</p>
                             </header>
                             <Link to="/sponsor" className="link primary"></Link>
+                            <div className="homeBanner">
+                                <Img fluid={this.props.data.sponsorImage.childImageSharp.fluid} />
+                            </div>
                         </article>
-                        <article style={{backgroundImage: `url(${pic03})`}}>
+                        <article>
                             <header className="major">
                                 <h3>Venue</h3>
                                 <p>Join us in Bengaluru!</p>
                             </header>
                             <Link to="/venue" className="link primary"></Link>
-                        </article>
-                        {/* <article style={{backgroundImage: `url(${pic05})`}}>
-                            <header className="major">
-                                <h3>Consequat</h3>
-                                <p>Ipsum dolor sit amet</p>
-                            </header>
-                            <Link to="/landing" className="link primary"></Link>
-                        </article>
-                        <article style={{backgroundImage: `url(${pic06})`}}>
-                            <header className="major">
-                                <h3>Etiam</h3>
-                                <p>Feugiat amet tempus</p>
-                            </header>
-                            <Link to="/landing" className="link primary"></Link>
-                        </article> */}
+                            <div className="homeBanner">
+                                <Img fluid={this.props.data.venueImage.childImageSharp.fluid} />
+                            </div>
+                        </article>                       
                     </section>                    
                     <section id="two">
                         <div className="inner">
@@ -94,16 +85,46 @@ class HomeIndex extends React.Component {
 }
 
 export default HomeIndex
+
 export const query = graphql`
   query {
-    file(relativePath: { eq: "../assets/images/brikl-logo.png" }) {
+    bannerImage: file(relativePath: { eq: "bengaluru-castle.png" }) {
       childImageSharp {
-        # Specify the image processing specifications right in the query.
-        # Makes it trivial to update as your page's design changes.
-        fixed(width: 150, height: 150) {
-          ...GatsbyImageSharpFixed
+        fluid(maxWidth: 2000) {
+          ...GatsbyImageSharpFluid
         }
       }
     }
+    # https://unsplash.com/photos/bzdhc5b3Bxs
+    speakerStageImage: file(relativePath: { eq: "conference-stage.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }  
+    # https://unsplash.com/photos/yB5cYEq7y2U 
+    ticketImage: file(relativePath: { eq: "ticket.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }  
+    venueImage: file(relativePath: { eq: "BLR_Chancery_Pavilion_facade1_dbr92l.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }  
+    # https://unsplash.com/photos/Dnkr_lmdKi8 
+    sponsorImage: file(relativePath: { eq: "sponsor.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }      
   }
 `

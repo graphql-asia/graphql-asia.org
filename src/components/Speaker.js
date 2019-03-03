@@ -1,11 +1,11 @@
 import React from 'react'
-
+import Img from "gatsby-image"
 const Speaker = (props) => (
     <section>
         <span className="image">
             {
                 props.speakerPicture ?
-                <img src={props.speakerPicture} alt={props.speakerName} />
+                <Img fixed={props.speakerPicture} alt={props.speakerName} />                
                 :
                 <span className="placeholder"/>
             }            

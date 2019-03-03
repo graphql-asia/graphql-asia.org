@@ -1,4 +1,6 @@
 import React from 'react'
+import { graphql } from 'gatsby'
+import Img from "gatsby-image"
 
 const Banner = (props) => (
     <section id="banner" className="major">
@@ -12,10 +14,19 @@ const Banner = (props) => (
                     <li>
                         <a className="button next scrolly" target="_blank" rel="noopener noreferrer" href="https://www.townscript.com/e/graphql-asia-020103/booking">Tickets</a>
                         {/* <a href="#one" className="button next scrolly">Read more</a> */}
-                    </li>
+                    </li>                   
                 </ul>
-            </div>
+            </div>                        
         </div>
+        <div style={{
+            width: '100%',
+            height: '100%',
+            position: 'absolute',
+            display: 'block',
+            zIndex: 0
+        }}>
+        <Img fluid={props.bannerImage} backgroundColor={'#777777'} />
+        </div>        
     </section>
 )
 
