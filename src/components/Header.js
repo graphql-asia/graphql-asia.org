@@ -6,16 +6,8 @@ import Menu from './Menu'
 const Header = (props) => (
     <header id="header" className="">        
         <span>GraphQL</span>
-        <Link to="/" className="logo">
-            
-            <img style={{
-                width: '100%',
-                height: '100%',
-                display: 'inline',
-                verticalAlign: 'middle',                                             
-                objectFit: 'contain',
-                padding: '.5vh'
-            }} src={GraphlQLAsiaLogo} alt="GraphQL Asia Logo" />              
+        <Link to="/" className="logo">            
+            <img src={GraphlQLAsiaLogo} alt="GraphQL Asia Logo" />              
         </Link>
         <span>Asia</span>          
         <nav>

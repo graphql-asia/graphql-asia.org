@@ -265,42 +265,42 @@ export default Speakers
 
 export const query = graphql`
   query {
-    LeeByron: file(relativePath: { eq: "LeeByron.webp" }) {
+    LeeByron: file(relativePath: { eq: "LeeByron.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 300) {
           ...GatsbyImageSharpFluid
         }
       }
     }    
-    SashaSolomon: file(relativePath: { eq: "SashaSolomon.webp" }) {
+    SashaSolomon: file(relativePath: { eq: "SashaSolomon.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 300) {
           ...GatsbyImageSharpFluid
         }
       }
     } 
-    ManojAwasthi: file(relativePath: { eq: "ManojAwasthi.webp" }) {
+    ManojAwasthi: file(relativePath: { eq: "ManojAwasthi.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 300) {
           ...GatsbyImageSharpFluid
         }
       }
     }   
-    MarcAndreGiroux: file(relativePath: { eq: "MarcAndreGiroux.webp" }) {
+    MarcAndreGiroux: file(relativePath: { eq: "MarcAndreGiroux.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 300) {
           ...GatsbyImageSharpFluid
         }
       }
     }   
-    AdamMiskiewicz: file(relativePath: { eq: "AdamMiskiewicz.webp" }) {
+    AdamMiskiewicz: file(relativePath: { eq: "AdamMiskiewicz.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 300) {
           ...GatsbyImageSharpFluid
         }
       }
     }   
-    ShrutiKapoor: file(relativePath: { eq: "ShrutiKapoor.webp" }) {
+    ShrutiKapoor: file(relativePath: { eq: "ShrutiKapoor.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 300) {
           ...GatsbyImageSharpFluid
