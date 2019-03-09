@@ -35,6 +35,7 @@ class Layout extends React.Component {
                         { name: 'google-site-verification', content: '0swMWogAzErcNEr2q0dVwCn9zI16r0fMi37eb7S-jz8' },
                         { name: 'image', content: 'GraphQL-Asia-Banner.png' },
                         { name: 'og:url', content: 'https://graphql-asia.org' },                        
+                        { name: 'og:title', content: 'GraphQL Asia in Bengaluru, India' },                        
                         { name: 'og:image', content: 'GraphQL-Asia-Banner.png' },
                         { name: 'twitter:image', content: 'GraphQL-Asia-Banner.png' },
                         { name: 'twitter:card', content: 'summary_large_image' },
