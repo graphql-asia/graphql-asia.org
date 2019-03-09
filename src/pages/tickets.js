@@ -15,14 +15,24 @@ const Tickets = (props) => (
         {/* <BannerSpeakers /> */}
 
         <div id="main">            
-            <section id="one">
+            <section style={{
+                position: 'relative'
+            }} id="one">
                 <div className="inner">
                     <header className="major">                    
                     <h1>Tickets</h1>
                     </header>                                    
                 </div>
-            </section>
-
+            </section>  
+            <div style={{
+                    height: '600px',
+                    fontSize: '3rem',
+                    textAlign: 'center',
+                    position: 'absolute',
+                    width: '100%',
+                    top: '400px',
+                    zIindex: 0
+                }}>Loading...</div>              
                 <Iframe url="https://www.townscript.com/widget/graphql-asia-020103"
                     // width="450px"
                     height="600px"
@@ -32,6 +42,7 @@ const Tickets = (props) => (
                     position="relative"
                     allowFullScreen
                 />
+                
         </div>
 
     </Layout>
