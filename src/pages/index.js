@@ -41,10 +41,10 @@ class HomeIndex extends React.Component {
                                 <p>Get your ticket now</p>
                             </header>
                             <a className="link primary" target="_blank" rel="noopener noreferrer" href="https://www.townscript.com/e/graphql-asia-020103/booking"></a>
-                            {/* <Link to="/tickets" className="link primary"></Link> */}
-                            <div className="homeBanner">
+                            <Link to="/tickets" className="link primary"></Link>
+                            {/* <div className="homeBanner">
                                 <Img fluid={this.props.data.ticketImage.childImageSharp.fluid} />
-                            </div>
+                            </div> */}
                         </article>
                         <article>
                             <header className="major">
