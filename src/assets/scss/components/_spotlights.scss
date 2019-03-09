@@ -19,9 +19,51 @@
 			display: table;
 			clear: both;
 		}
-
+		&.agenda{
+			> h2{
+				text-align: center;
+				margin: 1em;
+			}
+			> section {
+				header.major{
+					margin: 0;
+				}
+				.speakerTime{
+					border-radius: 0;
+					display: block;
+					position: relative;
+					width: 30%;
+					text-align: right;
+					line-height: 150px;
+				}
+				h3{
+					&:after{
+						display: none;
+					}
+				}
+				flex-direction: row!important;
+				height: 150px;
+				.agendaItem{
+					span, h3, h2, p{
+						text-align: left!important;
+					}
+				} 
+				&:nth-child(2n) {
+					@include vendor('flex-direction', 'row');					
+					ul, h3,.talkTitle, p, h4 {
+						text-align: left;
+					}
+					header {
+						margin-left: 0;
+					}
+					> .content {
+						@include vendor('align-items', 'flex-start');
+					}				
+				}
+			}
+		}
 		> section {
-			height: 300px;
+			height: 300px;			
 			@include vendor('display', 'flex');
 			@include vendor('flex-direction', 'row');
 			background-color: desaturate(lighten(_palette(bg-alt), 2), 1);
@@ -108,7 +150,7 @@
 
 		@include breakpoint(xlarge) {
 			> section {
-				> .image {
+				> .image, > .speakerTime {
 					width: 40%;					
 				}
 
@@ -120,7 +162,7 @@
 
 		@include breakpoint(large) {
 			> section {
-				> .image {				
+				> .image, > .speakerTime {				
 					width: 45%;
 				}
 
@@ -133,6 +175,15 @@
 		@include breakpoint(medium) {	
 			width: 100%;
 			float: none;	
+			.speakerTime{
+				float: left;
+			}
+			
+			.agendaItem .content{
+				width: 70%;
+				height: 100%;
+				padding: 3em 1.5em 1em 1.5em;
+			}
 			> section {
 				height: auto;
 				display: block;				

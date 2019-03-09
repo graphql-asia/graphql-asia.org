@@ -45,6 +45,11 @@
 	.hidden{
 		display: none;
 	}
+	.desktop{
+		@include breakpoint(small) {
+			display: none;
+		}
+	}
 
 	@mixin inner {
 		> .inner {
