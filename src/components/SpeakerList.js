@@ -104,7 +104,7 @@ const SpeakerList = (props) => (
           isLightningTalk={false}
           speakerDescription={''}
           speakerPosition={'Software Engineer, Paypal'}
-          talkTitle={'GrapQL @ Paypal'}
+          talkTitle={'GraphQL @ Paypal'}
           twitter={'shrutikapoor08'}
           isAgenda={props.isAgenda}
           time={'2:00 - 2:30'}
@@ -214,7 +214,7 @@ const SpeakerList = (props) => (
           isLightningTalk={false}
           speakerDescription={''}
           speakerPosition={'Senior Platform Engineer, Github'}
-          talkTitle={'GrapQL @ Github'}
+          talkTitle={'GraphQL @ Github'}
           twitter={'__xuorig__'}
           isAgenda={props.isAgenda}
           time={'5:30 - 6:00'}
@@ -238,7 +238,7 @@ const SpeakerList = (props) => (
           isLightningTalk={false}
           speakerDescription={''}
           speakerPosition={'VP of Engineering, Tokopedia'}
-          talkTitle={'GrapQL @ Tokopedia'}
+          talkTitle={'GraphQL @ Tokopedia'}
           twitter={'awmanoj'}
           isAgenda={props.isAgenda}
           time={'10:00 - 10:30'}
@@ -317,7 +317,7 @@ const SpeakerList = (props) => (
           speakerDescription={''}
           speakerPosition={'Director of Engineering, Myntra'}
           talkTitle={'TBD'}
-          twitter={'GrapQL @ Myntra'}
+          twitter={'GraphQL @ Myntra'}
           isAgenda={props.isAgenda}
           time={'2:00 - 2:30'}
         /> 
@@ -421,7 +421,7 @@ const SpeakerList = (props) => (
           isLightningTalk={false}
           speakerDescription={''}
           speakerPosition={'Engineer, Airbnb'}
-          talkTitle={'GrapQL @ Airbnb'}
+          talkTitle={'GraphQL @ Airbnb'}
           twitter={'skevy'}
           isAgenda={props.isAgenda}
           time={'5:30 - 6:00'}
