@@ -158,7 +158,7 @@ const SpeakerList = (props) => (
           isLightningTalk={false}
           speakerDescription={''}
           speakerPosition={'Senior Software Engineer, Twitter'}
-          talkTitle={'GrapQL @ Twitter'}
+          talkTitle={'Error handling with GraphQL'}
           twitter={'sachee'}
           isAgenda={props.isAgenda}
           time={'3:15 - 3:45'}
@@ -255,16 +255,17 @@ const SpeakerList = (props) => (
           time={'10:30 - 11:00'}
         />
         <Speaker
-          speakerPicture={props.data.RichardThelkard.childImageSharp.fluid}
-          speakerName={'Richard Thelkard'}
+          speakerPicture={props.data.KenjuWagatsuma.childImageSharp.fluid}
+          speakerName={'Kenju Wagatsuma'}
           isLightningTalk={false}
-          speakerDescription={'Richard Threlkeld is a Sr. Engineer in AWS Mobile and was the founding member of AWS AppSync and Amplify teams. Previously he worked in the field helping customers build web and mobile solutions with AWS technologies, including data processing for AdTech and Gaming industries. Today, he is responsible for the end to end experience for customers building mobile and web applications in the Amplify Framework.'}
-          speakerPosition={'Sr. Engineer, AWS (Mobile)'}
-          talkTitle={'TBD'}
-          twitter={'undef_obj'}
+          speakerDescription={''}
+          speakerPosition={'Software Engineer, Cookpad'}
+          talkTitle={'Re-architecture of a decade-old app with BFF/GraphQL'}
+          twitter={'itiskj'}
           isAgenda={props.isAgenda}
           time={'11:00 - 11:30'}
         />
+        
         <Speaker
           speakerPicture={props.data.KamleshChandnani.childImageSharp.fluid}
           speakerName={'Kamlesh Chandnani'}
@@ -297,7 +298,7 @@ const SpeakerList = (props) => (
           talkTitle={'Gatsby and GraphQL: Today and the Future'}
           twitter={'chatsidhartha'}
           isAgenda={props.isAgenda}
-          time={'12:30 - 1:00'}
+          time={'12:30 - 12:50'}
         />
         {
             props.isAgenda === true ?
@@ -305,7 +306,7 @@ const SpeakerList = (props) => (
                 speakerName={'Lunch break'}                                
                 isLightningTalk={false}
                 isAgenda={props.isAgenda}
-                time={'1:00 - 2:00'}
+                time={'12:50 - 2:00'}
             />
             :null
         }
@@ -371,23 +372,23 @@ const SpeakerList = (props) => (
           time={'3:15 - 3:45'}
         />
         <Speaker
-          speakerPicture={props.data.KenjuWagatsuma.childImageSharp.fluid}
-          speakerName={'Kenju Wagatsuma'}
+          speakerPicture={props.data.RichardThelkard.childImageSharp.fluid}
+          speakerName={'Richard Thelkard'}
           isLightningTalk={false}
-          speakerDescription={''}
-          speakerPosition={'Software Engineer, Cookpad'}
-          talkTitle={'Re-architecture of a decade-old app with BFF/GraphQL'}
-          twitter={'itiskj'}
+          speakerDescription={'Richard Threlkeld is a Sr. Engineer in AWS Mobile and was the founding member of AWS AppSync and Amplify teams. Previously he worked in the field helping customers build web and mobile solutions with AWS technologies, including data processing for AdTech and Gaming industries. Today, he is responsible for the end to end experience for customers building mobile and web applications in the Amplify Framework.'}
+          speakerPosition={'Sr. Engineer, AWS (Mobile)'}
+          talkTitle={'TBD'}
+          twitter={'undef_obj'}
           isAgenda={props.isAgenda}
-          time={'3:45 - 4:15'}
-        />
+          time={'3:45 - 4:15'}          
+        />        
         <Speaker
           // speakerPicture={props.data.AkashManohar.childImageSharp.fluid}
           speakerName={'Akash Manohar'}
           isLightningTalk={true}
           speakerDescription={''}
           speakerPosition={'Director of Engineering, Synup'}
-          talkTitle={'Notes from a year of GraphQL'}
+          talkTitle={'Notes from a year of GraphQL at Synup'}
           twitter={'HashNuke'}
           isAgenda={props.isAgenda}
           time={'4:15 - 4:23'}
