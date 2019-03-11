@@ -316,8 +316,8 @@ const SpeakerList = (props) => (
           isLightningTalk={false}
           speakerDescription={''}
           speakerPosition={'Director of Engineering, Myntra'}
-          talkTitle={'TBD'}
-          twitter={'GraphQL @ Myntra'}
+          talkTitle={'Scaling Myntra API Gateway to 30kqps built on Go lang with GraphQL'}
+          twitter={''}
           isAgenda={props.isAgenda}
           time={'2:00 - 2:30'}
         /> 
