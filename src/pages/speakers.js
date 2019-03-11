@@ -220,6 +220,13 @@ export const query = graphql`
         }
       }
     }
+    AkashManohar: file(relativePath: { eq: "Akash-Manohar.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 500) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }    
   }
 `
 

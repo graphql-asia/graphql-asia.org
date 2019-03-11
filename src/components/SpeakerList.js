@@ -124,7 +124,7 @@ const SpeakerList = (props) => (
           speakerPicture={props.data.EeshTyagi.childImageSharp.fluid}
           speakerName={'Eesh Tyagi'}
           isLightningTalk={true}
-          speakerDescription={''}
+          speakerDescription={'Lead UI Developer @Cleartrip Takes care of UI UX of different products and innovating usage of upcoming front end technologies. An avid Chelsea football fan and gamer by night.'}
           speakerPosition={'Lead UI, Cleartrip'}
           talkTitle={'Cleartrip reactive journey from 3 to 0.2s using Apollo GraphQL - a Case Study'}
           twitter={'EtEesh'}
@@ -178,7 +178,7 @@ const SpeakerList = (props) => (
           speakerPicture={props.data.CarlosRufo.childImageSharp.fluid}
           speakerName={'Carlos Rufo'}
           isLightningTalk={false}
-          speakerDescription={''}
+          speakerDescription={'OSS Developer 💜 #JavaScript & #GraphQL enthusiast ♻️ ‘The best code is always no code’ believer 🧐 Sporadic stargazer 🌌'}
           speakerPosition={'OSS Developer'}
           talkTitle={'End-to-end Type-Safe GraphQL Apps'}
           twitter={'swcarlosrj'}
@@ -364,7 +364,7 @@ const SpeakerList = (props) => (
           speakerPicture={props.data.AndreasMarek.childImageSharp.fluid}
           speakerName={'Andreas Marek'}
           isLightningTalk={false}
-          speakerDescription={''}
+          speakerDescription={'Creator and maintainer of GraphQL Java. Working on GraphQL at Atlassian. Living in Sydney.'}
           speakerPosition={'Senior Developer, Atlassian'}
           talkTitle={'GraphQL execution in-depth'}
           twitter={'andimarek'}
@@ -383,7 +383,7 @@ const SpeakerList = (props) => (
           time={'3:45 - 4:15'}          
         />        
         <Speaker
-          // speakerPicture={props.data.AkashManohar.childImageSharp.fluid}
+          speakerPicture={props.data.AkashManohar.childImageSharp.fluid}
           speakerName={'Akash Manohar'}
           isLightningTalk={true}
           speakerDescription={''}
@@ -408,7 +408,7 @@ const SpeakerList = (props) => (
           speakerPicture={props.data.NavyaAgarwal.childImageSharp.fluid}
           speakerName={'Navya Agarwal'}
           isLightningTalk={false}
-          speakerDescription={''}
+          speakerDescription={'A polyglot developer working with Adobe Experience Cloud.'}
           speakerPosition={'MTS-II, Adobe'}
           talkTitle={'A glimpse of GraphQL: Front end developers’ life is easy now!'}
           twitter={''}
