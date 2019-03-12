@@ -1,6 +1,7 @@
 import React from 'react'
 import BrikLogo from "../assets/images/brikl-logo.png"
 import HasuraLogo from "../assets/images/hasura-logo.png"
+import { Link } from 'gatsby'
 const Footer = (props) => (
     <footer id="footer">
         <div className="inner wide flex">            
