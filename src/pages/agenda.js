@@ -2,7 +2,6 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
-import BannerSpeakers from '../components/BannerSpeakers'
 import SpeakerList from '../components/SpeakerList'
 
 

@@ -7,10 +7,11 @@ const Menu = (props) => (
         <div className="inner">
             <ul className="links">                
                 {/* <li className="open" onClick={props.onToggleMenu}><span className="icon alt fa-hamburger"/></li> */}
-                <li><Link  to="/speakers">Speakers</Link></li>
+                <li className="desktop"><Link  to="/speakers">Speakers</Link></li>
                 <li><Link to="/agenda">Agenda</Link></li>                
                 <li><Link to="/venue">Venue</Link></li>
                 <li><Link to="/tickets">Tickets</Link></li>
+                <li><Link to="/workshops">Workshops</Link></li>
                 {/* <li><a target="_blank" rel="noopener noreferrer" href="https://www.townscript.com/e/graphql-asia-020103/booking">Tickets</a></li>                 */}
                 <li><Link to="/sponsor">Sponsor</Link></li>
                 <li className="desktop"><Link to="#contact-us">Contact</Link></li>
