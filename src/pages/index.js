@@ -21,6 +21,7 @@ class HomeIndex extends React.Component {
                         { name: 'google-site-verification', content: '0swMWogAzErcNEr2q0dVwCn9zI16r0fMi37eb7S-jz8' },
                     ]}
                 >
+                
                 </Helmet>                
                 <Banner bannerImage={this.props.data.bannerImage.childImageSharp.fluid} />
                 <div id="main">
