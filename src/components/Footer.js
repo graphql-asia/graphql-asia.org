@@ -12,6 +12,9 @@ const Footer = (props) => (
                 </ul>
                 <ul className="copyright">
                     <li>&copy; GraphQL Asia</li><li>Gatsby Theme by: <a href="https://html5up.net">HTML5 UP</a></li>
+                    <li>
+                        <Link to="/code-of-conduct">Code of Conduct</Link>
+                    </li>
                 </ul>
             </div>
             <div className="flex2">                
