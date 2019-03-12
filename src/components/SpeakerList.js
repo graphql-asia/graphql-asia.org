@@ -56,16 +56,16 @@ const SpeakerList = (props) => (
           time={'11:00 - 11:30'}
         />
         <Speaker
-          speakerPicture={props.data.KiranKumarAbburi.childImageSharp.fluid}
-          speakerName={'Kiran Kumar Abburi'}
+          speakerPicture={props.data.RajatKhare.childImageSharp.fluid}
+          speakerName={'Rajat Khare'}
           isLightningTalk={false}
           speakerDescription={''}
-          speakerPosition={'Organiser of @ReactBangalore'}
-          talkTitle={'How Apollo client works ?'}
-          twitter={'kiran_abburi'}
+          speakerPosition={'Architect, Intuit'}
+          talkTitle={'Running Intuit Quickbooks for 4M customers on Graphql!'}
+          twitter={'rajatontwit'}
           isAgenda={props.isAgenda}
           time={'11:30 - 12:00'}
-        />
+        />    
         <Speaker
           speakerPicture={props.data.TanayPratap.childImageSharp.fluid}
           speakerName={'Tanay Pratap'}
@@ -185,17 +185,18 @@ const SpeakerList = (props) => (
           isAgenda={props.isAgenda}
           time={'4:15 - 4:23'}
         />
+        
         <Speaker
-          speakerPicture={props.data.RajatKhare.childImageSharp.fluid}
-          speakerName={'Rajat Khare'}
+          speakerPicture={props.data.KiranKumarAbburi.childImageSharp.fluid}
+          speakerName={'Kiran Kumar Abburi'}
           isLightningTalk={false}
           speakerDescription={''}
-          speakerPosition={'Architect, Intuit'}
-          talkTitle={'Running Intuit Quickbooks for 4M customers on Graphql!'}
-          twitter={'rajatontwit'}
-          isAgenda={props.isAgenda}
+          speakerPosition={'Organiser of @ReactBangalore'}
+          talkTitle={'Live Queries implementation with Apollo & GraphQL'}
+          twitter={'kiran_abburi'}
+          isAgenda={props.isAgenda}          
           time={'4:30 - 5:00'}
-        />       
+        />  
         <Speaker
           speakerPicture={props.data.UriGoldstein.childImageSharp.fluid}
           speakerName={'Uri Goldstein'}
