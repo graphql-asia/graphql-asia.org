@@ -7,10 +7,7 @@ const Speaker = (props) => (
     }>
         {
             props.isAgenda === true ?
-            <div className="image">
-                <span className="speakerSlot">
-                    {props.time}
-                </span>
+            <div className="image">                
                 {
                     props.speakerPicture ?
                     <Img fixed={props.speakerPicture} alt={props.speakerName} />                
@@ -36,6 +33,9 @@ const Speaker = (props) => (
             "content"
         }>
             <div className="inner">
+                <span className="speakerSlot">
+                    {props.time}
+                </span>
                 <header className="major">
                     <h3>{props.speakerName}</h3>
                 </header>                
@@ -48,6 +48,7 @@ const Speaker = (props) => (
                 }       
                 <br/>
                 <span className="speakerPosition">{props.speakerPosition}</span>         
+                <span className="speakerDescription">{props.speakerDescription}</span>         
                 {/* <p className="talkTitle">{props.talkTitle}</p> */}
             </div>
         </div>

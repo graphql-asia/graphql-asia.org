@@ -48,7 +48,7 @@ const SpeakerList = (props) => (
           speakerPicture={props.data.RobertZhu.childImageSharp.fluid}
           speakerName={'Robert Zhu'}
           isLightningTalk={false}
-          speakerDescription={''}
+          speakerDescription={'ex-Facebook, ex-Microsoft'}
           speakerPosition={'AWS'}
           talkTitle={'Why you should use REST instead of GraphQL'}
           twitter={'rbzhu'}
@@ -70,7 +70,7 @@ const SpeakerList = (props) => (
           speakerPicture={props.data.TanayPratap.childImageSharp.fluid}
           speakerName={'Tanay Pratap'}
           isLightningTalk={false}
-          speakerDescription={''}
+          speakerDescription={'Rewriting and revamping Microsoft\'s fastest growing app i.e. Microsoft Teams using React and Apollo.'}
           speakerPosition={'Software Engineer, Microsoft'}
           talkTitle={'Rewriting Wiki in Teams with Apollo+GraphQL at Microsoft\'s scale'}
           twitter={'tanaypratap'}
@@ -81,7 +81,7 @@ const SpeakerList = (props) => (
           speakerPicture={props.data.TobiasMeixner.childImageSharp.fluid}
           speakerName={'Tobias Meixner'}
           isLightningTalk={false}
-          speakerDescription={''}
+          speakerDescription={'Co-Organizer @graphqlasia and GraphQL Bangkok, Certified AWS Solution Architect, Serverless & GraphQL fanatic'}
           speakerPosition={'Co-Founder & CTO, BrikL'}
           talkTitle={'BrikL - A GraphQL native'}
           twitter={'MeixnerTobias'}
@@ -113,7 +113,7 @@ const SpeakerList = (props) => (
           speakerPicture={props.data.AkankshaChoudhary.childImageSharp.fluid}
           speakerName={'Akanksha Choudhary'}
           isLightningTalk={true}
-          speakerDescription={''}
+          speakerDescription={'Akanksha Choudhary is a Tech Lead at Kidovators, developing technology to facilitate 21st Century skills learning.'}
           speakerPosition={'Full Stack Web Developer'}
           talkTitle={'The Cost of GraphQL'}
           twitter={'ch_akanksha'}
@@ -135,7 +135,7 @@ const SpeakerList = (props) => (
           speakerPicture={props.data.IvanGoncharov.childImageSharp.fluid}
           speakerName={'Ivan Goncharov'}
           isLightningTalk={true}
-          speakerDescription={''}
+          speakerDescription={'Ivan is the maintainer of graphql-js and active contributor to GraphQL Specification.'}
           speakerPosition={'GraphQL consultant, apis.guru'}
           talkTitle={'GraphQL Tools are easy or how to write one in less than 100 lines'}
           twitter={'E1Goncharov'}
@@ -178,7 +178,7 @@ const SpeakerList = (props) => (
           speakerPicture={props.data.CarlosRufo.childImageSharp.fluid}
           speakerName={'Carlos Rufo'}
           isLightningTalk={false}
-          speakerDescription={'OSS Developer 💜 #JavaScript & #GraphQL enthusiast ♻️ ‘The best code is always no code’ believer 🧐 Sporadic stargazer 🌌'}
+          speakerDescription={'Carlos is a passionate developer and speaker aficionado. While he codes with different B/FE techs, his go-to for every project is his crush: GraphQL. He is very active in the GraphQL ecosystem where he has collaborated with across numerous internal and external projects, such as HowToGraphQL & SpaceX GraphQL API. In his free time he loves stargazing & rocket science, but mostly, help to build a community where everyone could learn about everything!'}
           speakerPosition={'OSS Developer'}
           talkTitle={'End-to-end Type-Safe GraphQL Apps'}
           twitter={'swcarlosrj'}
@@ -190,7 +190,7 @@ const SpeakerList = (props) => (
           speakerPicture={props.data.KiranKumarAbburi.childImageSharp.fluid}
           speakerName={'Kiran Kumar Abburi'}
           isLightningTalk={false}
-          speakerDescription={''}
+          speakerDescription={'Kiran Abburi is a consultant who primarily work with Reactjs and GraphQL. He also organizes Reactjs Bangalore meetup group.'}
           speakerPosition={'Organiser of @ReactBangalore'}
           talkTitle={'Live Queries implementation with Apollo & GraphQL'}
           twitter={'kiran_abburi'}
@@ -201,7 +201,7 @@ const SpeakerList = (props) => (
           speakerPicture={props.data.UriGoldstein.childImageSharp.fluid}
           speakerName={'Uri Goldstein'}
           isLightningTalk={false}
-          speakerDescription={''}
+          speakerDescription={'Uri is the founder of The Guild, a group of open source developers working around the world to help create important open source libraries, mostly around GraphQL and to support large companies go through successful technological transformations.'}
           speakerPosition={'The Guild'}
           talkTitle={'GraphQL where it hurts the most - Practical tools to use GraphQL in the harshest environments'}
           twitter={'urigoldshtein'}
@@ -259,7 +259,7 @@ const SpeakerList = (props) => (
           speakerPicture={props.data.KenjuWagatsuma.childImageSharp.fluid}
           speakerName={'Kenju Wagatsuma'}
           isLightningTalk={false}
-          speakerDescription={''}
+          speakerDescription={'Developing the online advertising server.'}
           speakerPosition={'Software Engineer, Cookpad'}
           talkTitle={'Re-architecture of a decade-old app with BFF/GraphQL'}
           twitter={'itiskj'}
@@ -294,7 +294,7 @@ const SpeakerList = (props) => (
           speakerPicture={props.data.SidharthaChatterjee.childImageSharp.fluid}
           speakerName={'Sidhartha Chatterjee'}
           isLightningTalk={false}
-          speakerDescription={''}
+          speakerDescription={'Sidhartha is a full stack developer based out of Mumbai. He\'s part of the Gatsby core OSS team. He\'s worked with several companies in the past including Cleartrip and Insider and has helped them build React apps, PWAs and Node.js microservices. In his free time, he likes scuba diving in the deep seas, playing his guitar and walking his dog.'}
           speakerPosition={'OSS Maintainer, Gatsby'}
           talkTitle={'Gatsby and GraphQL: Today and the Future'}
           twitter={'chatsidhartha'}
@@ -326,7 +326,7 @@ const SpeakerList = (props) => (
           speakerPicture={props.data.ManaswiniDas.childImageSharp.fluid}
           speakerName={'Manaswini Das'}
           isLightningTalk={true}
-          speakerDescription={''}
+          speakerDescription={'Manaswini Das is an undergraduate, pursuing Bachelor\'s in computer science from College of Engineering and Technology, Bhubaneswar, India. She is a former Outreachy intern at Open Humans Foundation. She contributes to open source software and is ambitious of developing futuristic technologies. Her fields of interest include open source and artificial intelligence. Her hobbies include poetry, blogging and basketball. Being a pensive person, she likes diving into the depth of everything that she comes across.'}
           speakerPosition={'Open-source enthusiast'}
           talkTitle={'Hit your target with GraphQL, but not rate limits'}
           twitter={'ManaswiniDas4'}
@@ -398,7 +398,7 @@ const SpeakerList = (props) => (
           speakerPicture={props.data.TimGriesser.childImageSharp.fluid}
           speakerName={'Tim Griesser'}
           isLightningTalk={false}
-          speakerDescription={''}
+          speakerDescription={'Tim is a Senior Software Engineer at Cypress.io. An enthusiast of GraphQL and TypeScript, he enjoys building things for the web and collaborating on open source, creating libraries such as Knex.js and GraphQL Nexus. He is passionate about learning from and teaching the best ideas from different languages and frameworks.'}
           speakerPosition={'Senior Software Engineer, cypress.io'}
           talkTitle={'Paving a New Path for GraphQL Schemas '}
           twitter={'tgriesser'}
