@@ -209,7 +209,7 @@ const SpeakerList = (props) => (
           time={'5:00 - 5:30'}
         /> 
         
-        <Speaker
+        {/* <Speaker
           speakerPicture={props.data.MarcAndreGiroux.childImageSharp.fluid}
           speakerName={'Marc-Andre Giroux'}
           isLightningTalk={false}
@@ -219,7 +219,7 @@ const SpeakerList = (props) => (
           twitter={'__xuorig__'}
           isAgenda={props.isAgenda}
           time={'5:30 - 6:00'}
-        />
+        /> */}
       </section>
       <section id="three" 
       className={
@@ -389,7 +389,7 @@ const SpeakerList = (props) => (
           isLightningTalk={true}
           speakerDescription={''}
           speakerPosition={'Director of Engineering, Synup'}
-          talkTitle={'Notes from a year of GraphQL at Synup'}
+          talkTitle={'Optimizing GraphQL workload'}
           twitter={'HashNuke'}
           isAgenda={props.isAgenda}
           time={'4:15 - 4:23'}
@@ -400,7 +400,7 @@ const SpeakerList = (props) => (
           isLightningTalk={false}
           speakerDescription={'Tim is a Senior Software Engineer at Cypress.io. An enthusiast of GraphQL and TypeScript, he enjoys building things for the web and collaborating on open source, creating libraries such as Knex.js and GraphQL Nexus. He is passionate about learning from and teaching the best ideas from different languages and frameworks.'}
           speakerPosition={'Senior Software Engineer, cypress.io'}
-          talkTitle={'Paving a New Path for GraphQL Schemas '}
+          talkTitle={'Paving a New Path for GraphQL Schemas'}
           twitter={'tgriesser'}
           isAgenda={props.isAgenda}
           time={'4:30 - 5:00'}
