@@ -34,6 +34,12 @@ module.exports = {
     ...productionPlugins,
     'gatsby-plugin-react-helmet',
     {
+      resolve: `gatsby-plugin-fullstory`,
+      options: {
+        fs_org: 'JY8BM',
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
