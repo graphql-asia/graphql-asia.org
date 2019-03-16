@@ -21,6 +21,7 @@ const Tickets = (props) => (
                 <div className="inner">
                     <header className="major">                    
                     <h1>Tickets</h1>
+                    <p>All tickets give you access to both conference days and workshops along the conference.</p>
                     </header>                                    
                 </div>
             </section>  
@@ -30,7 +31,7 @@ const Tickets = (props) => (
                     textAlign: 'center',
                     position: 'absolute',
                     width: '100%',
-                    top: '400px',
+                    top: '465px',
                     zIindex: 0
                 }}>Loading...</div>              
                 <Iframe url="https://www.townscript.com/widget/graphql-asia-020103"
