@@ -58,7 +58,7 @@ class Speaker extends React.Component {
                         null                    
                     }      
                     <br/>          
-                    {/* {
+                    {
                         props.isAgenda === true && props.speakerDescription ?
                             this.state.showDetail === true ?
                             <div className="speakerDetail">
@@ -71,7 +71,7 @@ class Speaker extends React.Component {
                                 cursor: 'pointer'
                             }} onClick={()=>this.setState({showDetail:true})}>more...</span>
                         :null
-                    } */}                    
+                    }                    
                 </div>
             </div>
         </section>

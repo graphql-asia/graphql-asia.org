@@ -15,6 +15,16 @@ const SpeakerList = (props) => (
         }
         {
             props.isAgenda === true ?
+            <Speaker                        
+            speakerName={'Kiran Kumar Abburi'}
+            talkTitle={'Workshop - Introduction to GraphQL'}            
+            isAgenda={props.isAgenda}
+            time={'08:30 - 10:00'}
+            />
+            :null
+        }
+        {
+            props.isAgenda === true ?
             <Speaker            
             speakerName={'Registration + Tea/Coffee'}
             talkTitle={''}            
