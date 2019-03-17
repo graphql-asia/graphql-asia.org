@@ -41,7 +41,7 @@ class HomeIndex extends React.Component {
                                 <h3>Tickets</h3>
                                 <p>Get your ticket now</p>
                             </header>
-                            <a className="link primary" target="_blank" rel="noopener noreferrer" href="https://www.townscript.com/e/graphql-asia-020103/booking"></a>
+                            {/* <a className="link primary" target="_blank" rel="noopener noreferrer" href="https://www.townscript.com/e/graphql-asia-020103/booking">Ticket</a> */}
                             <Link to="/tickets" className="link primary"></Link>
                             {/* <div className="homeBanner">
                                 <Img fluid={this.props.data.ticketImage.childImageSharp.fluid} />

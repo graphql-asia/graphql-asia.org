@@ -1,7 +1,6 @@
-import Iframe from 'react-iframe'
-
 import React from 'react'
-import { Link } from 'gatsby'
+// import { Link } from 'gatsby'
+// import Iframe from 'react-iframe'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 

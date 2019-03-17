@@ -15,9 +15,10 @@ const SpeakerList = (props) => (
         }
         {
             props.isAgenda === true ?
-            <Speaker                        
+            <Speaker               
+            speakerPicture={props.data.KiranKumarAbburi.childImageSharp.fluid}         
             speakerName={'Kiran Kumar Abburi'}
-            talkTitle={'Workshop - Introduction to GraphQL'}            
+            talkTitle={'Workshop: Introduction to GraphQL'}            
             isAgenda={props.isAgenda}
             time={'08:30 - 10:00'}
             />
@@ -25,7 +26,8 @@ const SpeakerList = (props) => (
         }
         {
             props.isAgenda === true ?
-            <Speaker            
+            <Speaker        
+            speakerPicture={props.data.Register.childImageSharp.fluid}       
             speakerName={'Registration + Tea/Coffee'}
             talkTitle={''}            
             isAgenda={props.isAgenda}
@@ -36,6 +38,7 @@ const SpeakerList = (props) => (
         {
             props.isAgenda === true ?
             <Speaker            
+            speakerPicture={props.data.Rajoshi.childImageSharp.fluid}
             speakerName={'Welcome by Rajoshi & Tobias'}
             talkTitle={''}            
             isAgenda={props.isAgenda}
@@ -100,11 +103,26 @@ const SpeakerList = (props) => (
         />
         {
             props.isAgenda === true ?
-            <Speaker                
+            <Speaker      
+                speakerPicture={props.data.Lunch.childImageSharp.fluid}          
                 speakerName={'Lunch break'}                                
                 isLightningTalk={false}
                 isAgenda={props.isAgenda}
                 time={'1:00 - 2:00'}
+            />
+            :null
+        }
+        {
+            props.isAgenda === true ?
+            <Speaker      
+                speakerPicture={props.data.LucasMunhoz.childImageSharp.fluid}          
+                speakerName={'Lucas Munhoz'}   
+                speakerDescription={''}
+                speakerPosition={''}
+                talkTitle={'Workshop: React + GraphQL'}                             
+                isLightningTalk={false}
+                isAgenda={props.isAgenda}
+                time={'1:30 - 3:00'}
             />
             :null
         }
@@ -154,7 +172,8 @@ const SpeakerList = (props) => (
         />
         {
             props.isAgenda === true ?
-            <Speaker                
+            <Speaker             
+                speakerPicture={props.data.Coffee.childImageSharp.fluid}          
                 speakerName={'Coffee break'}                                
                 isLightningTalk={false}
                 isAgenda={props.isAgenda}
@@ -218,18 +237,19 @@ const SpeakerList = (props) => (
           isAgenda={props.isAgenda}
           time={'5:00 - 5:30'}
         /> 
-        
-        {/* <Speaker
-          speakerPicture={props.data.MarcAndreGiroux.childImageSharp.fluid}
-          speakerName={'Marc-Andre Giroux'}
+        <Speaker
+          speakerPicture={props.data.RichardThelkard.childImageSharp.fluid}
+          speakerName={'Richard Thelkard'}
           isLightningTalk={false}
-          speakerDescription={''}
-          speakerPosition={'Senior Platform Engineer, Github'}
-          talkTitle={'GraphQL @ Github'}
-          twitter={'__xuorig__'}
+          speakerDescription={'Richard Threlkeld is a Sr. Engineer in AWS Mobile and was the founding member of AWS AppSync and Amplify teams. Previously he worked in the field helping customers build web and mobile solutions with AWS technologies, including data processing for AdTech and Gaming industries. Today, he is responsible for the end to end experience for customers building mobile and web applications in the Amplify Framework.'}
+          speakerPosition={'Sr. Engineer, AWS (Mobile)'}
+          talkTitle={'Web and native clients – GraphQL design patterns for realtime and offline app architecture'}
+          twitter={'undef_obj'}
           isAgenda={props.isAgenda}
-          time={'5:30 - 6:00'}
-        /> */}
+          time={'5:30 - 6:00'}          
+        />       
+        
+        
       </section>
       <section id="three" 
       className={
@@ -241,6 +261,20 @@ const SpeakerList = (props) => (
         {
             props.isAgenda === true ?
             <h2>Day 2, 13th April</h2>
+            :null
+        }
+        {
+            props.isAgenda === true ?
+            <Speaker      
+                // speakerPicture={props.data.LucasMunhoz.childImageSharp.fluid}          
+                speakerName={'Tutor to be announced'}   
+                speakerDescription={''}
+                speakerPosition={''}
+                talkTitle={'Workshop: Advanced GraphQL'}                             
+                isLightningTalk={false}
+                isAgenda={props.isAgenda}
+                time={'8:30 - 10:00'}
+            />
             :null
         }
         <Speaker
@@ -309,15 +343,27 @@ const SpeakerList = (props) => (
           talkTitle={'Gatsby and GraphQL: Today and the Future'}
           twitter={'chatsidhartha'}
           isAgenda={props.isAgenda}
-          time={'12:30 - 12:50'}
+          time={'12:30 - 12:55'}
         />
         {
             props.isAgenda === true ?
-            <Speaker                
+            <Speaker         
+                speakerPicture={props.data.DigitalOcean.childImageSharp.fluid}          
+                speakerName={'Digital Ocean'}                
+                isLightningTalk={true}
+                isAgenda={props.isAgenda}
+                time={'12:55 - 1:00'}
+            />
+            :null
+        }     
+        {
+            props.isAgenda === true ?
+            <Speaker          
+                speakerPicture={props.data.Lunch.childImageSharp.fluid}                
                 speakerName={'Lunch break'}                                
                 isLightningTalk={false}
                 isAgenda={props.isAgenda}
-                time={'12:50 - 2:00'}
+                time={'1:00 - 2:00'}
             />
             :null
         }
@@ -343,34 +389,29 @@ const SpeakerList = (props) => (
           isAgenda={props.isAgenda}
           time={'2:30 - 2:38'}
         />
+        {/* <Speaker
+          speakerPicture={props.data.ManaswiniDas.childImageSharp.fluid}
+          speakerName={'Manaswini Das'}
+          isLightningTalk={true}
+          speakerDescription={'Manaswini Das is an undergraduate, pursuing Bachelor\'s in computer science from College of Engineering and Technology, Bhubaneswar, India. She is a former Outreachy intern at Open Humans Foundation. She contributes to open source software and is ambitious of developing futuristic technologies. Her fields of interest include open source and artificial intelligence. Her hobbies include poetry, blogging and basketball. Being a pensive person, she likes diving into the depth of everything that she comes across.'}
+          speakerPosition={'Open-source enthusiast'}
+          talkTitle={'Hit your target with GraphQL, but not rate limits'}
+          twitter={'ManaswiniDas4'}
+          isAgenda={props.isAgenda}
+          time={'2:30 - 2:38'}
+        /> */}
+        
         {
             props.isAgenda === true ?
             <Speaker                
-                speakerName={'Digital Ocean'}                
-                isLightningTalk={true}
-                isAgenda={props.isAgenda}
-                time={'2:40 - 2:45'}
-            />
-            :null
-        }     
-        {
-            props.isAgenda === true ?
-            <Speaker                
+                speakerPicture={props.data.Coffee.childImageSharp.fluid}          
                 speakerName={'Coffee break'}                                
                 isLightningTalk={false}
                 isAgenda={props.isAgenda}
                 time={'3:00 - 3:15'}
             />
             :null
-        }   
-        {/* <Speaker
-                    speakerPicture={props.data.TBD.childImageSharp.fluid}
-                    speakerName={'TBD'}
-                    isLightningTalk={false}
-                    speakerDescription={''}
-                    speakerPosition={'TBD'}
-                    talkTitle={'TBD'}
-                /> */}
+        }
         <Speaker
           speakerPicture={props.data.AndreasMarek.childImageSharp.fluid}
           speakerName={'Andreas Marek'}
@@ -383,16 +424,29 @@ const SpeakerList = (props) => (
           time={'3:15 - 3:45'}
         />
         <Speaker
-          speakerPicture={props.data.RichardThelkard.childImageSharp.fluid}
-          speakerName={'Richard Thelkard'}
+          speakerPicture={props.data.JonathanJalouzot.childImageSharp.fluid}
+          speakerName={'Jonathan Jalouzot'}
           isLightningTalk={false}
-          speakerDescription={'Richard Threlkeld is a Sr. Engineer in AWS Mobile and was the founding member of AWS AppSync and Amplify teams. Previously he worked in the field helping customers build web and mobile solutions with AWS technologies, including data processing for AdTech and Gaming industries. Today, he is responsible for the end to end experience for customers building mobile and web applications in the Amplify Framework.'}
-          speakerPosition={'Sr. Engineer, AWS (Mobile)'}
-          talkTitle={'TBD'}
-          twitter={'undef_obj'}
+          speakerDescription={'Speaker for more than 4 years on many topics such as the webperformance or the application cache, I’m working for over a year with ApolloJs and I advocate GraphQL to the French community through meetups. I animated the GraphQL track during Api Days.'}
+          speakerPosition={'Co-Founder, GraphQL Paris'}
+          talkTitle={'How to Implement an extension aiming to track and monitor the performance of the GraphQL API'}
+          talkAbstract={'How to monitor the performance of your API graph. I propose you to set up an extension in ApolloJS that will allow you to monitor your GraphQl API with your favorite tools such as an ELK'}
+          twitter={'CaptainJojo42'}
           isAgenda={props.isAgenda}
-          time={'3:45 - 4:15'}          
+          time={'3:47 - 3:55'}
         />        
+        {/* <Speaker
+          speakerPicture={props.data.JonathanJalouzot.childImageSharp.fluid}
+          speakerName={'Jonathan Jalouzot '}
+          isLightningTalk={false}
+          speakerDescription={'Speaker for more than 4 years on many topics such as the webperformance or the application cache, I’m working for over a year with ApolloJs and I advocate GraphQL to the French community through meetups. I animated the GraphQL track during Api Days.'}
+          speakerPosition={'Co-Founder, GraphQL Paris'}
+          talkTitle={'How to Implement an extension aiming to track and monitor the performance of the GraphQL API.'}
+          talkAbstract={'How to monitor the performance of your API graph. I propose you to set up an extension in ApolloJS that will allow you to monitor your GraphQl API with your favorite tools such as an ELK'}
+          twitter={'CaptainJojo42'}
+          isAgenda={props.isAgenda}
+          time={'3:47 - 3:55'}
+        />         */}
         <Speaker
           speakerPicture={props.data.AkashManohar.childImageSharp.fluid}
           speakerName={'Akash Manohar'}
@@ -436,16 +490,7 @@ const SpeakerList = (props) => (
           twitter={'skevy'}
           isAgenda={props.isAgenda}
           time={'5:30 - 6:00'}
-        />
-        
-        
-        
-
-        
-
-        {/* Day 1 */}
-        
-     
+        />     
       </section>
       </div>
 )

@@ -30,7 +30,14 @@ export default Speakers
 
 
 export const query = graphql`
-  query {
+  query {    
+    JonathanJalouzot: file(relativePath: { eq: "JonathanJalouzot.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 500) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
     AmitRana: file(relativePath: { eq: "AmitRana.jpeg" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
