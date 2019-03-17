@@ -20,12 +20,20 @@ const Tickets = (props) => (
             }} id="one">
                 <div className="inner">
                     <header className="major">                    
-                    <h1>Tickets</h1>
-                    <p>All tickets give you access to both conference days and workshops along the conference.</p>
+                    <h1>Tickets</h1>                    
                     </header>                                    
+                    <p>All tickets give you access to both conference days and workshops along the conference.</p>                    
+                    <p>
+                        Should you have any issues purchasing your ticket or like to request group tickets contact us below or on Twitter.
+                    </p>
+                    <div>
+                        <ul className="actions">
+                            <li><a rel="noopener noreferrer" target="_blank" href="https://www.townscript.com/e/graphql-asia-020103/booking" className="button special">Get your ticket</a></li>                            
+                        </ul>    
+                    </div>
                 </div>
             </section>  
-            <div style={{
+            {/* <div style={{
                     height: '600px',
                     fontSize: '3rem',
                     textAlign: 'center',
@@ -43,7 +51,7 @@ const Tickets = (props) => (
                     position="relative"
                     allowFullScreen
                 />
-                
+                 */}
         </div>
 
     </Layout>
