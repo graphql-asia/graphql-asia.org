@@ -37,6 +37,58 @@ export default Speakers
 
 export const query = graphql`
   query {
+    JonathanJalouzot: file(relativePath: { eq: "JonathanJalouzot.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 500) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    Rajoshi: file(relativePath: { eq: "Rajoshi.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 500) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    # https://unsplash.com/photos/jLjfAWwHdB8
+    Register: file(relativePath: { eq: "register.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 500) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    # https://unsplash.com/photos/nBJHO6wmRWw
+    Coffee: file(relativePath: { eq: "coffee.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 500) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    # https://unsplash.com/photos/Ww8eQWjMJWk
+    Lunch: file(relativePath: { eq: "lunch.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 500) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    LucasMunhoz: file(relativePath: { eq: "LucasMunhoz.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 500) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }    
+    DigitalOcean: file(relativePath: { eq: "DO.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 500) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
     AmitRana: file(relativePath: { eq: "AmitRana.jpeg" }) {
       childImageSharp {
         fluid(maxWidth: 500) {

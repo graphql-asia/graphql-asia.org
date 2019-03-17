@@ -216,6 +216,18 @@
 		}
 
 		@include breakpoint(medium) {	
+			&.agenda{
+				width: 100%;
+				float: none;	
+				> section {
+					.agendaItem{					
+						span, p, h3, h4{
+							text-align: center!important;
+							display: block;
+						}
+					}
+				}
+			}
 			width: 100%;
 			float: none;				
 			.speakerTime{
@@ -223,16 +235,19 @@
 			}
 			.agendaItem{
 				height: 100%!important;
+				span, p, h3, h4{
+					text-align: center!important;
+				}
 			}			
 			.agendaItem .content{
 				width: 100%;
 				height: 100%;
-				padding: 3em 1.5em 1em 1.5em;
+				padding: 3em 1.5em 1em 1.5em;				
 			}
 			> section {
 				height: auto;
 				display: block;				
-
+				
 				> .image {
 					.gatsby-image-wrapper{
 						width: 100%;

@@ -1,7 +1,6 @@
-import Iframe from 'react-iframe'
-
 import React from 'react'
-import { Link } from 'gatsby'
+// import { Link } from 'gatsby'
+// import Iframe from 'react-iframe'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 
@@ -22,9 +21,10 @@ const Tickets = (props) => (
                     <header className="major">                    
                     <h1>Tickets</h1>                    
                     </header>                                    
-                    <p>All tickets give you access to both conference days and workshops along the conference.</p>                    
-                    <p>
-                        Should you have any issues purchasing your ticket or like to request group tickets contact us below or on Twitter.
+                    <p>All tickets give you access to both conference days and workshops along the conference.
+                        <br/>                    
+                        We have group ticket discounts available.<br/>
+                        Should you have any issues purchasing your ticket or any questions, do contact us below or on Twitter.
                     </p>
                     <div>
                         <ul className="actions">

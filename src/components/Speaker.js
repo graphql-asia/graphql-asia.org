@@ -58,20 +58,25 @@ class Speaker extends React.Component {
                         null                    
                     }      
                     <br/>          
-                    {/* {
+                    {
                         props.isAgenda === true && props.speakerDescription ?
                             this.state.showDetail === true ?
                             <div className="speakerDetail">
-                                <span className="speakerDescription">{props.speakerDescription}</span>    
-                                // talkAbstract     
-                                <span onClick={()=>this.setState({showDetail:false})}>hide</span>
+                                <span className="speakerDescription">{props.speakerDescription}</span>
+                                <span style={{
+                                cursor: 'pointer',
+                                textDecoration: 'underline',
+                                fontSize: '80%'
+                            }} onClick={()=>this.setState({showDetail:false})}>hide</span>
                             </div>
                             :
                             <span style={{
-                                cursor: 'pointer'
+                                cursor: 'pointer',
+                                textDecoration: 'underline',
+                                fontSize: '80%'
                             }} onClick={()=>this.setState({showDetail:true})}>more...</span>
                         :null
-                    } */}                    
+                    }                    
                 </div>
             </div>
         </section>
