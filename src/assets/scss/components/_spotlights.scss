@@ -71,15 +71,19 @@
 				.inner{
 					text-align: left!important;
 				}
+				
 				.agendaItem{
 					border-bottom: 3px solid #777;
 					background: _palette(bg);					
+					.infoIcon{
+						text-align: center!important;
+					}
 					span, h3, h2, p{
 						text-align: left!important;
+						
 					}
 					.speakerDescription{
-						display: block;
-						font-size: 75%;						
+						display: block;						
 					}
 				} 
 				.image{
