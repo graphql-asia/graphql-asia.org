@@ -222,6 +222,8 @@ const SpeakerList = (props) => (
           speakerDescription={'Kiran Abburi is a consultant who primarily work with Reactjs and GraphQL. He also organizes Reactjs Bangalore meetup group.'}
           speakerPosition={'Organiser of @ReactBangalore'}
           talkTitle={'Live Queries implementation with Apollo & GraphQL'}
+          talkAbstract={'Apollo simplifies data fetching and state management in frontend apps. However, implementing subscriptions for real time updates is hard. Implementing Live Queries with GraphQL and Apollo will make real times updates declarative and easy to maintain.'}
+          talkDescription={'Subscriptions are useful to implement real time updates. However, Implementing subscriptions is time consuming and hard to maintain. It also effects performance of app as the number of subscriptions increase. Live queries is an alternative proposal to implement real-time updates. @live directive on a regular GraphQL query makes it a Live Query. Frameworks should take care of keeping the data of live queries in sync between client and server. But Apollo don’t support live queries yet. So, we implemented our own live query system with GraphQL & Apollo. In this talk, I will present how to implement Live Query system that keeps data in sync between Client and server automatically.'}
           twitter={'kiran_abburi'}
           isAgenda={props.isAgenda}          
           time={'4:30 - 5:00'}
@@ -341,6 +343,8 @@ const SpeakerList = (props) => (
           speakerDescription={'Sidhartha is a full stack developer based out of Mumbai. He\'s part of the Gatsby core OSS team. He\'s worked with several companies in the past including Cleartrip and Insider and has helped them build React apps, PWAs and Node.js microservices. In his free time, he likes scuba diving in the deep seas, playing his guitar and walking his dog.'}
           speakerPosition={'OSS Maintainer, Gatsby'}
           talkTitle={'Gatsby and GraphQL: Today and the Future'}
+          talkAbstract={'Gatsby uses GraphQL in a pretty unique way — type inference, automatic filter and connection generation. This talk will be a deep dive in we use GraphQL to support querying data from hundreds of different source plugins. We’ll also look at the future of GraphQL at Gatsby and exciting new features.'}
+          talkDescription={'Gatsby (amongst other things) is a static site generator with a performance first mindset. Anyone who has used Gatsby has likely used GraphQL because it’s the default way to consume data in Gatsby! Gatsby uses GraphQL in a pretty unique way though. With hundreds of different data sources with different shapes, it is really hard to scale with a type first model. We solve this with type inference in Gatsby. Taking it a step further, we also create connections automatically and generate filters for rich querying! In this talk, we’ll do a deep dive into how Gatsby uses GraphQL. We’ll look at how we do type inference today. We’ll also look at limitations of our current approach and how we’re looking at solving them so that users and plugin authors have a great inference system with solid extension capabilities. Finally, we’ll discuss our plans for the future of GraphQL in Gatsby and exciting upcoming features.'}
           twitter={'chatsidhartha'}
           isAgenda={props.isAgenda}
           time={'12:30 - 12:55'}
@@ -465,6 +469,7 @@ const SpeakerList = (props) => (
           speakerDescription={'Tim is a Senior Software Engineer at Cypress.io. An enthusiast of GraphQL and TypeScript, he enjoys building things for the web and collaborating on open source, creating libraries such as Knex.js and GraphQL Nexus. He is passionate about learning from and teaching the best ideas from different languages and frameworks.'}
           speakerPosition={'Senior Software Engineer, cypress.io'}
           talkTitle={'Paving a New Path for GraphQL Schemas'}
+          talkAbstract={'Schema-first (SDL) development is common in the JS ecosystem, yet isn’t in most other languages. Why? What if we challenged this “best practice” with something even better - a library with a declarative API and full type safety out of the box - without needing manual type-annotation (even in JS)!'}
           twitter={'tgriesser'}
           isAgenda={props.isAgenda}
           time={'4:30 - 5:00'}

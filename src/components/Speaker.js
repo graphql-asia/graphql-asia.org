@@ -56,7 +56,13 @@ class Speaker extends React.Component {
                         <span className="talkTitle">{props.talkTitle}</span>
                         :
                         null                    
-                    }      
+                    }
+                    {
+                        props.isAgenda === true ?
+                        <span className="talkAbstract">{props.talkAbstract}</span>
+                        :
+                        null                    
+                    }
                     <br/>          
                     {
                         props.isAgenda === true && props.speakerDescription ?
