@@ -31,7 +31,7 @@ const SpeakerList = (props) => (
             speakerName={'Registration + Tea/Coffee'}
             talkTitle={''}            
             isAgenda={props.isAgenda}
-            time={'09:00 - 10:00'}
+            time={'08:00 - 10:00'}
             />
             :null
         }
@@ -318,6 +318,17 @@ const SpeakerList = (props) => (
                 isLightningTalk={false}
                 isAgenda={props.isAgenda}
                 time={'8:30 - 10:00'}
+            />
+            :null
+        }
+        {
+            props.isAgenda === true ?
+            <Speaker        
+            speakerPicture={props.data.Register.childImageSharp.fluid}       
+            speakerName={'Registration + Tea/Coffee'}
+            talkTitle={''}            
+            isAgenda={props.isAgenda}
+            time={'08:00 - 10:00'}
             />
             :null
         }
