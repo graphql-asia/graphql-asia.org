@@ -28,10 +28,10 @@ class HomeIndex extends React.Component {
                     <section id="one" className="tiles">
                         <article>
                             <header className="major">
-                                <h3>Speakers</h3>
+                                <h3>Agenda</h3>
                                 <p>Our line up</p>
                             </header>
-                            <Link to="/speakers" className="link primary"></Link>
+                            <Link to="/agenda" className="link primary"></Link>
                             <div className="homeBanner">
                                 <Img fluid={this.props.data.speakerStageImage.childImageSharp.fluid} />
                             </div>
