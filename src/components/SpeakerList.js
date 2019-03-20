@@ -140,7 +140,7 @@ const SpeakerList = (props) => (
           isLightningTalk={false}
           speakerDescription={''}
           speakerPosition={'Software Engineer, Paypal'}
-          talkTitle={'GraphQL @ Paypal'}
+          talkTitle={'GraphQL and State Management'}
           twitter={'shrutikapoor08'}
           isAgenda={props.isAgenda}
           time={'2:00 - 2:30'}
