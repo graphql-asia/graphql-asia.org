@@ -38,7 +38,7 @@ const Sponsors = (props) => (
             <li>
                 <a style={{
                     border:'none'
-                }} href="https://github.com/">
+                }} href="https://tokopedia.com/">
                 <img style={{
                     background: 'white',
                     height: '100px',
