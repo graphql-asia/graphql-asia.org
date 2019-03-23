@@ -1,8 +1,8 @@
 import React from 'react'
 import Speaker from './Speaker'
 const SpeakerList = (props) => (
-    <div>
-    <section id="two" className={
+    <div>      
+    <section id="dayone" className={
         props.isAgenda ?
         'spotlights agenda'
         :
@@ -11,17 +11,6 @@ const SpeakerList = (props) => (
         {
             props.isAgenda === true ?
             <h2>Day 1, 12th April</h2>
-            :null
-        }
-        {
-            props.isAgenda === true ?
-            <Speaker               
-            speakerPicture={props.data.KiranKumarAbburi.childImageSharp.fluid}         
-            speakerName={'Kiran Kumar Abburi'}
-            talkTitle={'Workshop: Introduction to GraphQL'}            
-            isAgenda={props.isAgenda}
-            time={'08:30 - 10:00'}
-            />
             :null
         }
         {
@@ -37,8 +26,19 @@ const SpeakerList = (props) => (
         }
         {
             props.isAgenda === true ?
+            <Speaker               
+            speakerPicture={props.data.KiranKumarAbburi.childImageSharp.fluid}         
+            speakerName={'Kiran Kumar Abburi'}
+            talkTitle={'Workshop: Introduction to GraphQL'}            
+            isAgenda={props.isAgenda}
+            time={'08:30 - 10:00'}
+            />
+            :null
+        }        
+        {
+            props.isAgenda === true ?
             <Speaker            
-            speakerPicture={props.data.Rajoshi.childImageSharp.fluid}
+            speakerPicture={props.data.GraphQLAsiaRajoshiTobias.childImageSharp.fluid}
             speakerName={'Welcome by Rajoshi & Tobias'}
             talkTitle={''}            
             isAgenda={props.isAgenda}
@@ -295,7 +295,7 @@ const SpeakerList = (props) => (
         
         
       </section>
-      <section id="three" 
+      <section id="daytwo" 
       className={
         props.isAgenda ?
         'spotlights agenda'
@@ -309,20 +309,6 @@ const SpeakerList = (props) => (
         }
         {
             props.isAgenda === true ?
-            <Speaker      
-                // speakerPicture={props.data.LucasMunhoz.childImageSharp.fluid}          
-                speakerName={'Tutor to be announced'}   
-                speakerDescription={''}
-                speakerPosition={''}
-                talkTitle={'Workshop: Advanced GraphQL'}                             
-                isLightningTalk={false}
-                isAgenda={props.isAgenda}
-                time={'8:30 - 10:00'}
-            />
-            :null
-        }
-        {
-            props.isAgenda === true ?
             <Speaker        
             speakerPicture={props.data.Register.childImageSharp.fluid}       
             speakerName={'Registration + Tea/Coffee'}
@@ -332,6 +318,20 @@ const SpeakerList = (props) => (
             />
             :null
         }
+        {
+            props.isAgenda === true ?
+            <Speaker      
+                speakerPicture={props.data.AppSync.childImageSharp.fluid}          
+                speakerName={'Tutor to be announced'}   
+                speakerDescription={''}
+                speakerPosition={''}
+                talkTitle={'Workshop: AppSync'}                             
+                isLightningTalk={false}
+                isAgenda={props.isAgenda}
+                time={'8:30 - 10:00'}
+            />
+            :null
+        }        
         <Speaker
           speakerPicture={props.data.ManojAwasthi.childImageSharp.fluid}
           speakerName={'Manoj Awasthi'}
@@ -460,17 +460,42 @@ const SpeakerList = (props) => (
             />
             :null
         }
+        {
+            props.isAgenda === true ?
+            <Speaker      
+                speakerPicture={props.data.Hasura.childImageSharp.fluid}          
+                speakerName={''}   
+                speakerDescription={''}
+                speakerPosition={''}
+                talkTitle={'Workshop: Hasura'}                             
+                isLightningTalk={false}
+                isAgenda={props.isAgenda}
+                time={'1:30 - 3:00'}
+            />
+            :null
+        }
         <Speaker
-          speakerPicture={props.data.AmitRana.childImageSharp.fluid}
-          speakerName={'Amit Rana'}
+          speakerPicture={props.data.NavyaAgarwal.childImageSharp.fluid}
+          speakerName={'Navya Agarwal'}
           isLightningTalk={false}
-          speakerDescription={''}
-          speakerPosition={'Director of Engineering, Myntra'}
-          talkTitle={'Scaling Myntra API Gateway to 30kqps built on Go lang with GraphQL'}
+          speakerDescription={'Navya is a polyglot developer working with Adobe Experience Cloud. She currently looks after the authentication and orchestration part of the stack with the broad goal of optimizing the performance and scalability of the system. I have tried my hands-on trending technologies and introduced the same in my projects. Over the past years, Navya has dabbled with multiple tech stacks and has worked on various innovative ideas within the team.'}
+          speakerPosition={'MTS-II, Adobe'}
+          talkTitle={'A glimpse of GraphQL: Front end developers’ life is easy now!'}
+          talkAbstract={'Aim is to instill within audience the feeling:”REST APIs are now #RestInPeace APIs Long live GraphQL” by showcasing a case-study.But the journey to GraphQL is not all sunshine & rainbows.The road has certainly been bumpy at times,but in the end we’re really able to recognize the benefits of GraphQL.'}
+          talkDescription={`
+          In this talk we’ll walk through our journey to GraphQL at Adobe, and highlight a few of our successes and failures along the way.
+
+          Use Case: We at Adobe Experience Cloud, wanted to redefine our customer’s experience, and as part of this redesign we wanted to focus on surfacing more data (but not at the cost of a performance overhead). This new redesign now required a mix of data from different sources to be rendered on the screen and we began to face many problems around performance, documentation, and general ease-of-use. On many pages, we found ourselves making four or five round-trips to the server to fetch the data and nit picking it at the client side in order to render it.
+
+          Solving the problem with GraphQL: After some investigation, we thought of integrating GraphQL to our architecture— we decided to add a GraphQL proxy layer on top of our REST APIs. This was a pretty easy process- we built some utilities around making downstream REST calls to fetch data in our resolver, and wrote up some rules around converting our existing models into GraphQL and within a matter of days were ready to call our GraphQL pilot a success.
+
+          But the real challenges begin now: One of our REST API rolled back to a previous version and suddenly every GraphQL query started failing. And what about caching? The solution to these problems and others that came across as we switched to GraphQL are covered next.
+          `}
           twitter={''}
           isAgenda={props.isAgenda}
           time={'2:00 - 2:30'}
-        /> 
+        />
+        
         <Speaker
           speakerPicture={props.data.ManaswiniDas.childImageSharp.fluid}
           speakerName={'Manaswini Das'}
@@ -492,9 +517,20 @@ const SpeakerList = (props) => (
           talkTitle={'Hit your target with GraphQL, but not rate limits'}
           twitter={'ManaswiniDas4'}
           isAgenda={props.isAgenda}
-          time={'2:30 - 2:38'}
+          time={'2:40 - 2:45'}
         /> */}
-        
+         <Speaker
+          speakerPicture={props.data.JonathanJalouzot.childImageSharp.fluid}
+          speakerName={'Jonathan Jalouzot'}
+          isLightningTalk={false}
+          speakerDescription={'Speaker for more than 4 years on many topics such as the webperformance or the application cache, I’m working for over a year with ApolloJs and I advocate GraphQL to the French community through meetups. I animated the GraphQL track during Api Days.'}
+          speakerPosition={'Co-Founder, GraphQL Paris'}
+          talkTitle={'How to Implement an extension aiming to track and monitor the performance of the GraphQL API'}
+          talkAbstract={'How to monitor the performance of your API graph. I propose you to set up an extension in ApolloJS that will allow you to monitor your GraphQl API with your favorite tools such as an ELK'}
+          twitter={'CaptainJojo42'}
+          isAgenda={props.isAgenda}
+          time={'2:50 - 2:58'}
+        />        
         {
             props.isAgenda === true ?
             <Speaker                
@@ -525,18 +561,7 @@ Join us for a deep dive on those questions and leave with a in-depth knowledge a
           isAgenda={props.isAgenda}
           time={'3:15 - 3:45'}
         />
-        <Speaker
-          speakerPicture={props.data.JonathanJalouzot.childImageSharp.fluid}
-          speakerName={'Jonathan Jalouzot'}
-          isLightningTalk={false}
-          speakerDescription={'Speaker for more than 4 years on many topics such as the webperformance or the application cache, I’m working for over a year with ApolloJs and I advocate GraphQL to the French community through meetups. I animated the GraphQL track during Api Days.'}
-          speakerPosition={'Co-Founder, GraphQL Paris'}
-          talkTitle={'How to Implement an extension aiming to track and monitor the performance of the GraphQL API'}
-          talkAbstract={'How to monitor the performance of your API graph. I propose you to set up an extension in ApolloJS that will allow you to monitor your GraphQl API with your favorite tools such as an ELK'}
-          twitter={'CaptainJojo42'}
-          isAgenda={props.isAgenda}
-          time={'3:47 - 3:55'}
-        />        
+       
         {/* <Speaker
           speakerPicture={props.data.JonathanJalouzot.childImageSharp.fluid}
           speakerName={'Jonathan Jalouzot '}
@@ -549,7 +574,7 @@ Join us for a deep dive on those questions and leave with a in-depth knowledge a
           isAgenda={props.isAgenda}
           time={'3:47 - 3:55'}
         />         */}
-        <Speaker
+        {/* <Speaker
           speakerPicture={props.data.AkashManohar.childImageSharp.fluid}
           speakerName={'Akash Manohar'}
           isLightningTalk={true}
@@ -559,7 +584,7 @@ Join us for a deep dive on those questions and leave with a in-depth knowledge a
           twitter={'HashNuke'}
           isAgenda={props.isAgenda}
           time={'4:15 - 4:23'}
-        />
+        /> */}
         <Speaker
           speakerPicture={props.data.TimGriesser.childImageSharp.fluid}
           speakerName={'Tim Griesser'}
@@ -570,29 +595,19 @@ Join us for a deep dive on those questions and leave with a in-depth knowledge a
           talkAbstract={'Schema-first (SDL) development is common in the JS ecosystem, yet isn’t in most other languages. Why? What if we challenged this “best practice” with something even better - a library with a declarative API and full type safety out of the box - without needing manual type-annotation (even in JS)!'}
           twitter={'tgriesser'}
           isAgenda={props.isAgenda}
-          time={'4:30 - 5:00'}
+          time={'3:45 - 4:15'}
         />      
         <Speaker
-          speakerPicture={props.data.NavyaAgarwal.childImageSharp.fluid}
-          speakerName={'Navya Agarwal'}
+          speakerPicture={props.data.AmitRana.childImageSharp.fluid}
+          speakerName={'Amit Rana'}
           isLightningTalk={false}
-          speakerDescription={'Navya is a polyglot developer working with Adobe Experience Cloud. She currently looks after the authentication and orchestration part of the stack with the broad goal of optimizing the performance and scalability of the system. I have tried my hands-on trending technologies and introduced the same in my projects. Over the past years, Navya has dabbled with multiple tech stacks and has worked on various innovative ideas within the team.'}
-          speakerPosition={'MTS-II, Adobe'}
-          talkTitle={'A glimpse of GraphQL: Front end developers’ life is easy now!'}
-          talkAbstract={'Aim is to instill within audience the feeling:”REST APIs are now #RestInPeace APIs Long live GraphQL” by showcasing a case-study.But the journey to GraphQL is not all sunshine & rainbows.The road has certainly been bumpy at times,but in the end we’re really able to recognize the benefits of GraphQL.'}
-          talkDescription={`
-          In this talk we’ll walk through our journey to GraphQL at Adobe, and highlight a few of our successes and failures along the way.
-
-          Use Case: We at Adobe Experience Cloud, wanted to redefine our customer’s experience, and as part of this redesign we wanted to focus on surfacing more data (but not at the cost of a performance overhead). This new redesign now required a mix of data from different sources to be rendered on the screen and we began to face many problems around performance, documentation, and general ease-of-use. On many pages, we found ourselves making four or five round-trips to the server to fetch the data and nit picking it at the client side in order to render it.
-
-          Solving the problem with GraphQL: After some investigation, we thought of integrating GraphQL to our architecture— we decided to add a GraphQL proxy layer on top of our REST APIs. This was a pretty easy process- we built some utilities around making downstream REST calls to fetch data in our resolver, and wrote up some rules around converting our existing models into GraphQL and within a matter of days were ready to call our GraphQL pilot a success.
-
-          But the real challenges begin now: One of our REST API rolled back to a previous version and suddenly every GraphQL query started failing. And what about caching? The solution to these problems and others that came across as we switched to GraphQL are covered next.
-          `}
+          speakerDescription={''}
+          speakerPosition={'Director of Engineering, Myntra'}
+          talkTitle={'Scaling Myntra API Gateway to 30kqps built on Go lang with GraphQL'}
           twitter={''}
           isAgenda={props.isAgenda}
-          time={'5:00 - 5:30'}
-        />
+          time={'4:15 - 4:45'}
+        />         
         <Speaker
           speakerPicture={props.data.AdamMiskiewicz.childImageSharp.fluid}
           speakerName={'Adam Miskiewicz'}
@@ -602,8 +617,19 @@ Join us for a deep dive on those questions and leave with a in-depth knowledge a
           talkTitle={'GraphQL @ Airbnb'}
           twitter={'skevy'}
           isAgenda={props.isAgenda}
-          time={'5:30 - 6:00'}
-        />     
+          time={'4:45 - 5:15'}
+        />
+        <Speaker
+          speakerPicture={props.data.GraphQLAsiaRajoshiTobias.childImageSharp.fluid}
+          speakerName={'Rajoshi & Tobias'}
+          isLightningTalk={false}
+          speakerDescription={''}
+          speakerPosition={''}
+          talkTitle={'Closing'}
+          twitter={''}
+          isAgenda={props.isAgenda}
+          time={'5:15 - 5:30'}
+        />
       </section>
       </div>
 )

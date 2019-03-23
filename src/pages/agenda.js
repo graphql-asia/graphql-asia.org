@@ -44,7 +44,28 @@ export const query = graphql`
         }
       }
     }
+    AppSync: file(relativePath: { eq: "AppSync.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 500) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    Hasura: file(relativePath: { eq: "Hasura.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 500) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
     Rajoshi: file(relativePath: { eq: "Rajoshi.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 500) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    GraphQLAsiaRajoshiTobias: file(relativePath: { eq: "GraphQL-Asia-Rajoshi-Tobias.png" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid

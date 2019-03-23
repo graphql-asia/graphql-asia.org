@@ -20,8 +20,10 @@
 			clear: both;
 		}
 		&.agenda{
-			width: 50%;						
-			float: left;
+			margin: 0 auto;
+			max-width: 960px;
+			width: 100%;						
+			float: none;
 			.speakerPosition{
 				font-size: 80%;
 			}
