@@ -23,6 +23,14 @@ if(process.env.GATSBY_STAGE&&process.env.GATSBY_STAGE==='production'){
       },
     },
   )
+  productionPlugins.push(
+    {
+      resolve: `gatsby-plugin-facebook-pixel`,
+      options: {
+        pixelId: '432447416966399',
+      },
+    }
+  ) 
 }
 module.exports = {
   siteMetadata: {
