@@ -159,7 +159,7 @@ export const query = graphql`
         }
       }
     }
-    UriGoldstein: file(relativePath: { eq: "UriGoldstein.png" }) {
+    UriGoldshtein: file(relativePath: { eq: "UriGoldshtein.png" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid

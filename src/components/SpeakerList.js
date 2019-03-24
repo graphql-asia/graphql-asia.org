@@ -271,8 +271,8 @@ const SpeakerList = (props) => (
           time={'4:30 - 5:00'}
         />  
         <Speaker
-          speakerPicture={props.data.UriGoldstein.childImageSharp.fluid}
-          speakerName={'Uri Goldstein'}
+          speakerPicture={props.data.UriGoldshtein.childImageSharp.fluid}
+          speakerName={'Uri Goldshtein'}
           isLightningTalk={false}
           speakerDescription={'Uri is the founder of The Guild, a group of open source developers working around the world to help create important open source libraries, mostly around GraphQL and to support large companies go through successful technological transformations.'}
           speakerPosition={'The Guild'}
