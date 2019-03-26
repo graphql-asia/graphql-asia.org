@@ -283,7 +283,7 @@ const SpeakerList = (props) => (
         /> 
         <Speaker
           speakerPicture={props.data.RichardThelkard.childImageSharp.fluid}
-          speakerName={'Richard Thelkard'}
+          speakerName={'Richard Threlkeld'}
           isLightningTalk={false}
           speakerDescription={'Richard Threlkeld is a Sr. Engineer in AWS Mobile and was the founding member of AWS AppSync and Amplify teams. Previously he worked in the field helping customers build web and mobile solutions with AWS technologies, including data processing for AdTech and Gaming industries. Today, he is responsible for the end to end experience for customers building mobile and web applications in the Amplify Framework.'}
           speakerPosition={'Sr. Engineer, AWS (Mobile)'}
