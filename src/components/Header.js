@@ -5,11 +5,11 @@ import GraphlQLAsiaLogo from '../assets/images/GraphlQLAsiaLogo.jpg'
 import Menu from './Menu'
 const Header = (props) => (
     <header id="header" className="">        
-        <span>GraphQL</span>
+        <span><Link to="/">Home</Link></span>
         <Link to="/" className="logo">            
             <img src={GraphlQLAsiaLogo} alt="GraphQL Asia Logo" />              
         </Link>
-        <span>Asia</span>          
+        <span><Link to="/tickets">Tickets</Link></span>
         <nav>
             <Menu />
             {/* <a className="menu-link" onClick={props.onToggleMenu} href="javascript:;">Menu</a> */}
