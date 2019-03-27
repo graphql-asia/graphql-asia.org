@@ -26,6 +26,14 @@ const Tickets = (props) => (
                         We have group ticket discounts available with 5 or more tickets (10% off), 10 or more (20% off) and 25 or more (30% off).<br/>
                         Should you have any issues purchasing your ticket or any questions, do contact us below or on Twitter.
                     </p>
+                    <p>                     
+                        Diversity tickets are available <a href="https://docs.google.com/forms/d/e/1FAIpQLSfwpLgjzCRXRT1ZJLkbUNiH2EtBBMkFxJTvCy_owrppvO0mHw/viewform?usp=sf_link">here</a>
+                        <br/>
+                        Student tickets are available <a href="https://docs.google.com/forms/d/e/1FAIpQLSerKReSGDq_sjEKlrYm9HvVzmuUEQA2SlEb_cR-Ga6wVG9fBQ/viewform?usp=sf_link">here</a>                        
+                    </p>
+                    <p>
+                        We are looking forward to welcoming you soon!
+                    </p>
                     <div>
                         <ul className="actions">
                             <li><a rel="noopener noreferrer" target="_blank" href="https://www.townscript.com/e/graphql-asia-020103/booking" className="button special">Get your ticket</a></li>                            

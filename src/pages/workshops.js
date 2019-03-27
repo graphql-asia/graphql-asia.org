@@ -54,7 +54,7 @@ const Venue = (props) => (
                         <span className="image fit"><img src={AppSync} alt="AppSync" /></span>
                         </div>
                         <div className="col-9">                            
-                            <strong>Day 2 - 8:30 - 1000</strong>  
+                            <strong>Day 2 - 8:30 - 10:00</strong>  
                             <p>                            
                             </p>
                         </div>
