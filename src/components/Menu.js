@@ -13,7 +13,7 @@ const Menu = (props) => (
                 <li className="desktop"><Link to="/tickets">Tickets</Link></li>
                 <li><Link to="/workshops">Workshops</Link></li>
                 {/* <li><a target="_blank" rel="noopener noreferrer" href="https://www.townscript.com/e/graphql-asia-020103/booking">Tickets</a></li>                 */}
-                <li><Link to="/sponsor">Sponsor</Link></li>
+                <li><Link to="/sponsor">Sponsors</Link></li>
                 <li className="desktop"><Link to="#contact-us">Contact</Link></li>
             </ul>
             <ul className="actions vertical">
