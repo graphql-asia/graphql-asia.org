@@ -496,7 +496,7 @@ const SpeakerList = (props) => (
           time={'2:00 - 2:30'}
         />
         
-        <Speaker
+        {/* <Speaker
           speakerPicture={props.data.ManaswiniDas.childImageSharp.fluid}
           speakerName={'Manaswini Das'}
           isLightningTalk={true}
@@ -507,29 +507,40 @@ const SpeakerList = (props) => (
           twitter={'ManaswiniDas4'}
           isAgenda={props.isAgenda}
           time={'2:30 - 2:38'}
-        />
-        {/* <Speaker
-          speakerPicture={props.data.ManaswiniDas.childImageSharp.fluid}
-          speakerName={'Manaswini Das'}
+        /> */}
+        <Speaker
+        speakerPicture={props.data.PeterThomas.childImageSharp.fluid}
+          speakerName={'Peter Thomas'}
           isLightningTalk={true}
-          speakerDescription={'Manaswini Das is an undergraduate, pursuing Bachelor\'s in computer science from College of Engineering and Technology, Bhubaneswar, India. She is a former Outreachy intern at Open Humans Foundation. She contributes to open source software and is ambitious of developing futuristic technologies. Her fields of interest include open source and artificial intelligence. Her hobbies include poetry, blogging and basketball. Being a pensive person, she likes diving into the depth of everything that she comes across.'}
-          speakerPosition={'Open-source enthusiast'}
-          talkTitle={'Hit your target with GraphQL, but not rate limits'}
-          twitter={'ManaswiniDas4'}
+          speakerDescription={'Peter is a full-stack engineer who enjoys building and mentoring technology teams. An avid open-source enthusiast, Peter\'s first open-source project \'CB2XML\' was created on SourceForge way back in 2004 and incredibly still sees active releases by the current maintainers.  His latest open-source initiative is a web-services test-automation framework called \'Karate\' - that has racked up 1700+ GitHub \"stars\" in less than two years. Peter also features in the TechBeacon list of \"Test Automation Leaders to Follow in 2019\".'}
+          speakerPosition={'Distinguished Engineer, Intuit'}
+          talkTitle={'GraphQL Test-Automation with Karate'}
+          talkAbstract={'Karate is the only open-source tool to combine API test-automation, mocks and performance-testing into a single, unified framework. In this talk, you get to hear from the creator of Karate as to how it greatly simplifies the integration testing of GraphQL. Karate\'s native support for JSON, JsonPath and JavaScript means that you can zoom into interesting parts of your response payloads and perform complex assertions. This is especially important for GraphQL - since responses are highly dynamic, and do not typically conform to a fixed schema. And since you can run tests in parallel - you can dramatically crunch your test execution time.'}
+          talkDescription={`
+          Karate is a relatively new open-source framework for testing micro-services. But within just two years, Karate’s adoption by the community has been remarkable, as evident from the rising tide of Stack Overflow questions and the 1400+ stars the project currently has on GitHub. Karate was featured as one of the top 5 open-source API testing tools in a blog post on TechBeacon, within just six months of its release. It now regularly turns up in blog-posts, social-media mentions, and believe it or not – even job-listings as a desired skill.
+
+Karate has clearly filled a gap in the industry for a simple yet powerful tool that makes easy – the business of dealing with complex HTTP payloads. The unique mix of a Domain Specific Language (DSL), embedded JavaScript engine and native support for JsonPath and XPath makes Karate a great fit for testing GraphQL.
+
+Karate is the only open-source tool to combine API test-automation, mocks and performance-testing into a single, unified framework. Besides powerful JSON & XML assertions, you can run tests in parallel for speed - which is critical for HTTP API testing.
+
+In this session you will get to hear from the creator of Karate and understand how it greatly simplifies the integration testing of GraphQL scenarios. Authorization headers, complex response assertions, multiple dynamic calls and data-driven testing are just some of the things Karate can handle.
+          `}
+          twitter={'ptrthomas'}
           isAgenda={props.isAgenda}
           time={'2:40 - 2:45'}
-        /> */}
+        />
+      
          <Speaker
           speakerPicture={props.data.JonathanJalouzot.childImageSharp.fluid}
           speakerName={'Jonathan Jalouzot'}
-          isLightningTalk={false}
+          isLightningTalk={true}
           speakerDescription={'Speaker for more than 4 years on many topics such as the webperformance or the application cache, I’m working for over a year with ApolloJs and I advocate GraphQL to the French community through meetups. I animated the GraphQL track during Api Days.'}
           speakerPosition={'Co-Founder, GraphQL Paris'}
           talkTitle={'How to Implement an extension aiming to track and monitor the performance of the GraphQL API'}
           talkAbstract={'How to monitor the performance of your API graph. I propose you to set up an extension in ApolloJS that will allow you to monitor your GraphQl API with your favorite tools such as an ELK'}
           twitter={'CaptainJojo42'}
           isAgenda={props.isAgenda}
-          time={'2:50 - 2:58'}
+          time={'2:45 - 2:58'}
         />        
         {
             props.isAgenda === true ?

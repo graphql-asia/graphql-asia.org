@@ -306,6 +306,13 @@ export const query = graphql`
         }
       }
     }
+    PeterThomas: file(relativePath: { eq: "PeterThomas.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 500) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
   }
 `
 
