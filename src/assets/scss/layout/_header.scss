@@ -11,6 +11,23 @@
 		100% { top: 0; opacity: 1; }
 	}
 
+	.links {
+		text-transform: capitalize;
+		li {
+			a {
+				font-family: Roboto;
+				font-size: 20px;
+				font-weight: 600;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 4.8;
+				letter-spacing: normal;
+				text-align: left;
+				color: #36327f;
+			}
+		}
+	}
+
 	#header {
 		> span {
 			display: none;
@@ -22,7 +39,7 @@
 		font-weight: _font(weight-bold);
 		height: 3.25em;
 		left: 0;
-		letter-spacing: _font(letter-spacing-alt);
+		// letter-spacing: _font(letter-spacing-alt);
 		line-height: 3.25em;
 		margin: 0;
 		position: fixed!important;
@@ -33,15 +50,23 @@
 
 		.logo {
 			border: 0;
-			display: inline-block;
+			// display: inline-block;
+			display: flex;
+			align-items: center;
+			justify-content: center;
 			font-size: 0.8em;
 			height: inherit;
 			line-height: inherit;
 			padding: 0 1.5em;
 			background: white;
+
+			span {
+				color: #e535ab;
+			}
 			
 			img{
-				width: 100%;
+				// width: 100%;
+				width: 25%;
 				height: 100%;
 				display: block;				
 				object-fit: contain;
@@ -198,6 +223,7 @@
 				margin: 0 auto;
 			}
 			> span {
+				color: #000;
 				display: block;
 				margin: 0 auto;
 				text-align: center;

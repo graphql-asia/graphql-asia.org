@@ -2,11 +2,18 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Img from "gatsby-image"
 
+const date1 = new Date("4/12/2019");
+const date2 = new Date();
+const timeDiff = Math.abs(date2.getTime() - date1.getTime());
+const diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24)); 
+
 const Banner = (props) => (
     <section id="banner" className="major">
         <div className="inner">
+            {diffDays} days left
             <header className="major">
-                <h1>GraphQL Asia</h1><h2>Asia's first GraphQL conference</h2>
+                <h1>GraphQL Asia</h1>
+                <h2>Asia's first GraphQL conference is happening</h2>
             </header>
             <div className="content">                
                 <p>12th &amp; 13th April, Bangalore, India</p>
