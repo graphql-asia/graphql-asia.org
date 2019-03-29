@@ -16,7 +16,19 @@ class Speaker extends React.Component {
             :
             'agendaItem':''
         }>
-            {
+                 
+            <div className={
+                props.isAgenda === true ?
+                "content agendaItem"
+                :
+                "content"
+            }>
+                <div className="inner">
+                    <span className="speakerSlot">
+                        {props.time}
+                    </span>
+                    <header className="major">
+                    {
                 props.isAgenda === true ?
                 <div className="image">                
                     {
@@ -36,18 +48,7 @@ class Speaker extends React.Component {
                         <span className="placeholder"/>
                     }            
                 </span>
-            }        
-            <div className={
-                props.isAgenda === true ?
-                "content agendaItem"
-                :
-                "content"
-            }>
-                <div className="inner">
-                    <span className="speakerSlot">
-                        {props.time}
-                    </span>
-                    <header className="major">
+            }   
                         <h3>{props.speakerName}
                         {
                         props.speakerDescription ?
