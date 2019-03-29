@@ -313,6 +313,13 @@ export const query = graphql`
         }
       }
     }
+    ShawnSwyxWang: file(relativePath: { eq: "ShawnSwyxWang.jpeg" }) {
+      childImageSharp {
+        fluid(maxWidth: 500) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
   }
 `
 

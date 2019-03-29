@@ -414,17 +414,21 @@ const SpeakerList = (props) => (
           time={'11:30 - 12:00'}
         />
         
-        {/* <Speaker
-          speakerPicture={props.data.AmitRana.childImageSharp.fluid}
-          speakerName={'TBD'}
+        <Speaker
+          speakerPicture={props.data.ShawnSwyxWang.childImageSharp.fluid}
+          speakerName={'Shawn Wang'}
           isLightningTalk={false}
-          speakerDescription={''}
-          speakerPosition={'TBD'}
-          talkTitle={'TBD'}
-          twitter={''}
+          speakerDescription={'swyx is an Infinite Builder working on Developer Experience at Netlify. In his free time he helps people Learn in Public at Egghead.io and /r/reactjs.'}
+          speakerPosition={'Developer Experience, Netlify'}
+          talkTitle={'Serverless GraphQL'}
+          talkAbstract={'GraphQL is often synonymous with the return of Monolithic architecture. Does this mean the benefits of Serverless are irrelevant? In this talk we explore how Serverless and GraphQL work together, explore ways to stitch individual function schemas, and get hard numbers to fight performance concerns.'}
+          talkDescription={`
+          This talk is a gentle reintroduction to the serverless movement for skeptics, who may not have been paying attention to all the GraphQL capabilities that are slowly emerging even on the Serverless side because most tutorials assume monolithic architectures. Nothing in the spec requires a monolith, and in fact resolvers are all mini-serverless functions anyway. We just lack the tools and wholistic viewpoint to address this gap in the market. In this talk we will discuss what we’re doing at Netlify to fix that
+          `}
+          twitter={'swyx'}
           isAgenda={props.isAgenda}
           time={'12 - 12:30 '}
-        /> */}
+        />
         <Speaker
           speakerPicture={props.data.SidharthaChatterjee.childImageSharp.fluid}
           speakerName={'Sidhartha Chatterjee'}
@@ -509,7 +513,7 @@ const SpeakerList = (props) => (
           time={'2:30 - 2:38'}
         /> */}
         <Speaker
-        speakerPicture={props.data.PeterThomas.childImageSharp.fluid}
+          speakerPicture={props.data.PeterThomas.childImageSharp.fluid}
           speakerName={'Peter Thomas'}
           isLightningTalk={true}
           speakerDescription={'Peter is a full-stack engineer who enjoys building and mentoring technology teams. An avid open-source enthusiast, Peter\'s first open-source project \'CB2XML\' was created on SourceForge way back in 2004 and incredibly still sees active releases by the current maintainers.  His latest open-source initiative is a web-services test-automation framework called \'Karate\' - that has racked up 1700+ GitHub \"stars\" in less than two years. Peter also features in the TechBeacon list of \"Test Automation Leaders to Follow in 2019\".'}
