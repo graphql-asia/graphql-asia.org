@@ -80,7 +80,7 @@
 	textarea {
 		@include vendor('appearance', 'none');
 		background: _palette(border-bg);
-		border: none;
+		border: 1px solid;;
 		border-radius: 0;
 		color: inherit;
 		display: block;
