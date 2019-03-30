@@ -48,10 +48,10 @@ const Venue = (props) => (
                         </div>
                     </div>
                     <br/>                    
-                    <h2>3. AppSync</h2>     
+                    <h2>3. Building your first Fullstack Serverless App with AWS Amplify</h2>     
                     <div className="grid-wrapper">                        
                         <div className="col-3">
-                        <span className="image fit"><img src={GerardSans} alt="AppSync" /></span>
+                        <span className="image fit"><img src={GerardSans} alt="Gerard Sans" /></span>
                         </div>
                         <div className="col-9">                            
                             <strong>Day 2 - 8:30 - 10:00</strong>  
