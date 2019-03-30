@@ -307,10 +307,39 @@
 		}
 	}
 }
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 1020px) {
+	#banner.major
+	{
+		min-height: 26em;
+	}
 	#banner {
 		h1 {
 			line-height: normal;
+			font-size: 2em;
+		}
+		h2 {
+			font-size: 1.5em;
+			.whiteCircle
+			{
+				top: 25px;
+				width: 25px;
+				height: 25px;
+				left: 150px
+			}
+		}
+	}
+}
+@media screen and (max-width: 736px) {
+	#banner.major {
+    height: 23em;
+    min-height: 23em;
+    max-height: none;
+		padding: 5em 0 4em 0;
+	}
+	#banner {
+		h1 {
+			line-height: normal;
+			font-size: 1.5em;
 		}
 		h2 {
 			font-size: 1.5em;
@@ -357,18 +386,45 @@
 	}
 }
 @media screen and (max-width: 480px) {
+	header.major
+	{
+		margin-bottom: 1em;
+	}
 	#banner {
 		h1 {
 			line-height: normal;
+			font-size: 1em;
 		}
 		h2 {
-			font-size: 1.5em;
+			font-size: 1em;
+			margin-bottom: 0;
 			.whiteCircle
 			{
-				width: 25px;
-		    height: 25px;
-		    left: 145px;
-		    top: 27px;
+				width: 15px;
+		    height: 15px;
+		    left: 100px;
+		    top: 20px;
+			}
+		}
+		.datedisplay
+		{
+			font-size: 12px;
+			right: 10px;
+    	top: 50px;
+			.datetile
+			{
+				font-size: 20px;
+				line-height: normal;
+			}
+			.daysleft
+			{
+				.whiteCircle
+				{
+					width: 10px;
+			    height: 10px;
+			    right: 0;
+			    top: 20px;
+				}
 			}
 		}
 		> .inner {
@@ -376,7 +432,7 @@
 			{
 				p
 				{
-					font-size: 20px;
+					font-size: 16px;
 					padding-bottom: 20px;
 				}
 				.actions
