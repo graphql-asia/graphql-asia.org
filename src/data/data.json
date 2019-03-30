@@ -90,7 +90,7 @@
           "speakerPosition":"Co-Founder & CTO, BrikL",
           "type":"talk",
           "talkTitle":"BrikL - A GraphQL native",
-          "talkAbstract": "BrikL's GraphQL journey started in 2016 with constantly changing business requirements. Along the way of finding the product market fit BrikL has been adopting new GraphQL tooling. The talk will share some insights on the journey of a startup using GraphQL to enable high development velocity and how BrikL is using GraphQL today.",
+          "talkAbstract": "BrikL's GraphQL journey started in 2016 with constantly changing business requirements towards finding the product market fit. The talk will share some insights on the journey and lessons learnt of a startup using GraphQL to enable high development velocity and how BrikL is using GraphQL today.",
           "twitter":"MeixnerTobias",
           "time":"12:30 - 13:00",
           "day":1
