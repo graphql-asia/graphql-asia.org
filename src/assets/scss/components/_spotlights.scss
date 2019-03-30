@@ -19,6 +19,12 @@
 			display: table;
 			clear: both;
 		}
+		.agendaItem{
+			display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100%;
+		}
 		&.agenda{
 			margin: 0 auto;
 			max-width: 960px;
@@ -45,10 +51,11 @@
 					// bottom: 0;
 					// background: white;
 					z-index: 99;
-					border-bottom: 3px solid #777;
+					border-bottom: 2px solid #777;
 					right: 0;
 					left: 0;
 					text-align: center;
+					width: 100%;
 				}
 				.speakerTime{
 										
@@ -65,8 +72,7 @@
 					}
 				}
 				flex-direction: row!important;
-				height: auto;
-				height: 300px;
+				
 				&.extended{
 					height: 100%;
 				}				
@@ -88,13 +94,7 @@
 						display: block;						
 					}
 				} 
-				.image{
-					img{
-						border-bottom: 3px solid #777;
-						// padding-bottom: 30px;
-						max-height: 300px
-					}
-				}
+				
 				&:nth-child(2n) {
 					@include vendor('flex-direction', 'row');					
 					ul, h3,.talkTitle, p, h4 {
@@ -128,14 +128,15 @@
 				font-weight: bold;
 				font-style: italic;
 			}
-			> .image {
+			.newImage {
 				.gatsby-image-wrapper{
-					width: 100%;
-					height: 100%;
+					width: 75px;
+					height: 75px;
+					border-radius: 50%;
 				}
 				background-position: center center;
 				background-size: cover;
-				border-radius: 0;
+				// border-radius: 0;
 				display: block;
 				position: relative;
 				width: 30%;
@@ -144,7 +145,7 @@
 					border-radius: 0;
 					display: block;
 					width: 100%;
-					object-fit: cover;
+					object-fit: contain;
 					height: 100%;
 				}
 				.placeholder{
@@ -199,7 +200,7 @@
 
 		@include breakpoint(xlarge) {
 			> section {
-				> .image, > .speakerTime {
+				.newImage, > .speakerTime {
 					width: 40%;					
 				}
 
@@ -210,22 +211,25 @@
 		}
 
 		@include breakpoint(large) {
-			> section {
-				> .image, > .speakerTime {				
-					width: 45%;
-				}
-
-				> .content {
-					width: 55%;
-				}
-			}
+		
 		}
 
 		@include breakpoint(medium) {	
+			section{
+				display: block!important;
+				text-align: center!important;
+			}
+			.speakerSlot{
+				display: block;
+				font-weight: bold;
+				border: none!important;
+				padding: 1em 0;
+			}
 			&.agenda{
-				width: 100%;
-				float: none;	
+					
 				> section {
+					width: 100%;
+				float: none;
 					.agendaItem{					
 						span, p, h3, h4{
 							text-align: center!important;
@@ -240,6 +244,7 @@
 				float: left;
 			}
 			.agendaItem{
+				
 				height: 100%!important;
 				span, p, h3, h4{
 					text-align: center!important;
@@ -254,7 +259,7 @@
 				height: auto;
 				display: block;				
 				
-				> .image {
+				.newImage {
 					.gatsby-image-wrapper{
 						width: 100%;
 						height: 200px;
