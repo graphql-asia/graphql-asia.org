@@ -368,6 +368,13 @@ export const query1 = graphql`
         }
       }
     }
+    GerardSans: file(relativePath: { eq: "GerardSans.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 200) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
   }
 `
 

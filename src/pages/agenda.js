@@ -326,8 +326,7 @@ export const agendaQuery = graphql`
           ...GatsbyImageSharpFluid
         }
       }
-    }
-    
+    }   
   }
 `
 
