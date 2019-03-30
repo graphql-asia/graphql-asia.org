@@ -18,7 +18,7 @@ exports.createPages = async ({ graphql, actions }) => {
     const speakerPageTemplate = path.resolve("src/page-templates/speaker.js")
     speakerData.forEach(speaker => {
         try {
-            if(speaker.type==='talk'){
+            if(speaker.type==='talk'||speaker.type==='workshop'){
                 createPage({
                     path: `/speaker/${speaker.speakerId}`,
                     component: speakerPageTemplate,
