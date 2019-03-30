@@ -16,61 +16,75 @@ const Venue = (props) => (
             <section id="one">
                 <div className="inner">
                     <header className="major">
-                        <h1>GraphQL Workshops</h1>                        
+                        <h1>
+                          <div className="pinkCircle"></div>
+                          GraphQL Workshops
+                        </h1>
                     </header>
                     <p>We will be offering several workshops alongside the conference from beginner to advanced workshops free to attend with your conference ticket.</p>
-                    <h2>1. Intro to GraphQL and Advanced GraphQL concepts</h2>                            
-                    <div className="grid-wrapper">                        
+                    <h2>
+                      <div className="pinkCircle"></div>
+                      1. Intro to GraphQL and Advanced GraphQL concepts
+                    </h2>
+                    <div className="grid-wrapper">
                         <div className="col-3">
                         <span className="image fit"><img src={Kiran} alt="Kiran" /></span>
                         </div>
-                        <div className="col-9">                            
+                        <div className="col-9">
                             <strong>Day 1 - 8:30 - 10:00</strong>
                             <p>
                                 This workshop will be held by Kiran, Co-Organiser of React Bangalore, giving an introduction to GraphQL and advanced concepts of GraphQL.
                             </p>
                         </div>
                     </div>
-                    <h2>2. React + GraphQL using Apollo Client and Typescript    
-                    </h2> 
-                    <div className="grid-wrapper">                        
+                    <h2>
+                      <div className="pinkCircle"></div>
+                      2. React + GraphQL using Apollo Client and Typescript
+                    </h2>
+                    <div className="grid-wrapper">
                         <div className="col-3">
                         <span className="image fit"><img src={LucasMunhoz} alt="Lucas Munhoz" /></span>
                         </div>
-                        <div className="col-9">                            
-                        <strong>Day 1 - 1:30 - 3:00</strong>  
+                        <div className="col-9">
+                        <strong>Day 1 - 1:30 - 3:00</strong>
                             <p>
                             Lucas Munhoz will be teaching you on getting started with React and GraphQL using Apollo Client.
                             </p>
                             <p>
-                    Lucas Munhoz is a full-stack developer and organiser of GraphQL Bangkok meetup.                        
+                    Lucas Munhoz is a full-stack developer and organiser of GraphQL Bangkok meetup.
                     </p>
                         </div>
                     </div>
-                    <br/>                    
-                    <h2>3. AppSync</h2>     
-                    <div className="grid-wrapper">                        
+                    <br/>
+                    <h2>
+                      <div className="pinkCircle"></div>
+                      3. AppSync
+                    </h2>
+                    <div className="grid-wrapper">
                         <div className="col-3">
                         <span className="image fit"><img src={AppSync} alt="AppSync" /></span>
                         </div>
-                        <div className="col-9">                            
-                            <strong>Day 2 - 8:30 - 10:00</strong>  
-                            <p>                            
+                        <div className="col-9">
+                            <strong>Day 2 - 8:30 - 10:00</strong>
+                            <p>
                             </p>
                         </div>
                     </div>
-                    <h2>4. Realtime chat app with GraphQL subscriptions using Hasura.</h2>                    
-                    <div className="grid-wrapper">                        
+                    <h2>
+                      <div className="pinkCircle"></div>
+                      4. Realtime chat app with GraphQL subscriptions using Hasura.
+                    </h2>
+                    <div className="grid-wrapper">
                         <div className="col-3">
                         <span className="image fit"><img src={Hasura} alt="Lucas Munhoz" /></span>
                         </div>
-                        <div className="col-9">                            
-                        <strong>Day 2 - 1:30 - 3:00</strong>  
+                        <div className="col-9">
+                        <strong>Day 2 - 1:30 - 3:00</strong>
                             <p>
                                 In this workshop you will be building a sample chat app using Hasura GraphQL service to enable real-time subscriptions in your app.
                             </p>
                         </div>
-                    </div>                    
+                    </div>
                 </div>
             </section>
         </div>

@@ -15,7 +15,10 @@ const Speakers = (props) => (
         <section id="one">
             <div className="inner">
                 <header className="major">
-                    <h1>Agenda</h1>
+                    <h1>
+                      <div className="pinkCircle"></div>
+                      Agenda
+                    </h1>
                 </header>
             </div>
         </section>
@@ -102,7 +105,7 @@ export const query = graphql`
           ...GatsbyImageSharpFluid
         }
       }
-    }    
+    }
     DigitalOcean: file(relativePath: { eq: "DO.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
@@ -249,7 +252,7 @@ export const query = graphql`
           ...GatsbyImageSharpFluid
         }
       }
-    }    
+    }
     RajatKhare: file(relativePath: { eq: "RajatKhare.jpeg" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
@@ -315,5 +318,3 @@ export const query = graphql`
     }
   }
 `
-
-

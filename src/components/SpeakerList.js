@@ -1,24 +1,27 @@
 import React from 'react'
 import Speaker from './Speaker'
 const SpeakerList = (props) => (
-    <div>      
+    <div>
     <section id="dayone" className={
         props.isAgenda ?
         'spotlights agenda'
         :
         'spotlights'
-    }>  
+    }>
         {
             props.isAgenda === true ?
-            <h2>Day 1, 12th April</h2>
+            <h2>
+              <div className="pinkCircle"></div>
+              Day 1, 12th April
+            </h2>
             :null
         }
         {
             props.isAgenda === true ?
-            <Speaker        
-            speakerPicture={props.data.Register.childImageSharp.fluid}       
+            <Speaker
+            speakerPicture={props.data.Register.childImageSharp.fluid}
             speakerName={'Registration + Tea/Coffee'}
-            talkTitle={''}            
+            talkTitle={''}
             isAgenda={props.isAgenda}
             time={'08:00 - 10:00'}
             />
@@ -26,26 +29,26 @@ const SpeakerList = (props) => (
         }
         {
             props.isAgenda === true ?
-            <Speaker               
-            speakerPicture={props.data.KiranKumarAbburi.childImageSharp.fluid}         
+            <Speaker
+            speakerPicture={props.data.KiranKumarAbburi.childImageSharp.fluid}
             speakerName={'Kiran Kumar Abburi'}
-            talkTitle={'Workshop: Introduction to GraphQL'}            
+            talkTitle={'Workshop: Introduction to GraphQL'}
             isAgenda={props.isAgenda}
             time={'08:30 - 10:00'}
             />
             :null
-        }        
+        }
         {
             props.isAgenda === true ?
-            <Speaker            
+            <Speaker
             speakerPicture={props.data.GraphQLAsiaRajoshiTobias.childImageSharp.fluid}
             speakerName={'Welcome by Rajoshi & Tobias'}
-            talkTitle={''}            
+            talkTitle={''}
             isAgenda={props.isAgenda}
             time={'10:00 - 10:20'}
             />
             :null
-        }      
+        }
         <Speaker
           speakerPicture={props.data.LeeByron.childImageSharp.fluid}
           speakerName={'Lee Byron'}
@@ -84,7 +87,7 @@ const SpeakerList = (props) => (
           twitter={'rajatontwit'}
           isAgenda={props.isAgenda}
           time={'11:30 - 12:00'}
-        />    
+        />
         <Speaker
           speakerPicture={props.data.TanayPratap.childImageSharp.fluid}
           speakerName={'Tanay Pratap'}
@@ -111,9 +114,9 @@ const SpeakerList = (props) => (
         />
         {
             props.isAgenda === true ?
-            <Speaker      
-                speakerPicture={props.data.Lunch.childImageSharp.fluid}          
-                speakerName={'Lunch break'}                                
+            <Speaker
+                speakerPicture={props.data.Lunch.childImageSharp.fluid}
+                speakerName={'Lunch break'}
                 isLightningTalk={false}
                 isAgenda={props.isAgenda}
                 time={'1:00 - 2:00'}
@@ -122,12 +125,12 @@ const SpeakerList = (props) => (
         }
         {
             props.isAgenda === true ?
-            <Speaker      
-                speakerPicture={props.data.LucasMunhoz.childImageSharp.fluid}          
-                speakerName={'Lucas Munhoz'}   
+            <Speaker
+                speakerPicture={props.data.LucasMunhoz.childImageSharp.fluid}
+                speakerName={'Lucas Munhoz'}
                 speakerDescription={''}
                 speakerPosition={''}
-                talkTitle={'Workshop: React + GraphQL'}                             
+                talkTitle={'Workshop: React + GraphQL'}
                 isLightningTalk={false}
                 isAgenda={props.isAgenda}
                 time={'1:30 - 3:00'}
@@ -149,7 +152,7 @@ const SpeakerList = (props) => (
           speakerPicture={props.data.AkankshaChoudhary.childImageSharp.fluid}
           speakerName={'Akanksha Choudhary'}
           isLightningTalk={true}
-          speakerDescription={'Akanksha Choudhary is a Tech Lead at Kidovators, developing technology to facilitate 21st Century skills learning.'}          
+          speakerDescription={'Akanksha Choudhary is a Tech Lead at Kidovators, developing technology to facilitate 21st Century skills learning.'}
           speakerPosition={'Full Stack Web Developer'}
           talkTitle={'The Cost of GraphQL'}
           talkAbstract={'REST has been around for a while now and implementing GraphQL into existing apps take time. Cost of GraphQL is basically the time it is taking for startups to adapt GraphQL. Akanksha is a developer at Kidovators (an eduTech startup for kids) and Akanksha will share her story of adapting GraphQL in her company.'}
@@ -171,25 +174,25 @@ const SpeakerList = (props) => (
 
           First Problem.
           We were doing multiple API calls and fetching extra data not required by mobile as the API is common across the website and mobile. Our first solution was to create another API for PWA client to give less data. We quickly realized it is not scalable and the turnaround time and maintenance effort for creating a separate version of API for PWA was huge.
-          
+
           Second Problem.
           The data received was from different API calls and verbose in nature because of which the client ended up in calculating the derived data required to render fields. For example - the logic to filter and sort the data was implemented on the client which was creating unnecessary overhead on the browser.
-          
+
           Solution.
           GraphQL with Apollo client and Apollo server.
-          
+
           We created our own GraphQL endpoint whose source of truth will be all the current API’s needed to render hotels. This transformation layer will give the client only that derived data which is required. Not a single thing more or less.
-          
+
           No manipulation required in client side , all fields given by GraphQL are the formated fields that the client renderer requires.
-          
+
           The intended audience for this talk is anyone, React specialists or not.
-          
+
           I’ll start the talk by explaining how GraphQl can make the life of a frontend developer easier by not depending on API versioning system and getting exactly what they need. Then I will briefly explain the Apollo client and server wrapper around GraphQL and how to use it with React.
-          
+
           I will talk about the implementation of the cursor based pagination using GraphQL which led to 3 → 0.2 s document load time in Cleartrip Hotels list page.
-          
+
           This whole talk will be justified by real time metrics captured while in development and production.
-          
+
           `}
           twitter={'EtEesh'}
           isAgenda={props.isAgenda}
@@ -212,9 +215,9 @@ const SpeakerList = (props) => (
         />
         {
             props.isAgenda === true ?
-            <Speaker             
-                speakerPicture={props.data.Coffee.childImageSharp.fluid}          
-                speakerName={'Coffee break'}                                
+            <Speaker
+                speakerPicture={props.data.Coffee.childImageSharp.fluid}
+                speakerName={'Coffee break'}
                 isLightningTalk={false}
                 isAgenda={props.isAgenda}
                 time={'3:00 - 3:15'}
@@ -256,7 +259,7 @@ const SpeakerList = (props) => (
           isAgenda={props.isAgenda}
           time={'4:15 - 4:23'}
         />
-        
+
         <Speaker
           speakerPicture={props.data.KiranKumarAbburi.childImageSharp.fluid}
           speakerName={'Kiran Kumar Abburi'}
@@ -267,9 +270,9 @@ const SpeakerList = (props) => (
           talkAbstract={'Apollo simplifies data fetching and state management in frontend apps. However, implementing subscriptions for real time updates is hard. Implementing Live Queries with GraphQL and Apollo will make real times updates declarative and easy to maintain.'}
           talkDescription={'Subscriptions are useful to implement real time updates. However, Implementing subscriptions is time consuming and hard to maintain. It also effects performance of app as the number of subscriptions increase. Live queries is an alternative proposal to implement real-time updates. @live directive on a regular GraphQL query makes it a Live Query. Frameworks should take care of keeping the data of live queries in sync between client and server. But Apollo don’t support live queries yet. So, we implemented our own live query system with GraphQL & Apollo. In this talk, I will present how to implement Live Query system that keeps data in sync between Client and server automatically.'}
           twitter={'kiran_abburi'}
-          isAgenda={props.isAgenda}          
+          isAgenda={props.isAgenda}
           time={'4:30 - 5:00'}
-        />  
+        />
         <Speaker
           speakerPicture={props.data.UriGoldshtein.childImageSharp.fluid}
           speakerName={'Uri Goldshtein'}
@@ -280,7 +283,7 @@ const SpeakerList = (props) => (
           twitter={'urigoldshtein'}
           isAgenda={props.isAgenda}
           time={'5:00 - 5:30'}
-        /> 
+        />
         <Speaker
           speakerPicture={props.data.RichardThelkard.childImageSharp.fluid}
           speakerName={'Richard Threlkeld'}
@@ -290,12 +293,12 @@ const SpeakerList = (props) => (
           talkTitle={'Web and native clients – GraphQL design patterns for realtime and offline app architecture'}
           twitter={'undef_obj'}
           isAgenda={props.isAgenda}
-          time={'5:30 - 6:00'}          
-        />       
-        
-        
+          time={'5:30 - 6:00'}
+        />
+
+
       </section>
-      <section id="daytwo" 
+      <section id="daytwo"
       className={
         props.isAgenda ?
         'spotlights agenda'
@@ -304,15 +307,18 @@ const SpeakerList = (props) => (
     }>
         {
             props.isAgenda === true ?
-            <h2>Day 2, 13th April</h2>
+            <h2>
+              <div className="pinkCircle"></div>
+              Day 2, 13th April
+            </h2>
             :null
         }
         {
             props.isAgenda === true ?
-            <Speaker        
-            speakerPicture={props.data.Register.childImageSharp.fluid}       
+            <Speaker
+            speakerPicture={props.data.Register.childImageSharp.fluid}
             speakerName={'Registration + Tea/Coffee'}
-            talkTitle={''}            
+            talkTitle={''}
             isAgenda={props.isAgenda}
             time={'08:00 - 10:00'}
             />
@@ -320,18 +326,18 @@ const SpeakerList = (props) => (
         }
         {
             props.isAgenda === true ?
-            <Speaker      
-                speakerPicture={props.data.AppSync.childImageSharp.fluid}          
-                speakerName={'Tutor to be announced'}   
+            <Speaker
+                speakerPicture={props.data.AppSync.childImageSharp.fluid}
+                speakerName={'Tutor to be announced'}
                 speakerDescription={''}
                 speakerPosition={''}
-                talkTitle={'Workshop: AppSync'}                             
+                talkTitle={'Workshop: AppSync'}
                 isLightningTalk={false}
                 isAgenda={props.isAgenda}
                 time={'8:30 - 10:00'}
             />
             :null
-        }        
+        }
         <Speaker
           speakerPicture={props.data.ManojAwasthi.childImageSharp.fluid}
           speakerName={'Manoj Awasthi'}
@@ -382,7 +388,7 @@ const SpeakerList = (props) => (
           isAgenda={props.isAgenda}
           time={'11:00 - 11:30'}
         />
-        
+
         <Speaker
           speakerPicture={props.data.KamleshChandnani.childImageSharp.fluid}
           speakerName={'Kamlesh Chandnani'}
@@ -397,7 +403,7 @@ const SpeakerList = (props) => (
           Manager: Hey, we have a page of Booking Details and we want to keep it up to date in real time.
           Developer (Immediate response): Can’t the user refresh the page or can’t we refresh the page at certain interval? 🤔
           Manager: Eyebrows up and weird look!! 😠
-          Developer (After scratching his head): since I’ve a GraphQL query for fetching the total number of bookings for a particular hotel I’ll add polling to the query and I’ll be done 🚀 
+          Developer (After scratching his head): since I’ve a GraphQL query for fetching the total number of bookings for a particular hotel I’ll add polling to the query and I’ll be done 🚀
           Manager: Awesome go ahead.
 
           Developer implements the feature and now comes the time for UAT
@@ -413,7 +419,7 @@ const SpeakerList = (props) => (
           isAgenda={props.isAgenda}
           time={'11:30 - 12:00'}
         />
-        
+
         {/* <Speaker
           speakerPicture={props.data.AmitRana.childImageSharp.fluid}
           speakerName={'TBD'}
@@ -440,20 +446,20 @@ const SpeakerList = (props) => (
         />
         {
             props.isAgenda === true ?
-            <Speaker         
-                speakerPicture={props.data.DigitalOcean.childImageSharp.fluid}          
-                speakerName={'Digital Ocean'}                
+            <Speaker
+                speakerPicture={props.data.DigitalOcean.childImageSharp.fluid}
+                speakerName={'Digital Ocean'}
                 isLightningTalk={true}
                 isAgenda={props.isAgenda}
                 time={'12:55 - 1:00'}
             />
             :null
-        }     
+        }
         {
             props.isAgenda === true ?
-            <Speaker          
-                speakerPicture={props.data.Lunch.childImageSharp.fluid}                
-                speakerName={'Lunch break'}                                
+            <Speaker
+                speakerPicture={props.data.Lunch.childImageSharp.fluid}
+                speakerName={'Lunch break'}
                 isLightningTalk={false}
                 isAgenda={props.isAgenda}
                 time={'1:00 - 2:00'}
@@ -462,12 +468,12 @@ const SpeakerList = (props) => (
         }
         {
             props.isAgenda === true ?
-            <Speaker      
-                speakerPicture={props.data.Hasura.childImageSharp.fluid}          
-                speakerName={''}   
+            <Speaker
+                speakerPicture={props.data.Hasura.childImageSharp.fluid}
+                speakerName={''}
                 speakerDescription={''}
                 speakerPosition={''}
-                talkTitle={'Workshop: Hasura'}                             
+                talkTitle={'Workshop: Hasura'}
                 isLightningTalk={false}
                 isAgenda={props.isAgenda}
                 time={'1:30 - 3:00'}
@@ -495,7 +501,7 @@ const SpeakerList = (props) => (
           isAgenda={props.isAgenda}
           time={'2:00 - 2:30'}
         />
-        
+
         {/* <Speaker
           speakerPicture={props.data.ManaswiniDas.childImageSharp.fluid}
           speakerName={'Manaswini Das'}
@@ -529,7 +535,7 @@ In this session you will get to hear from the creator of Karate and understand h
           isAgenda={props.isAgenda}
           time={'2:40 - 2:45'}
         />
-      
+
          <Speaker
           speakerPicture={props.data.JonathanJalouzot.childImageSharp.fluid}
           speakerName={'Jonathan Jalouzot'}
@@ -541,12 +547,12 @@ In this session you will get to hear from the creator of Karate and understand h
           twitter={'CaptainJojo42'}
           isAgenda={props.isAgenda}
           time={'2:45 - 2:58'}
-        />        
+        />
         {
             props.isAgenda === true ?
-            <Speaker                
-                speakerPicture={props.data.Coffee.childImageSharp.fluid}          
-                speakerName={'Coffee break'}                                
+            <Speaker
+                speakerPicture={props.data.Coffee.childImageSharp.fluid}
+                speakerName={'Coffee break'}
                 isLightningTalk={false}
                 isAgenda={props.isAgenda}
                 time={'3:00 - 3:15'}
@@ -572,7 +578,7 @@ Join us for a deep dive on those questions and leave with a in-depth knowledge a
           isAgenda={props.isAgenda}
           time={'3:15 - 3:45'}
         />
-       
+
         {/* <Speaker
           speakerPicture={props.data.JonathanJalouzot.childImageSharp.fluid}
           speakerName={'Jonathan Jalouzot '}
@@ -607,7 +613,7 @@ Join us for a deep dive on those questions and leave with a in-depth knowledge a
           twitter={'tgriesser'}
           isAgenda={props.isAgenda}
           time={'3:45 - 4:15'}
-        />      
+        />
         <Speaker
           speakerPicture={props.data.AmitRana.childImageSharp.fluid}
           speakerName={'Amit Rana'}
@@ -618,7 +624,7 @@ Join us for a deep dive on those questions and leave with a in-depth knowledge a
           twitter={''}
           isAgenda={props.isAgenda}
           time={'4:15 - 4:45'}
-        />         
+        />
         <Speaker
           speakerPicture={props.data.AdamMiskiewicz.childImageSharp.fluid}
           speakerName={'Adam Miskiewicz'}
