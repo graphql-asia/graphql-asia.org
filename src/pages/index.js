@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import Banner from '../components/Banner'
+import LandingSpeaker from '../components/LandingSpeaker'
 import Sponsors from '../components/Sponsors'
 // import Img from "gatsby-image"
 import { graphql } from 'gatsby'
@@ -21,20 +22,21 @@ class HomeIndex extends React.Component {
                         { name: 'google-site-verification', content: '0swMWogAzErcNEr2q0dVwCn9zI16r0fMi37eb7S-jz8' },
                     ]}
                 >
-                
-                </Helmet>                
+
+                </Helmet>
                 <Banner bannerImage={this.props.data.bannerImage.childImageSharp.fluid} />
+                <LandingSpeaker/>
                 <div id="main">
                     <section id="one" className="tiles">
-                    </section>                    
+                    </section>
                     <section id="two">
                         <div className="inner">
                             <header className="major">
                                 <h2>Sponsors</h2>
                             </header>
-                            <Sponsors />     
+                            <Sponsors />
                             <p>
-                            <Link to="/sponsor">Become a sponsor</Link>                 
+                            <Link to="/sponsor">Become a sponsor</Link>
                             </p>
                         </div>
                     </section>
@@ -42,8 +44,8 @@ class HomeIndex extends React.Component {
                         <div className="inner">
                             <header className="major">
                                 <h2>Partners</h2>
-                            </header>         
-                            <div>      
+                            </header>
+                            <div>
                               <h3>GraphQL Conf, Berlin, June 20-21 2019</h3>
                               <ul className="actions">
                                   <li>
@@ -56,7 +58,7 @@ class HomeIndex extends React.Component {
                                           width: '150px',
                                           objectFit: 'contain',
                                           padding: '.5em'
-                                      }} src={graphqlconfLogo} alt="Graphql Conf" />                                    
+                                      }} src={graphqlconfLogo} alt="Graphql Conf" />
                                       </a>
                                   </li>
                               </ul>
@@ -91,29 +93,29 @@ export const query = graphql`
           ...GatsbyImageSharpFluid
         }
       }
-    }  
-    # https://unsplash.com/photos/yB5cYEq7y2U 
+    }
+    # https://unsplash.com/photos/yB5cYEq7y2U
     ticketImage: file(relativePath: { eq: "ticket.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }
       }
-    }  
+    }
     venueImage: file(relativePath: { eq: "BLR_Chancery_Pavilion_facade1_dbr92l.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }
       }
-    }  
-    # https://unsplash.com/photos/Dnkr_lmdKi8 
+    }
+    # https://unsplash.com/photos/Dnkr_lmdKi8
     sponsorImage: file(relativePath: { eq: "sponsor.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }
       }
-    }      
+    }
   }
 `

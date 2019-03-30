@@ -40,11 +40,14 @@
 	);
 	$palette: (
 		// bg:					#525252,
-		bg:					#000,
+		// bg:					#000,
+		bg:					#fff,
 		// bg-alt:				#3d3d3d,
 		bg-alt:				#fff,
-		fg:					#ffffff,
-		fg-bold:			#ffffff,
+		// fg:					#ffffff,
+		fg:					#000,
+		// fg-bold:			#ffffff,
+		fg-bold:			#000,
 		fg-btn-bold: #34337f,
 		fg-circle: #e535ab,
 		fg-light:			rgba(255, 244, 253, 0.4),

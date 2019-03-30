@@ -9,15 +9,15 @@ const diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
 
 const Banner = (props) => (
     <section id="banner" className="major">
-        <div className="inner">
-            <div className="datedisplay">
-              <div className="datetile">{diffDays}</div>
-              <div className="daysleft">
-                days left
-                <div className="whiteCircle">
-                </div>
-              </div>
+        <div className="datedisplay">
+          <div className="datetile">{diffDays}</div>
+          <div className="daysleft">
+            days left
+            <div className="whiteCircle">
             </div>
+          </div>
+        </div>
+        <div className="inner">
             <header className="major">
                 <h1>GraphQL Asia 2019</h1>
                 <h2>
