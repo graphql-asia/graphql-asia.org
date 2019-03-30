@@ -25,12 +25,19 @@
 		family-fixed:		('Roboto', sans-serif),
 		weight:				300,
 		weight-bold:		600,
+		weight-semi-bold: 500,
 		letter-spacing:		0.025em,
+		letter-spacing-normal: normal,
+		letter-spacing-nav:	0.25em,
+		line-height: normal,
 		// letter-spacing-alt:	0.25em
-		letter-spacing-alt:	0.5em
+		letter-spacing-alt:	0.5em,
+		text-transform: uppercase,
 	);
-
 // Palette.
+	$circle: (
+	border-radius: 50%,
+	);
 	$palette: (
 		// bg:					#525252,
 		bg:					#000,
@@ -38,6 +45,8 @@
 		bg-alt:				#fff,
 		fg:					#ffffff,
 		fg-bold:			#ffffff,
+		fg-btn-bold: #34337f,
+		fg-circle: #e535ab,
 		fg-light:			rgba(255, 244, 253, 0.4),
 		border:				rgba(212,212,255,0.1),
 		border-bg:			rgba(212,212,255,0.035),

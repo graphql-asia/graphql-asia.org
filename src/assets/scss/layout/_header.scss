@@ -13,17 +13,20 @@
 
 	.links {
 		text-transform: capitalize;
+		padding-right: 20px;
 		li {
 			a {
-				font-family: Roboto;
+				font-family: _font(family-fixed);
 				font-size: 20px;
 				font-weight: 600;
 				font-style: normal;
 				font-stretch: normal;
 				line-height: 4.8;
-				letter-spacing: normal;
+				letter-spacing: _font(letter-spacing-nav);
 				text-align: left;
 				color: #36327f;
+				text-transform: _font(text-transform);
+
 			}
 		}
 	}
@@ -63,12 +66,12 @@
 			span {
 				color: #e535ab;
 			}
-			
+
 			img{
 				// width: 100%;
 				width: 25%;
 				height: 100%;
-				display: block;				
+				display: block;
 				object-fit: contain;
 				padding: 0.2em;
 			}
@@ -276,14 +279,14 @@
 
 			nav {
 				a {
-					font-size: 50%;	
-					padding: 0;					
+					font-size: 50%;
+					padding: 0;
 					&.menu-link {
 						overflow: hidden;
 						padding-right: 0 !important;
 						text-indent: 5em;
 						white-space: nowrap;
-						width: 5em;						
+						width: 5em;
 
 						&:before, &:after {
 							right: 0;
@@ -297,6 +300,17 @@
 							}
 						}
 					}
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 991px) {
+		.links {
+			text-transform: capitalize;
+			padding-right: 0px;
+			li {
+				a {
+					letter-spacing: normal;
 				}
 			}
 		}
