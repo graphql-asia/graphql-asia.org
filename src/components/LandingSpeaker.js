@@ -27,7 +27,10 @@ const LandingSpeaker = ({data}) => {
     <section id="landingSpeaker" className="major">
       <div className="inner">
         <header className="major">
-            <h2>Speakers 2019</h2>
+            <h2>
+              <div className="pinkCircle"></div>
+              Speakers 2019
+            </h2>
         </header>
         <div className="speakerListWrppar">
           <Speaker speakerName='Lee Byron' speakerImage={data.LeeByron.childImageSharp.fluid.src} speakerBio='Co-Creator of GraphQL, Senior Software Engineer, Robinhood' />
@@ -85,7 +88,7 @@ const query = graphql`
           ...GatsbyImageSharpFluid
         }
       }
-    }    
+    }
     AmitRana: file(relativePath: { eq: "AmitRana.jpeg" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
@@ -204,7 +207,7 @@ const query = graphql`
           ...GatsbyImageSharpFluid
         }
       }
-    }    
+    }
     RajatKhare: file(relativePath: { eq: "RajatKhare.jpeg" }) {
       childImageSharp {
         fluid(maxWidth: 500) {

@@ -5,31 +5,37 @@ import TokopediaLogo from "../assets/images/tokopedia.png"
 import AtlassianLogo from "../assets/images/atlassian.png"
 const Sponsors = (props) => (
     <div>
-        <h3>Silver</h3>
+        <h3>
+          <div className="pinkCircleSmall"></div>
+          Silver
+        </h3>
         <ul className="actions">
             <li>
                 <a style={{
                     border:'none'
                 }} href="https://www.digitalocean.com/">
                 <img style={{
-                    background: 'white',
-                    height: '150px',
-                    width: '150px',
+                    // background: 'white',
+                    // height: '250px',
+                    width: '250px',
                     objectFit: 'contain',
                     padding: '.5em'
-                }} src={DigitalOceanLogo} alt="Digital Ocean" />                                    
+                }} src={DigitalOceanLogo} alt="Digital Ocean" />
                 </a>
             </li>
         </ul>
-        <h3>Bronze</h3>
+        <h3>
+          <div className="pinkCircleSmall"></div>
+          Bronze
+        </h3>
         <ul className="actions">
             <li>
                 <a style={{
                     border:'none'
                 }} href="https://github.com/">
                 <img style={{
-                    background: 'white',
-                    height: '100px',
+                    // background: 'white',
+                    // height: '100px',
                     width: '100px',
                     objectFit: 'contain',
                     padding: '.5em'
@@ -41,14 +47,15 @@ const Sponsors = (props) => (
                     border:'none'
                 }} href="https://tokopedia.com/">
                 <img style={{
-                    background: 'white',
-                    height: '100px',
+                    // background: 'white',
+                    // height: '100px',
                     width: '100px',
                     objectFit: 'contain',
                     padding: '.5em'
                 }} src={TokopediaLogo} alt="Tokopedia" />
                 </a>
             </li>
+            {/*
             <li>
                 <a style={{
                     border:'none'
@@ -62,8 +69,9 @@ const Sponsors = (props) => (
                 }} src={AtlassianLogo} alt="Atlassian" />
                 </a>
             </li>
+            */}
         </ul>
     </div>
 )
-      
+
 export default Sponsors

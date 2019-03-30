@@ -32,7 +32,10 @@ class HomeIndex extends React.Component {
                     <section id="two">
                         <div className="inner">
                             <header className="major">
-                                <h2>Sponsors</h2>
+                                <h2>
+                                <div className="pinkCircle"></div>
+                                Sponsors
+                                </h2>
                             </header>
                             <Sponsors />
                             <p>
@@ -43,10 +46,16 @@ class HomeIndex extends React.Component {
                     <section id="two">
                         <div className="inner">
                             <header className="major">
-                                <h2>Partners</h2>
+                                <h2>
+                                  <div className="pinkCircle"></div>
+                                  Partners
+                                </h2>
                             </header>
                             <div>
-                              <h3>GraphQL Conf, Berlin, June 20-21 2019</h3>
+                              <h3>
+                                <div className="pinkCircleSmall"></div>
+                                GraphQL Conf, Berlin, June 20-21 2019
+                              </h3>
                               <ul className="actions">
                                   <li>
                                       <a style={{
