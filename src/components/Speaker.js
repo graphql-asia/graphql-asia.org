@@ -17,7 +17,8 @@ class Speaker extends React.Component {
                         {speakerProps.time}
                     </span>      
             <div className={"content agendaItem"}>
-                <div className="inner">               
+                <div className="inner">   
+                <h2 className="talkTitle">{speakerProps.talkTitle}</h2>               
                 <div className="newImage">                
                     {
                         speakerProps.speakerPicture ?
@@ -28,8 +29,8 @@ class Speaker extends React.Component {
                 </div>             
             
               
-                    <header className="major">
-                        <h3>
+                    <header className="major">                    
+                        <h5>
                         {speakerProps.speakerName}                                                
                         {                            
                             speakerProps.speakerDescription ?
@@ -48,12 +49,10 @@ class Speaker extends React.Component {
                             </Link>
                             :null
                         }          
-                        </h3>
-                    </header>                                   
-                    <span  className="speakerPosition">{speakerProps.speakerPosition}</span>                                        
-                    <br/>                    
-                    <div>
-                    <span className="talkTitle">{speakerProps.talkTitle}</span>                                                
+                        </h5>
+                    </header>                                                       
+                    <div>                    
+                    <p className="talkAbstract">{speakerProps.talkAbstract}</p>                                                
                     </div>                                                               
                     <br/>
                 </div>
