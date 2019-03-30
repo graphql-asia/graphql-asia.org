@@ -301,6 +301,14 @@
 			}
 		}
 	}
+	@media screen and (max-width: 480px)
+		{
+			#header .logo img
+			{
+				width: 100%;
+			}
+		}
+
 	@media screen and (max-width: 991px) {
 		.links {
 			text-transform: capitalize;
