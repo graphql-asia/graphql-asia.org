@@ -13,6 +13,10 @@
 		left: 0;
 		top: 0;
 	}
+	.gatsby-image-wrapper
+	{
+		height: 100%;
+	}
 	#banner {
 		@include vendor('align-items', 'center');
 		// @include vendor('background-image', 'url("../images/bengaluru-castle.png")');
@@ -83,7 +87,7 @@
 		}
 		h1 {
 			// font-size: 3.25em;
-			font-size: 112px;
+			font-size: 100px;
 			font-family: _font(family);
 			font-weight: _font(weight-bold);
 			line-height: 110px;
@@ -269,7 +273,6 @@
 
 		@include breakpoint(xsmall) {
 			@include padding(4em, 0, (2em, 0, 0, 0));
-
 			> .inner {
 				.content {
 					p {
@@ -330,15 +333,16 @@
 }
 @media screen and (max-width: 736px) {
 	#banner.major {
-    height: 23em;
-    min-height: 23em;
+		height: 30em;
+    min-height: 30em;
     max-height: none;
 		padding: 5em 0 4em 0;
 	}
 	#banner {
 		h1 {
+			padding-top: 50px;
 			line-height: normal;
-			font-size: 1.5em;
+			font-size: 2.5em;
 		}
 		h2 {
 			font-size: 1.5em;
@@ -348,6 +352,40 @@
 		    height: 25px;
 		    left: 145px;
 		    top: 27px;
+			}
+		}
+		.content
+		{
+
+		}
+		.content
+		{
+			margin-bottom: 0 !important;
+			padding-top: 20px !important;
+			p
+			{
+				padding-bottom: 0;
+			}
+		}
+		.datedisplay
+		{
+			font-size: 12px;
+			right: 10px;
+    	top: 50px;
+			.datetile
+			{
+				font-size: 20px;
+				line-height: normal;
+			}
+			.daysleft
+			{
+				.whiteCircle
+				{
+					width: 10px;
+			    height: 10px;
+			    right: 0;
+			    top: 20px;
+				}
 			}
 		}
 		> .inner {
@@ -385,6 +423,12 @@
 	}
 }
 @media screen and (max-width: 480px) {
+	#banner.major {
+		height: 28em;
+    min-height: 28em;
+    max-height: none;
+		padding: 5em 0 4em 0;
+	}
 	header.major
 	{
 		margin-bottom: 1em;
@@ -392,7 +436,7 @@
 	#banner {
 		h1 {
 			line-height: normal;
-			font-size: 1em;
+			font-size: 2.5em;
 		}
 		h2 {
 			font-size: 1em;
@@ -461,6 +505,10 @@
 	}
 }
 /* Landing page speaker section */
+#landingSpeaker
+{
+		padding-top: 50px;
+}
 .speakerListWrppar
 {
 	display: flex;
@@ -562,5 +610,12 @@
 	    		height: 128px;
 				}
 			}
+	}
+}
+@media screen and (max-width: 736px)
+{
+	#landingSpeaker
+	{
+			padding-top: 0px;
 	}
 }

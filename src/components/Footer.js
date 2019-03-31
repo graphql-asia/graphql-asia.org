@@ -24,6 +24,19 @@ const Footer = (props) => (
                     <li>
                         <a style={{
                             border:'none'
+                        }} href="https://hasura.io/" rel="noopener noreferrer">
+                        <img style={{
+                            // background: 'white',
+                            // height: '150px',
+                            width: '150px',
+                            objectFit: 'contain',
+                            // padding: '.5em'
+                        }} src={HasuraLogo} alt="Hasura" />
+                        </a>
+                    </li>
+                    <li>
+                        <a style={{
+                            border:'none'
                         }} href="https://www.brikl.io" rel="noopener noreferrer">
                         <img style={{
                             // background: 'white',
@@ -33,19 +46,6 @@ const Footer = (props) => (
                             // padding: '.5em'
                         }} src={BrikLogo} alt="BrikL" />
                         {/* <Img fixed={this.props.data.file.childImageSharp.fixed} /> */}
-                        </a>
-                    </li>
-                    <li>
-                        <a style={{
-                            border:'none'
-                        }} href="https://hasura.io/" rel="noopener noreferrer">
-                        <img style={{
-                            // background: 'white',
-                            // height: '150px',
-                            width: '150px',
-                            objectFit: 'contain',
-                            // padding: '.5em'
-                        }} src={HasuraLogo} alt="Hasura" />
                         </a>
                     </li>
                 </ul>
