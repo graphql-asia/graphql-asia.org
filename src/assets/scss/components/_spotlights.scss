@@ -20,10 +20,14 @@
 			clear: both;
 		}
 		.agendaItem{
-			display: flex;
-				justify-content: center;
-				align-items: center;
-				height: 100%;
+			// display: flex;
+			display: block;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+			padding-left: 0;
+			border-left: 2px solid #ccc;
+			padding-left: 50px;
 		}
 		&.agenda{
 			margin: 0 auto;
@@ -51,11 +55,18 @@
 					// bottom: 0;
 					// background: white;
 					z-index: 99;
-					border-bottom: 2px solid #777;
+					// border-bottom: 2px solid #777;
 					right: 0;
 					left: 0;
 					text-align: center;
 					width: 100%;
+					position: relative;
+					.pinkCircleSmall
+					{
+						position: absolute;
+						left: -60px;
+						top: 0;
+					}
 				}
 				.speakerTime{
 
@@ -81,7 +92,7 @@
 				}
 
 				.agendaItem{
-					border-bottom: 3px solid #777;
+					// border-bottom: 3px solid #777;
 					background: _palette(bg);
 					.infoIcon{
 						text-align: center!important;
@@ -116,7 +127,7 @@
 			background-color: desaturate(lighten(_palette(bg-alt), 2), 1);
 
 			p{
-				color: rgba(255,255,255,.5);
+				// color: rgba(255,255,255,.5);
 				font-size: 80%;
 			}
 			ul, h3, p, h4 {
@@ -175,6 +186,7 @@
 				@include vendor('justify-content', 'center');
 				@include vendor('align-items', 'center');
 				@include padding(2em, 3em);
+				padding-left: 0;
 				width: 70%;
 
 				> .inner {

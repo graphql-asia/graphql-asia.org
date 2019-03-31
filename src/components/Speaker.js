@@ -14,9 +14,11 @@ class Speaker extends React.Component {
             id={speakerProps.speakerId}
             className={'agendaItem'}>
                     <span className="speakerSlot">
+                        <div className="pinkCircleSmall">
+                        </div>
                         {speakerProps.time}
                     </span>
-            <div className={"content agendaItem"}>
+            <div className={"content"}>
                 <div className="inner">
                 <h2 className="talkTitle">{speakerProps.talkTitle}</h2>
                 <div className="newImage">
