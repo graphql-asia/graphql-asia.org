@@ -1,5 +1,7 @@
 import React from 'react'
 import Speaker from './Speaker'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
+
 const speakerData = require('../data/data.json')
 const SpeakerList = (props) => {
   var day1 = []
@@ -43,7 +45,9 @@ const SpeakerList = (props) => {
     <div>
     <section id="dayone" className={'spotlights agenda'}>
         <div className="addPaddTopLarge" id="day2">
-          <h4 id="day1"><a href="#dayone">Day 1</a> / <a href="#daytwo">Day 2</a></h4>
+          <h4>
+            <AnchorLink href="#dayone">Day 1</AnchorLink> / <AnchorLink href="#daytwo">Day 2</AnchorLink>
+          </h4>
         </div>
         {day1}
       </section>
@@ -51,7 +55,7 @@ const SpeakerList = (props) => {
       className={'spotlights agenda'}>
         <div className="addPaddTopLarge" id="day2">
           <h4>
-            <a href="#day2">Day 2</a>
+            <AnchorLink href="#dayone">Day 1</AnchorLink> / <AnchorLink href="#daytwo">Day 2</AnchorLink>
           </h4>
         </div>
         {day2}
