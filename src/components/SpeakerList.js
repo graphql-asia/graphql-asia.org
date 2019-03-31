@@ -46,7 +46,7 @@ const SpeakerList = (props) => {
     <section id="dayone" className={'spotlights agenda'}>
         <div className="addPaddTopLarge" id="day2">
           <h4>
-            <AnchorLink href="#dayone">Day 1</AnchorLink> / <AnchorLink href="#daytwo">Day 2</AnchorLink>
+            <AnchorLink href="#dayone" className="active">Day 1</AnchorLink> / <AnchorLink href="#daytwo">Day 2</AnchorLink>
           </h4>
         </div>
         {day1}
@@ -55,7 +55,7 @@ const SpeakerList = (props) => {
       className={'spotlights agenda'}>
         <div className="addPaddTopLarge" id="day2">
           <h4>
-            <AnchorLink href="#dayone">Day 1</AnchorLink> / <AnchorLink href="#daytwo">Day 2</AnchorLink>
+            <AnchorLink href="#dayone">Day 1</AnchorLink> / <AnchorLink className="active" href="#daytwo">Day 2</AnchorLink>
           </h4>
         </div>
         {day2}

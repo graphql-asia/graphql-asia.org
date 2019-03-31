@@ -1,6 +1,7 @@
 import React from 'react'
 import Img from "gatsby-image"
 import {Link} from 'gatsby'
+import information from '../assets/images/open_in_new.svg'
 class Speaker extends React.Component {
     state = {
       showTalkDetail: false,
@@ -20,7 +21,21 @@ class Speaker extends React.Component {
                     </span>
             <div className={"content"}>
                 <div className="inner">
-                <h2 className="talkTitle">{speakerProps.talkTitle}</h2>
+                <h2 className="talkTitle">
+                {speakerProps.talkTitle}
+                {
+                    speakerProps.speakerDescription ?
+                    <Link
+                    className="infoIcon icon"
+                    style={{
+                        marginLeft: '1em',
+                        display: 'inline-block',
+                    }} to={`/speaker/${speakerProps.speakerId}`}>
+                    <img src={information} alt="icon"/>
+                    </Link>
+                    :null
+                }
+                </h2>
                 <div className="newImage">
                     {
                         speakerProps.speakerPicture ?
@@ -34,24 +49,6 @@ class Speaker extends React.Component {
                     <header className="major">
                         <h5>
                         {speakerProps.speakerName}
-                        {
-                            speakerProps.speakerDescription ?
-                            <Link
-                            className="infoIcon fa-info icon"
-                            style={{
-                                borderRadius: '50%',
-                                border: '1px solid #000',
-                                width: '17px',
-                                height: '17px',
-                                fontSize: '10px',
-                                lineHeight: '1.5em',
-                                marginLeft: '1em',
-                                display: 'inline-block',
-                                paddingLeft: '5px'
-                            }} to={`/speaker/${speakerProps.speakerId}`}>
-                            </Link>
-                            :null
-                        }
                         </h5>
                     </header>
                     <div>

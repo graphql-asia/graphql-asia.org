@@ -10,6 +10,7 @@
 		border-top: 0 !important;
 		width: 50%;
 		float: left;
+		padding: 0 30px;
 		& + * {
 			border-top: 0 !important;
 		}
@@ -40,6 +41,13 @@
 			.addPaddTopLarge
 			{
 				padding-top: 70px;
+			}
+			h4
+			{
+				.active
+				{
+					color: #ff00a9 !important;
+				}
 			}
 			> h2{
 				text-align: center;
@@ -141,6 +149,7 @@
 				text-align: left;
 				font-size: 100%;
 				font-weight: bold;
+				display: flex;
 			}
 			.talkAbstract{
 				font-size: 80%;
@@ -235,7 +244,11 @@
 		@include breakpoint(medium) {
 			section{
 				display: block!important;
-				text-align: center!important;
+				// text-align: center!important;
+				.spotlights
+				{
+						padding: 0 30px;
+				}
 			}
 			.speakerSlot{
 				display: block;
@@ -250,7 +263,7 @@
 				float: none;
 					.agendaItem{
 						span, p, h3, h4{
-							text-align: center!important;
+							// text-align: center!important;
 							display: block;
 						}
 					}
@@ -265,13 +278,13 @@
 
 				height: 100%!important;
 				span, p, h3, h4{
-					text-align: center!important;
+					// text-align: center!important;
 				}
 			}
 			.agendaItem .content{
 				width: 100%;
 				height: 100%;
-				padding: 3em 1.5em 1em 1.5em;
+				// padding: 3em 1.5em 1em 1.5em;
 			}
 			> section {
 				height: auto;
@@ -279,11 +292,11 @@
 
 				.newImage {
 					.gatsby-image-wrapper{
-						width: 100%;
-						height: 200px;
+						width: 100px;
+						height: 100px;
 					}
-					width: 100%;
-					height: 200px;
+					width: 100px;
+					height: 100px;
 					// text-align: center;
 					img{
 						width: 100%;
@@ -301,10 +314,10 @@
 					width: 100%;
 				}
 				header {
-					margin: auto!important;
+					// margin: auto!important;
 				}
 				ul, h3,.talkTitle, p, h4 {
-					text-align: center!important;
+					// text-align: center!important;
 				}
 			}
 		}
@@ -317,8 +330,35 @@
 				width: 100%;
 				float: none;
 				> .content {
-					@include padding(3em, 1.5em);
+					@include padding(0, 0);
 				}
 			}
 		}
+}
+@media screen and (max-width: 980px) {
+	.spotlights
+	{
+		.speakerSlot
+		{
+			text-align: left !important;
+		}
+	}
+}
+@media screen and (max-width: 480px) {
+	.spotlights
+	{
+		.agendaItem {
+			padding-left: 30px;
+		}
+		padding: 0 20px;
+		.speakerSlot
+		{
+			text-align: left !important;
+			.pinkCircleSmall
+			{
+				left: -40px !important;
+				top: 15px !important;
+			}
+		}
+	}
 }

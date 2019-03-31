@@ -16,7 +16,7 @@ const Sponsors = (props) => (
                 <img style={{
                     // background: 'white',
                     // height: '250px',
-                    width: '300px',
+                    width: '275px',
                     objectFit: 'contain',
                     // padding: '.5em'
                 }} src={DigitalOceanLogo} alt="Digital Ocean" />
