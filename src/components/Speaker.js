@@ -40,13 +40,14 @@ class Speaker extends React.Component {
                             className="infoIcon fa-info icon"
                             style={{
                                 borderRadius: '50%',
-                                border: '1px solid #fff',
-                                width: '1.5em',
-                                height: '1.5em',
-                                fontSize: '.5em',
+                                border: '1px solid #000',
+                                width: '17px',
+                                height: '17px',
+                                fontSize: '10px',
                                 lineHeight: '1.5em',
                                 marginLeft: '1em',
-                                display: 'inline-block'
+                                display: 'inline-block',
+                                paddingLeft: '5px'
                             }} to={`/speaker/${speakerProps.speakerId}`}>
                             </Link>
                             :null
