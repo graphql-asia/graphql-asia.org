@@ -13,9 +13,11 @@ const Speakers = (props) => (
     </Helmet>
     <div id="main" className="alt">
         <section id="one">
-            <div className="inner">
-                <header className="major">
-                    <h1>Agenda</h1>
+            <div className="inner removePaddBottom">
+                <header className="major removeMarBottom">
+                    <h1 className="removeMarBottom">
+                      Agenda
+                    </h1>
                 </header>
             </div>
         </section>
@@ -102,7 +104,7 @@ export const agendaQuery = graphql`
           ...GatsbyImageSharpFluid
         }
       }
-    }    
+    }
     DigitalOcean: file(relativePath: { eq: "DO.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 200) {
@@ -249,7 +251,7 @@ export const agendaQuery = graphql`
           ...GatsbyImageSharpFluid
         }
       }
-    }    
+    }
     RajatKhare: file(relativePath: { eq: "RajatKhare.jpeg" }) {
       childImageSharp {
         fluid(maxWidth: 200) {
@@ -326,8 +328,6 @@ export const agendaQuery = graphql`
           ...GatsbyImageSharpFluid
         }
       }
-    }   
+    }
   }
 `
-
-

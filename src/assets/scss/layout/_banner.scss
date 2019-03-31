@@ -9,9 +9,13 @@
 		width: 100%;
 		height: 100%;
 		position: absolute;
-		z-index: 0;    
+		z-index: 0;
 		left: 0;
 		top: 0;
+	}
+	.gatsby-image-wrapper
+	{
+		height: 100%;
 	}
 	#banner {
 		@include vendor('align-items', 'center');
@@ -25,17 +29,46 @@
 		border-bottom: 0 !important;
 		cursor: default;
 		height: 70vh;
-		margin-bottom: -3.25em;
+		// margin-bottom: -3.25em;
+		margin-bottom: -6.25em;
 		max-height: 35em;
 		min-height: 22em;
 		position: relative;
 		top: -3.25em;
-
+		.datedisplay
+		{
+			position: absolute;
+			z-index: 100;
+	    right: 20px;
+	    top: 60px;
+			font-family: _font(family-fixed);
+			font-size: 20px;
+			font-weight: _font(weight-bold);
+			text-align: center;
+			color: _palette(bg);
+			.datetile
+			{
+				font-family: _font(family);
+				font-size: 71px;
+				line-height: 70px;
+			}
+			.daysleft
+			{
+				position: relative;
+				.whiteCircle
+				{
+					width: 14px;
+					height: 14px;
+					right: 0;
+					top: 35px;
+				}
+			}
+		}
 		&:after {
 			@include vendor('transition', 'opacity #{_duration(banner)} ease');
 			@include vendor('transition-delay', '0.75s');
 			@include vendor('pointer-events', 'none');
-			background-color: _palette(bg);
+			// background-color: _palette(bg);
 			content: '';
 			display: block;
 			height: 100%;
@@ -46,11 +79,36 @@
 			width: 100%;
 			z-index: 1;
 		}
-
-		h1 {
-			font-size: 3.25em;
+		.whiteCircle
+		{
+			border-radius: _circle(border-radius);
+			background-color: _palette(bg);
+			position: absolute;
 		}
-
+		h1 {
+			// font-size: 3.25em;
+			font-size: 100px;
+			font-family: _font(family);
+			font-weight: _font(weight-bold);
+			line-height: 110px;
+			text-transform: _font(text-transform);
+			color: _palette(bg);
+		}
+		h2 {
+			font-size: 64px;
+			font-family: _font(family);
+			font-weight: _font(weight-semi-bold);
+			margin-bottom: 40px;
+			position: relative;
+			color: _palette(bg);
+			.whiteCircle
+			{
+				width: 40px;
+				height: 40px;
+				left: 400px;
+				top: 80px;
+			}
+		}
 		> .inner {
 			@include vendor('transition', (
 				'opacity 1.5s ease',
@@ -65,22 +123,25 @@
 			.image {
 				display: none;
 			}
-
 			header {
 				width: auto;
 
 				> :first-child {
 					width: auto;
-
 					&:after {
 						max-width: 100%;
+						height: 0;
+						margin: 0;
 					}
 				}
 			}
 
 			.content {
-				@include vendor('display', 'flex');
+				// @include vendor('display', 'flex');
+				@include vendor('display', 'block');
 				@include vendor('align-items', 'center');
+				@include vendor('justify-content', 'center');
+				@include vendor('text-align', 'center');
 				margin: 0 0 _size(element-margin) 0;
 
 				> * {
@@ -91,10 +152,55 @@
 				> :first-child {
 					margin-left: 0;
 				}
+				.actions
+				{
+					li
+					{
+						position: relative;
+						.whiteCircle
+						{
+							width: 30px;
+					    height: 30px;
+					    right: -30px;
+					    bottom: -30px;
+						}
+					}
+					.bannerButton
+					{
+						background-color: #fff;
+						color: #34337f;
+						font-family: _font(family-fixed);
+						font-size: 24px;
+						font-weight: _font(weight-bold);
+						text-transform: capitalize;
+						letter-spacing: _font(letter-spacing-normal);
+						line-height: _font(line-height);
+						height: auto;
+						padding: 14px 30px;
+						padding-right: 4.5em;
+						border-radius: 40px;
+						&:before {
+							background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36px" height="24px" viewBox="0 0 36 24" zoomAndPan="disable"><style>line { stroke: #{_palette(fg-btn-bold)}; stroke-width: 2px; }</style><line x1="0" y1="12" x2="34" y2="12" /><line x1="25" y1="4" x2="34" y2="12.5" /><line x1="25" y1="20" x2="34" y2="11.5" /></svg>');
+						}
+						&.next {
+							padding-right: 4em;
+							position: relative;
 
+							&:before, &:after {
+								right: 30px;
+							}
+						}
+					}
+				}
 				p {
 					// font-size: 0.7em;
+					font-family: _font(family-fixed);
+					// font-weight: _font(weight-bold);
 					font-weight: _font(weight-bold);
+					line-height: _font(line-height);
+					font-size: 30px;
+					padding-bottom: 20px;
+					color: _palette(bg);
 					// letter-spacing: _font(letter-spacing-alt);
 					// text-transform: uppercase;
 				}
@@ -103,7 +209,8 @@
 
 		&.major {
 			height: 75vh;
-			min-height: 35em;
+			// min-height: 35em;
+			min-height: 44em;
 			max-height: 50em;
 
 			&.alt {
@@ -166,7 +273,6 @@
 
 		@include breakpoint(xsmall) {
 			@include padding(4em, 0, (2em, 0, 0, 0));
-
 			> .inner {
 				.content {
 					p {
@@ -182,3 +288,334 @@
 			}
 		}
 	}
+
+@media screen and (max-width: 1680px) {
+	#banner {
+		> .inner {
+			.datedisplay {
+				top: -35px;
+    	right: -100px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 1280px) {
+	#banner {
+		> .inner {
+			.datedisplay {
+				top: -35px;
+    	right: -60px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 1020px) {
+	#banner.major
+	{
+		min-height: 26em;
+	}
+	#banner {
+		h1 {
+			line-height: normal;
+			font-size: 2em;
+		}
+		h2 {
+			font-size: 1.5em;
+			.whiteCircle
+			{
+				top: 25px;
+				width: 25px;
+				height: 25px;
+				left: 150px
+			}
+		}
+	}
+}
+@media screen and (max-width: 736px) {
+	#banner.major {
+		height: 30em;
+    min-height: 30em;
+    max-height: none;
+		padding: 5em 0 4em 0;
+	}
+	#banner {
+		h1 {
+			padding-top: 50px;
+			line-height: normal;
+			font-size: 2.5em;
+		}
+		h2 {
+			font-size: 1.5em;
+			.whiteCircle
+			{
+				width: 25px;
+		    height: 25px;
+		    left: 145px;
+		    top: 27px;
+			}
+		}
+		.content
+		{
+
+		}
+		.content
+		{
+			margin-bottom: 0 !important;
+			padding-top: 20px !important;
+			p
+			{
+				padding-bottom: 0;
+			}
+		}
+		.datedisplay
+		{
+			font-size: 12px;
+			right: 10px;
+    	top: 50px;
+			.datetile
+			{
+				font-size: 20px;
+				line-height: normal;
+			}
+			.daysleft
+			{
+				.whiteCircle
+				{
+					width: 10px;
+			    height: 10px;
+			    right: 0;
+			    top: 20px;
+				}
+			}
+		}
+		> .inner {
+			.content
+			{
+				p
+				{
+					font-size: 20px;
+					padding-bottom: 20px;
+				}
+				.actions
+				{
+					li
+					{
+						position: relative;
+						.whiteCircle
+						{
+							width: 25px;
+					    height: 25px;
+					    right: -20px;
+					    bottom: -30px;
+						}
+					}
+					.bannerButton
+					{
+						font-size: 16px;
+						&:before, &:after {
+								background-size: 23px 20px;
+								width: 28px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 480px) {
+	#banner.major {
+		height: 28em;
+    min-height: 28em;
+    max-height: none;
+		padding: 5em 0 4em 0;
+	}
+	header.major
+	{
+		margin-bottom: 1em;
+	}
+	#banner {
+		h1 {
+			line-height: normal;
+			font-size: 2.5em;
+		}
+		h2 {
+			font-size: 1em;
+			margin-bottom: 0;
+			.whiteCircle
+			{
+				width: 15px;
+		    height: 15px;
+		    left: 100px;
+		    top: 20px;
+			}
+		}
+		.datedisplay
+		{
+			font-size: 12px;
+			right: 10px;
+    	top: 50px;
+			.datetile
+			{
+				font-size: 20px;
+				line-height: normal;
+			}
+			.daysleft
+			{
+				.whiteCircle
+				{
+					width: 10px;
+			    height: 10px;
+			    right: 0;
+			    top: 20px;
+				}
+			}
+		}
+		> .inner {
+			.content
+			{
+				p
+				{
+					font-size: 16px;
+					padding-bottom: 20px;
+				}
+				.actions
+				{
+					li
+					{
+						position: relative;
+						.whiteCircle
+						{
+							width: 25px;
+					    height: 25px;
+					    right: -20px;
+					    bottom: -30px;
+						}
+					}
+					.bannerButton
+					{
+						font-size: 16px;
+						&:before, &:after {
+								background-size: 23px 20px;
+								width: 28px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+/* Landing page speaker section */
+#landingSpeaker
+{
+		padding-top: 50px;
+}
+.speakerListWrppar
+{
+	display: flex;
+  flex-wrap: wrap;
+	.speakerList
+	{
+		.profile
+		{
+			.speakerImage
+			{
+		    display: inline-flex;
+		    -webkit-box-pack: center;
+		    justify-content: center;
+		    -webkit-box-align: center;
+		    align-items: center;
+				img
+				{
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					object-position: center center;
+				}
+			}
+			.speakerProfile
+			{
+				margin-top: 46px;
+				.profileWrapper
+				{
+					display: flex;
+					align-items: flex-end;
+					.profileName
+					{
+						font-weight: bold;
+				    font-size: 18px;
+				    line-height: 1.4;
+				    vertical-align: middle;
+					}
+					.profileLinks
+					{
+						margin-left: 8px;
+				    padding-bottom: 4px;
+				    flex-shrink: 0;
+				    -webkit-box-flex: 1;
+				    flex-grow: 1;
+				    display: flex;
+				    -webkit-box-align: center;
+				    align-items: center;
+						.profileIcon
+						{
+							outline: 0;
+							cursor: pointer;
+					    display: inline-block;
+					    margin-right: 6px;
+					    line-height: 1;
+					    font-size: 15px;
+						}
+					}
+				}
+				.profielBio
+				{
+					margin-top: 8px;
+			    font-size: 16px;
+			    line-height: 1.45;
+			    color: #000;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 1070px)
+{
+	.speakerList {
+	    width: calc((100% - 40px) / 4);
+	    margin-right: 10px;
+	    margin-bottom: 40px;
+			.profile
+			{
+				.speakerImage
+				{
+					width: 168px;
+			    height: 168px;
+				}
+			}
+	}
+}
+
+@media screen and (max-width: 1070px)
+{
+	.speakerList {
+			width: calc((100% - 40px) / 2);
+			margin-right: 20px;
+			margin-bottom: 40px;
+			.profile
+			{
+				.speakerImage
+				{
+					width: 128px;
+	    		height: 128px;
+				}
+			}
+	}
+}
+@media screen and (max-width: 736px)
+{
+	#landingSpeaker
+	{
+			padding-top: 0px;
+	}
+}

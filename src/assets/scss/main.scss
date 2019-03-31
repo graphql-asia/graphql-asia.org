@@ -41,7 +41,7 @@
 			flex: initial;
 			width: 100%;
 		}
-	}	
+	}
 	.hidden{
 		display: none;
 	}
@@ -57,14 +57,14 @@
 			margin: 0 auto;
 			max-width: _size(inner);
 			&.wide{
-				max-width: 65em;	
+				max-width: 65em;
 			}
 			width: calc(100% - 6em);
 
 			@include breakpoint(small) {
 				@include padding(3em, 0);
 				width: calc(100% - 3em);
-			}			
+			}
 		}
 	}
 

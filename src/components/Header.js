@@ -8,6 +8,7 @@ const Header = (props) => (
         <span><Link to="/">Home</Link></span>
         <Link to="/" className="logo">            
             <img src={GraphlQLAsiaLogo} alt="GraphQL Asia Logo" />              
+            <span> GraphQL Asia </span>
         </Link>
         <span><Link to="/tickets">Tickets</Link></span>
         <nav>

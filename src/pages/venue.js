@@ -14,8 +14,10 @@ const Venue = (props) => (
             <section id="one">
                 <div className="inner">
                     <header className="major">
-                        <h1>Join us in Bengaluru!</h1>
-                        <p>The conference will take place in Chancery Pavillion, Residency Road.</p>
+                        <h1>
+                          Join us in Bengaluru!
+                        </h1>
+                        <h3>The conference will take place in Chancery Pavillion, Residency Road.</h3>
                     </header>
 
                     <span className="image medium"><img src={pic03} alt="Chancery Pavillion" /></span>

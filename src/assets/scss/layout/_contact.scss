@@ -7,9 +7,17 @@
 /* Contact */
 
 	#contact {
+		h1, h2, h3, h4, h5, h6 {
+			color: _palette(bg);
+		}
+		label
+		{
+			color: _palette(bg);
+		}
 		border-bottom: solid 1px _palette(border);
 		overflow-x: hidden;
-
+		background-color: _palette(fg);
+		color: _palette(bg);
 		> .inner {
 			@include vendor('display', 'flex');
 			padding: 0 !important;

@@ -15,7 +15,7 @@
             "speakerDescription":"Co-Organiser of React Bangalore",
             "speakerId": "workshop-intro",
             "talkTitle":"Workshop: Introduction to GraphQL",
-            "talkAbstract":"An introduction to GraphQL and advanced concepts of GraphQL.",
+            "talkAbstract":"Kiran Kumar Abburi, Co-Organiser of React Bangalore, will be giving you an introduction to GraphQL and advanced concepts of GraphQL. This workshop targets beginners of GraphQL getting their introduction and getting their first hands-on experience with GraphQL.",
             "time":"08:30 - 10:00",
             "twitter":"kiran_abburi",
             "type": "workshop",
@@ -405,7 +405,8 @@
                 "speakerDescription":"",
                 "speakerPosition":"",
                 "type": "workshop",
-                "talkTitle":"Workshop: Hasura",                             
+                "talkTitle":"Workshop: Building realtime application with GraphQL subscriptions using Hasura", 
+                "talkAbstract":"",
                 "isLightningTalk":false,
                 "time":"13:30 - 15:00",
                 "day":2
