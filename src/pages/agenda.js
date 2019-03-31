@@ -16,7 +16,6 @@ const Speakers = (props) => (
             <div className="inner">
                 <header className="major">
                     <h1>
-                      <div className="pinkCircle"></div>
                       Agenda
                     </h1>
                 </header>

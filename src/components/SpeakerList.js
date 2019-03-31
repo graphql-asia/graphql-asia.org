@@ -11,7 +11,6 @@ const SpeakerList = (props) => (
         {
             props.isAgenda === true ?
             <h2>
-              <div className="pinkCircle"></div>
               Day 1, 12th April
             </h2>
             :null
@@ -308,7 +307,6 @@ const SpeakerList = (props) => (
         {
             props.isAgenda === true ?
             <h2>
-              <div className="pinkCircle"></div>
               Day 2, 13th April
             </h2>
             :null

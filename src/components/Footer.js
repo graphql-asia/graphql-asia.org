@@ -27,10 +27,10 @@ const Footer = (props) => (
                         }} href="https://www.brikl.io" rel="noopener noreferrer">
                         <img style={{
                             // background: 'white',
-                            height: '150px',
+                            // height: '150px',
                             width: '150px',
                             objectFit: 'contain',
-                            padding: '.5em'
+                            // padding: '.5em'
                         }} src={BrikLogo} alt="BrikL" />
                         {/* <Img fixed={this.props.data.file.childImageSharp.fixed} /> */}
                         </a>
@@ -41,10 +41,10 @@ const Footer = (props) => (
                         }} href="https://hasura.io/" rel="noopener noreferrer">
                         <img style={{
                             // background: 'white',
-                            height: '150px',
+                            // height: '150px',
                             width: '150px',
                             objectFit: 'contain',
-                            padding: '.5em'
+                            // padding: '.5em'
                         }} src={HasuraLogo} alt="Hasura" />
                         </a>
                     </li>

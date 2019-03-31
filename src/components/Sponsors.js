@@ -6,7 +6,6 @@ import AtlassianLogo from "../assets/images/atlassian.png"
 const Sponsors = (props) => (
     <div>
         <h3>
-          <div className="pinkCircleSmall"></div>
           Silver
         </h3>
         <ul className="actions">
@@ -17,15 +16,14 @@ const Sponsors = (props) => (
                 <img style={{
                     // background: 'white',
                     // height: '250px',
-                    width: '250px',
+                    width: '300px',
                     objectFit: 'contain',
-                    padding: '.5em'
+                    // padding: '.5em'
                 }} src={DigitalOceanLogo} alt="Digital Ocean" />
                 </a>
             </li>
         </ul>
         <h3>
-          <div className="pinkCircleSmall"></div>
           Bronze
         </h3>
         <ul className="actions">
@@ -36,9 +34,9 @@ const Sponsors = (props) => (
                 <img style={{
                     // background: 'white',
                     // height: '100px',
-                    width: '100px',
+                    width: '150px',
                     objectFit: 'contain',
-                    padding: '.5em'
+                    // padding: '.5em'
                 }} src={GithubLogo} alt="Github" />
                 </a>
             </li>
@@ -49,9 +47,9 @@ const Sponsors = (props) => (
                 <img style={{
                     // background: 'white',
                     // height: '100px',
-                    width: '100px',
+                    width: '200px',
                     objectFit: 'contain',
-                    padding: '.5em'
+                    // padding: '.5em'
                 }} src={TokopediaLogo} alt="Tokopedia" />
                 </a>
             </li>

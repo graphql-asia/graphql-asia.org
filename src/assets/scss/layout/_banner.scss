@@ -471,8 +471,6 @@
 		{
 			.speakerImage
 			{
-				width: 168px;
-		    height: 168px;
 		    display: inline-flex;
 		    -webkit-box-pack: center;
 		    justify-content: center;
@@ -539,6 +537,14 @@
 	    width: calc((100% - 40px) / 4);
 	    margin-right: 10px;
 	    margin-bottom: 40px;
+			.profile
+			{
+				.speakerImage
+				{
+					width: 168px;
+			    height: 168px;
+				}
+			}
 	}
 }
 
@@ -546,7 +552,15 @@
 {
 	.speakerList {
 			width: calc((100% - 40px) / 2);
-			margin-right: 10px;
+			margin-right: 20px;
 			margin-bottom: 40px;
+			.profile
+			{
+				.speakerImage
+				{
+					width: 128px;
+	    		height: 128px;
+				}
+			}
 	}
 }

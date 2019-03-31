@@ -33,7 +33,6 @@ class HomeIndex extends React.Component {
                         <div className="inner">
                             <header className="major">
                                 <h2>
-                                <div className="pinkCircle"></div>
                                 Sponsors
                                 </h2>
                             </header>
@@ -47,13 +46,11 @@ class HomeIndex extends React.Component {
                         <div className="inner">
                             <header className="major">
                                 <h2>
-                                  <div className="pinkCircle"></div>
                                   Partners
                                 </h2>
                             </header>
                             <div>
                               <h3>
-                                <div className="pinkCircleSmall"></div>
                                 GraphQL Conf, Berlin, June 20-21 2019
                               </h3>
                               <ul className="actions">
@@ -62,9 +59,9 @@ class HomeIndex extends React.Component {
                                           border:'none'
                                       }} href="https://www.graphqlconf.org/">
                                       <img style={{
-                                          background: 'white',
-                                          height: '150px',
-                                          width: '150px',
+                                          // background: 'white',
+                                          // height: '150px',
+                                          width: '100px',
                                           objectFit: 'contain',
                                           padding: '.5em'
                                       }} src={graphqlconfLogo} alt="Graphql Conf" />

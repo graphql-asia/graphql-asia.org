@@ -20,7 +20,6 @@ const Tickets = (props) => (
                 <div className="inner">
                     <header className="major">
                     <h1>
-                      <div className="pinkCircle"></div>
                       Tickets
                     </h1>
                     </header>

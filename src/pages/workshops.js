@@ -17,13 +17,11 @@ const Venue = (props) => (
                 <div className="inner">
                     <header className="major">
                         <h1>
-                          <div className="pinkCircle"></div>
                           GraphQL Workshops
                         </h1>
                     </header>
                     <p>We will be offering several workshops alongside the conference from beginner to advanced workshops free to attend with your conference ticket.</p>
                     <h2>
-                      <div className="pinkCircle"></div>
                       1. Intro to GraphQL and Advanced GraphQL concepts
                     </h2>
                     <div className="grid-wrapper">
@@ -38,7 +36,6 @@ const Venue = (props) => (
                         </div>
                     </div>
                     <h2>
-                      <div className="pinkCircle"></div>
                       2. React + GraphQL using Apollo Client and Typescript
                     </h2>
                     <div className="grid-wrapper">
@@ -57,7 +54,6 @@ const Venue = (props) => (
                     </div>
                     <br/>
                     <h2>
-                      <div className="pinkCircle"></div>
                       3. AppSync
                     </h2>
                     <div className="grid-wrapper">
@@ -71,7 +67,6 @@ const Venue = (props) => (
                         </div>
                     </div>
                     <h2>
-                      <div className="pinkCircle"></div>
                       4. Realtime chat app with GraphQL subscriptions using Hasura.
                     </h2>
                     <div className="grid-wrapper">

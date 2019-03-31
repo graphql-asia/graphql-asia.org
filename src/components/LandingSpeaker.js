@@ -28,7 +28,6 @@ const LandingSpeaker = ({data}) => {
       <div className="inner">
         <header className="major">
             <h2>
-              <div className="pinkCircle"></div>
               Speakers 2019
             </h2>
         </header>
