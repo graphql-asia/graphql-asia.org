@@ -70,7 +70,7 @@ class HomeIndex extends React.Component {
                               </ul>
                             </div>
                             <p>
-                            <a href="#contact-us">Interested to partner with us? Contact us</a>
+                            <a href="#contact-us">Interested to partner with us? Contact us.</a>
                             </p>
                         </div>
                     </section>

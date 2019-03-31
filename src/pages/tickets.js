@@ -34,7 +34,7 @@ const Tickets = (props) => (
                         Student tickets are available <a href="https://docs.google.com/forms/d/e/1FAIpQLSerKReSGDq_sjEKlrYm9HvVzmuUEQA2SlEb_cR-Ga6wVG9fBQ/viewform?usp=sf_link">here</a>
                     </p>
                     <p>
-                        We are looking forward to welcoming you soon!
+                        We look forward to seeing you soon!
                     </p>
                     <div>
                         <ul className="actions">

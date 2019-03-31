@@ -21,9 +21,9 @@ const Sponsor = (props) => (
                     </header>
                     <p>Learn from experts responsible for GraphQL’s incredible tooling, speak to architects who have implemented GraphQL at their own organisations, showcase your technology & forge connections with the forward-looking engineers who have made GraphQL the tech to watch in 2019 at GraphQL Asia.</p>
                     <p>Leave us your email and we will get back to you with the sponsorship details. You could also get in touch with us at sponsor@graphql-asia.org.</p>
-                    <h2>
+                    <h3>
                       Our current sponsors
-                    </h2>
+                    </h3>
                     <Sponsors />
                 </div>
             </section>

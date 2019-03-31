@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import LucasMunhoz from '../assets/images/LucasMunhoz.jpg'
 import Kiran from '../assets/images/KiranKumarAbburi.jpg'
-import AppSync from '../assets/images/AppSync.jpg'
+import GerardSans from '../assets/images/GerardSans.jpg'
 import Hasura from '../assets/images/Hasura.png'
 const Venue = (props) => (
     <Layout>
@@ -21,9 +21,9 @@ const Venue = (props) => (
                         </h1>
                     </header>
                     <p>We will be offering several workshops alongside the conference from beginner to advanced workshops free to attend with your conference ticket.</p>
-                    <h2>
+                    <h3>
                       1. Intro to GraphQL and Advanced GraphQL concepts
-                    </h2>
+                    </h3>
                     <div className="grid-wrapper">
                         <div className="col-3">
                         <span className="image fit"><img src={Kiran} alt="Kiran" /></span>
@@ -35,9 +35,9 @@ const Venue = (props) => (
                             </p>
                         </div>
                     </div>
-                    <h2>
+                    <h3>
                       2. React + GraphQL using Apollo Client and Typescript
-                    </h2>
+                    </h3>
                     <div className="grid-wrapper">
                         <div className="col-3">
                         <span className="image fit"><img src={LucasMunhoz} alt="Lucas Munhoz" /></span>
@@ -45,30 +45,31 @@ const Venue = (props) => (
                         <div className="col-9">
                         <strong>Day 1 - 1:30 - 3:00</strong>
                             <p>
-                            Lucas Munhoz will be teaching you on getting started with React and GraphQL using Apollo Client.
+                              Lucas Munhoz will be teaching you on getting started with React and GraphQL using Apollo Client.
                             </p>
                             <p>
-                    Lucas Munhoz is a full-stack developer and organiser of GraphQL Bangkok meetup.
-                    </p>
+                              Lucas Munhoz is a full-stack developer and organiser of GraphQL Bangkok meetup.
+                            </p>
                         </div>
                     </div>
                     <br/>
-                    <h2>
-                      3. AppSync
-                    </h2>
+                    <h3>
+                      3. Building your first Fullstack Serverless App with AWS Amplify
+                    </h3>
                     <div className="grid-wrapper">
                         <div className="col-3">
-                        <span className="image fit"><img src={AppSync} alt="AppSync" /></span>
+                        <span className="image fit"><img src={GerardSans} alt="AppSync" /></span>
                         </div>
                         <div className="col-9">
                             <strong>Day 2 - 8:30 - 10:00</strong>
                             <p>
+                              In this workshop we will be introducing AWS Amplify a modern toolchain, libraries and UI components to build modern Fullstack Serverless Apps. You will be building a fully featured Application from development to production.
                             </p>
                         </div>
                     </div>
-                    <h2>
+                    <h3>
                       4. Realtime chat app with GraphQL subscriptions using Hasura.
-                    </h2>
+                    </h3>
                     <div className="grid-wrapper">
                         <div className="col-3">
                         <span className="image fit"><img src={Hasura} alt="Lucas Munhoz" /></span>
