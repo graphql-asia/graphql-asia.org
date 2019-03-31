@@ -51,7 +51,7 @@ const Venue = (props) => (
                               Lucas Munhoz, full-stack developer and organiser of GraphQL Bangkok meetup, will be teaching you on getting started with React and GraphQL using Apollo Client.
                             </p>
                             <p>
-                              In this workshop Lucas Munhoz will teach you how to connect to your GraphQL API using Apollo Client with React and Typescript.
+                              During this session Lucas Munhoz will teach you how to connect to your GraphQL API using Apollo Client with React and Typescript.
                             </p>
                         </div>
                     </div>
@@ -64,7 +64,7 @@ const Venue = (props) => (
                         <div className="col-9">
                             <strong>Day 2 - 8:30 - 10:00</strong>
                             <p>
-                            In this workshop Gerard Sans will be introducing AWS Amplify, a modern toolchain, libraries and UI components to build modern Fullstack Serverless Apps. You will be building a fully featured application from development to production.
+                            Gerard Sans will be introducing AWS Amplify, a modern toolchain, libraries and UI components to build modern Fullstack Serverless Apps. You will be building a fully featured application from development to production.
                             </p>
                         </div>
                     </div>
