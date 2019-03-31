@@ -13,6 +13,10 @@
 		left: 0;
 		top: 0;
 	}
+	.gatsby-image-wrapper
+	{
+		height: 100%;
+	}
 	#banner {
 		@include vendor('align-items', 'center');
 		// @include vendor('background-image', 'url("../images/bengaluru-castle.png")');
@@ -269,7 +273,6 @@
 
 		@include breakpoint(xsmall) {
 			@include padding(4em, 0, (2em, 0, 0, 0));
-
 			> .inner {
 				.content {
 					p {
@@ -330,8 +333,8 @@
 }
 @media screen and (max-width: 736px) {
 	#banner.major {
-    height: 23em;
-    min-height: 23em;
+    height: 26em;
+    min-height: 26em;
     max-height: none;
 		padding: 5em 0 4em 0;
 	}
@@ -461,6 +464,10 @@
 	}
 }
 /* Landing page speaker section */
+#landingSpeaker
+{
+		padding-top: 50px;
+}
 .speakerListWrppar
 {
 	display: flex;
@@ -562,5 +569,12 @@
 	    		height: 128px;
 				}
 			}
+	}
+}
+@media screen and (max-width: 736px)
+{
+	#landingSpeaker
+	{
+			padding-top: 0px;
 	}
 }

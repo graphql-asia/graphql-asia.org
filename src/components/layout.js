@@ -13,7 +13,7 @@ class Layout extends React.Component {
             loading: ''
         }
         this.handleToggleMenu = this.handleToggleMenu.bind(this)
-    }   
+    }
 
     handleToggleMenu() {
         alert('menu')
@@ -33,11 +33,11 @@ class Layout extends React.Component {
                         { name: 'description', content: 'GraphQL Asia is going to be the first Asian GraphQL conference, with 2 full days of everything GraphQL. Location: Bangalore, India Date: April 12-13, 2019' },
                         { name: 'keywords', content: 'GraphQL, Asia, Conference, Tech, Event, India, Bangalore' },
                         { name: 'google-site-verification', content: '0swMWogAzErcNEr2q0dVwCn9zI16r0fMi37eb7S-jz8' },
-                        { name: 'image', content: 'https://graphql-asia.org/GraphQL-Asia-Banner-2.png' },
-                        { name: 'og:url', content: 'https://graphql-asia.org' },                        
-                        { name: 'og:title', content: 'GraphQL Asia in Bengaluru, India' },                        
-                        { name: 'og:image', content: 'https://graphql-asia.org/GraphQL-Asia-Banner-2.png' },
-                        { name: 'twitter:image', content: 'https://graphql-asia.org/GraphQL-Asia-Banner-2.png' },
+                        { name: 'image', content: 'https://graphql-asia.org/GraphQL_Asia_page_card.png' },
+                        { name: 'og:url', content: 'https://graphql-asia.org' },
+                        { name: 'og:title', content: 'GraphQL Asia in Bengaluru, India' },
+                        { name: 'og:image', content: 'https://graphql-asia.org/GraphQL_Asia_page_card.png' },
+                        { name: 'twitter:image', content: 'https://graphql-asia.org/GraphQL_Asia_page_card.png' },
                         { name: 'twitter:card', content: 'summary_large_image' },
                         { name: 'twitter:creator', content: 'graphqlasia' },
                     ]}
