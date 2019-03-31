@@ -43,7 +43,7 @@ const SpeakerList = (props) => {
     <div>
     <section id="dayone" className={'spotlights agenda'}>
         <div className="addPaddTopLarge" id="day2">
-          <h4 id="day1"><a href="#day1">Day 1</a> / <a href="#day2">Day 2</a></h4>
+          <h4 id="day1"><a href="#dayone">Day 1</a> / <a href="#daytwo">Day 2</a></h4>
         </div>
         {day1}
       </section>
@@ -51,7 +51,7 @@ const SpeakerList = (props) => {
       className={'spotlights agenda'}>
         <div className="addPaddTopLarge" id="day2">
           <h4>
-            <a href="#day1">Day 1</a> / <a href="#day2">Day 2</a>
+            <a href="#day2">Day 2</a>
           </h4>
         </div>
         {day2}

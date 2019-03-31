@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import Banner from '../components/Banner'
-// import LandingSpeaker from '../components/LandingSpeaker'
+import LandingSpeaker from '../components/LandingSpeaker'
 import Sponsors from '../components/Sponsors'
 // import Img from "gatsby-image"
 import { graphql } from 'gatsby'
@@ -25,7 +25,7 @@ class HomeIndex extends React.Component {
 
                 </Helmet>
                 <Banner bannerImage={this.props.data.bannerImage.childImageSharp.fluid} />
-                {/* <LandingSpeaker/> */}
+                <LandingSpeaker/>
                 <div id="main">
                     <section id="one" className="tiles">
                     </section>

@@ -34,14 +34,14 @@ const LandingSpeaker = ({data}) => {
         <div className="speakerListWrppar">
           <Speaker speakerName='Lee Byron' speakerImage={data.LeeByron.childImageSharp.fluid.src} speakerBio='Co-Creator of GraphQL, Senior Software Engineer, Robinhood' />
           <Speaker speakerName='Sasha Solomon' speakerImage={data.SashaSolomon.childImageSharp.fluid.src} speakerBio='Senior Software Engineer, Twitter' />
-          <Speaker speakerName='Tanmai Gopal' speakerImage={data.TanmaiGopal.childImageSharp.fluid.src} speakerBio='Co-Founder, Hasura' />
-          <Speaker speakerName='Tobias Meixner' speakerImage={data.TobiasMeixner.childImageSharp.fluid.src} speakerBio='Co-Founder & CTO, BrikL' />
-          <Speaker speakerName='Jonathan Jalouzot' speakerImage={data.JonathanJalouzot.childImageSharp.fluid.src} speakerBio='Co-Founder, GraphQL Paris' />
           <Speaker speakerName='Amit Rana' speakerImage={data.AmitRana.childImageSharp.fluid.src} speakerBio='Director of Engineering, Myntra' />
+          <Speaker speakerName='Madhu Jahagirdar' speakerImage={data.MadhuJahagirdar.childImageSharp.fluid.src} speakerBio='Principal Architect, Philips' />
+          <Speaker speakerName='Jonathan Jalouzot' speakerImage={data.JonathanJalouzot.childImageSharp.fluid.src} speakerBio='Co-Founder, GraphQL Paris' />
           <Speaker speakerName='Manoj Awasthi' speakerImage={data.ManojAwasthi.childImageSharp.fluid.src} speakerBio='VP of Engineering, Tokopedia' />
           <Speaker speakerName='Adam Miskiewicz' speakerImage={data.AdamMiskiewicz.childImageSharp.fluid.src} speakerBio='Engineer, Airbnb' />
           <Speaker speakerName='Shruti Kapoor' speakerImage={data.ShrutiKapoor.childImageSharp.fluid.src} speakerBio='Software Engineer, Paypal' />
           <Speaker speakerName='Uri Goldshtein' speakerImage={data.UriGoldshtein.childImageSharp.fluid.src} speakerBio='The Guild' />
+          <Speaker speakerName='Tanmai Gopal' speakerImage={data.TanmaiGopal.childImageSharp.fluid.src} speakerBio='Co-Founder, Hasura' />
           <Speaker speakerName='Akanksha Choudhary' speakerImage={data.AkankshaChoudhary.childImageSharp.fluid.src} speakerBio='Full Stack Web Developer' />
           <Speaker speakerName='Andreas Marek' speakerImage={data.AndreasMarek.childImageSharp.fluid.src} speakerBio='Senior Developer, Atlassian' />
           <Speaker speakerName='Carlos Rufo' speakerImage={data.CarlosRufo.childImageSharp.fluid.src} speakerBio='OSS Developer' />
@@ -49,11 +49,11 @@ const LandingSpeaker = ({data}) => {
           <Speaker speakerName='Ivan Goncharov' speakerImage={data.IvanGoncharov.childImageSharp.fluid.src} speakerBio='GraphQL consultant, apis.guru' />
           <Speaker speakerName='Kamlesh Chandnani' speakerImage={data.KamleshChandnani.childImageSharp.fluid.src} speakerBio='Associate Frontend Architect, Treebo Hotels' />
           <Speaker speakerName='Kenju Wagatsuma' speakerImage={data.KenjuWagatsuma.childImageSharp.fluid.src} speakerBio='Software Engineer, Cookpad' />
-          <Speaker speakerName='Madhu Jahagirdar' speakerImage={data.MadhuJahagirdar.childImageSharp.fluid.src} speakerBio='Principal Architect, Philips' />
+          <Speaker speakerName='Tobias Meixner' speakerImage={data.TobiasMeixner.childImageSharp.fluid.src} speakerBio='Co-Founder & CTO, BrikL' />
           <Speaker speakerName='Navya Agarwal' speakerImage={data.NavyaAgarwal.childImageSharp.fluid.src} speakerBio='MTS-II, Adobe' />
           <Speaker speakerName='Tim Griesser' speakerImage={data.TimGriesser.childImageSharp.fluid.src} speakerBio='Senior Software Engineer, cypress.io' />
           <Speaker speakerName='Rajat Khare' speakerImage={data.RajatKhare.childImageSharp.fluid.src} speakerBio='Architect, Intuit' />
-          <Speaker speakerName='Richard Thelkard' speakerImage={data.RichardThelkard.childImageSharp.fluid.src} speakerBio='Sr. Engineer, AWS (Mobile)' />
+          <Speaker speakerName='Richard Threlkeld' speakerImage={data.RichardThrelkeld.childImageSharp.fluid.src} speakerBio='Sr. Engineer, AWS (Mobile)' />
           <Speaker speakerName='Robert Zhu' speakerImage={data.RobertZhu.childImageSharp.fluid.src} speakerBio='AWS' />
           <Speaker speakerName='Sidhartha Chatterjee' speakerImage={data.SidharthaChatterjee.childImageSharp.fluid.src} speakerBio='OSS Maintainer, Gatsby' />
           <Speaker speakerName='Tanay Pratap' speakerImage={data.TanayPratap.childImageSharp.fluid.src} speakerBio='Software Engineer, Microsoft' />
@@ -243,6 +243,13 @@ const query = graphql`
       }
     }
     TanmaiGopal: file(relativePath: { eq: "TanmaiGopal.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 500) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    RichardThrelkeld: file(relativePath: { eq: "RichardThrelkeld.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
