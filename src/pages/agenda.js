@@ -13,9 +13,9 @@ const Speakers = (props) => (
     </Helmet>
     <div id="main" className="alt">
         <section id="one">
-            <div className="inner">
-                <header className="major">
-                    <h1>
+            <div className="inner removePaddBottom">
+                <header className="major removeMarBottom">
+                    <h1 className="removeMarBottom">
                       Agenda
                     </h1>
                 </header>
@@ -328,6 +328,6 @@ export const agendaQuery = graphql`
           ...GatsbyImageSharpFluid
         }
       }
-    }   
+    }
   }
 `
