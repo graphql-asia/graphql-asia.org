@@ -53,17 +53,15 @@ const Venue = (props) => (
                         </div>
                     </div>
                     <br/>
-                    <h3>
-                      3. Building your first Fullstack Serverless App with AWS Amplify
-                    </h3>
+                    <h3>3. Building your first Fullstack Serverless App with AWS Amplify</h3>
                     <div className="grid-wrapper">
                         <div className="col-3">
-                        <span className="image fit"><img src={GerardSans} alt="AppSync" /></span>
+                        <span className="image fit"><img src={GerardSans} alt="Gerard Sans" /></span>
                         </div>
                         <div className="col-9">
                             <strong>Day 2 - 8:30 - 10:00</strong>
                             <p>
-                              In this workshop we will be introducing AWS Amplify a modern toolchain, libraries and UI components to build modern Fullstack Serverless Apps. You will be building a fully featured Application from development to production.
+                            In this workshop we will be introducing AWS Amplify a modern toolchain, libraries and UI components to build modern Fullstack Serverless Apps. You will be building a fully featured Application from development to production.
                             </p>
                         </div>
                     </div>

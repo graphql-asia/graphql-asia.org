@@ -2,7 +2,7 @@ import React from 'react'
 import DigitalOceanLogo from "../assets/images/DO_Logo_horizontal_blue.svg"
 import GithubLogo from "../assets/images/GitHub_Logo.png"
 import TokopediaLogo from "../assets/images/tokopedia.png"
-import AtlassianLogo from "../assets/images/atlassian.png"
+// import AtlassianLogo from "../assets/images/atlassian.png"
 const Sponsors = (props) => (
     <div>
         <h3>
