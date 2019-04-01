@@ -29,8 +29,7 @@ const SpeakerPage = (props) => {
                 <header style={{
                     width: '100%',
                     minHeight: '300px',
-                    display: 'flex',
-                }} className="major">
+                }} className="major workshopDetails">
                     <div className="image workleft" style={{
                         width:'225px',
                         height:'225px',
@@ -84,7 +83,7 @@ const SpeakerPage = (props) => {
                           top: '5px',
                           position: 'absolute',
                       }}
-                      className="pinkCircleSmall"></div>
+                      className="pinkCircleSmall pinkCircleSmall1"></div>
                       </h2>
                       <h3 style={{
                           fontSize: '18px',
