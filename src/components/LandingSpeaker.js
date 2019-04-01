@@ -35,6 +35,7 @@ const Speaker = (props) => {
 const LandingSpeaker = ({data}) => {
   var speakerList = []
   const sortedSpeakers = speakerData.sort((a,b)=>a.sortOrder-b.sortOrder)
+  console.log('sortedSpeakers', sortedSpeakers)
   sortedSpeakers.forEach(speaker => {
     const speakerData =  speaker
     try {
