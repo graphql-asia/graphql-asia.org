@@ -39,12 +39,12 @@ const LandingSpeaker = ({data}) => {
   sortedSpeakers.forEach(speaker => {
     const speakerData =  speaker
     try {
-    if(speakerData.featured===true&&data[speakerData.speakerPicture]){
+    if(speakerData.featured===true&&data[speakerData.speakerPicture+'1']){
       speakerList.push(
       <Speaker 
         speakerId={speakerData.speakerId}
         speakerName={speakerData.speakerName} 
-        speakerImage={data[speakerData.speakerPicture].childImageSharp.fluid.src} 
+        speakerImage={data[speakerData.speakerPicture+'1'].childImageSharp.fluid.src} 
         speakerBio={speakerData.speakerPosition}
       />
     )
@@ -70,203 +70,203 @@ const LandingSpeaker = ({data}) => {
 
 const query = graphql`
   query {
-    LeeByron: file(relativePath: { eq: "LeeByron.jpg" }) {
+    LeeByron1: file(relativePath: { eq: "LeeByron.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    JonathanJalouzot: file(relativePath: { eq: "JonathanJalouzot.png" }) {
+    JonathanJalouzot1: file(relativePath: { eq: "JonathanJalouzot.png" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    LucasMunhoz: file(relativePath: { eq: "LucasMunhoz.jpg" }) {
+    LucasMunhoz1: file(relativePath: { eq: "LucasMunhoz.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    AmitRana: file(relativePath: { eq: "AmitRana.jpeg" }) {
+    AmitRana1: file(relativePath: { eq: "AmitRana.jpeg" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    SashaSolomon: file(relativePath: { eq: "SashaSolomon.jpg" }) {
+    SashaSolomon1: file(relativePath: { eq: "SashaSolomon.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    ManojAwasthi: file(relativePath: { eq: "ManojAwasthi.jpg" }) {
+    ManojAwasthi1: file(relativePath: { eq: "ManojAwasthi.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    AdamMiskiewicz: file(relativePath: { eq: "AdamMiskiewicz.jpg" }) {
+    AdamMiskiewicz1: file(relativePath: { eq: "AdamMiskiewicz.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    ShrutiKapoor: file(relativePath: { eq: "ShrutiKapoor.jpg" }) {
+    ShrutiKapoor1: file(relativePath: { eq: "ShrutiKapoor.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    UriGoldshtein: file(relativePath: { eq: "UriGoldshtein.png" }) {
+    UriGoldshtein1: file(relativePath: { eq: "UriGoldshtein.png" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    AkankshaChoudhary: file(relativePath: { eq: "AkankshaChoudhary.jpg" }) {
+    AkankshaChoudhary1: file(relativePath: { eq: "AkankshaChoudhary.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    AndreasMarek: file(relativePath: { eq: "AndreasMarek.jpeg" }) {
+    AndreasMarek1: file(relativePath: { eq: "AndreasMarek.jpeg" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    CarlosRufo: file(relativePath: { eq: "CarlosRufo.jpg" }) {
+    CarlosRufo1: file(relativePath: { eq: "CarlosRufo.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    EeshTyagi: file(relativePath: { eq: "EeshTyagi.jpg" }) {
+    EeshTyagi1: file(relativePath: { eq: "EeshTyagi.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    IvanGoncharov: file(relativePath: { eq: "IvanGoncharov.jpg" }) {
+    IvanGoncharov1: file(relativePath: { eq: "IvanGoncharov.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    KamleshChandnani: file(relativePath: { eq: "KamleshChandnani.jpg" }) {
+    KamleshChandnani1: file(relativePath: { eq: "KamleshChandnani.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    KenjuWagatsuma: file(relativePath: { eq: "KenjuWagatsuma.jpeg" }) {
+    KenjuWagatsuma1: file(relativePath: { eq: "KenjuWagatsuma.jpeg" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    KiranKumarAbburi: file(relativePath: { eq: "KiranKumarAbburi.jpg" }) {
+    KiranKumarAbburi1: file(relativePath: { eq: "KiranKumarAbburi.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    MadhuJahagirdar: file(relativePath: { eq: "MadhuJahagirdar.jpeg" }) {
+    MadhuJahagirdar1: file(relativePath: { eq: "MadhuJahagirdar.jpeg" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    NavyaAgarwal: file(relativePath: { eq: "NavyaAgarwal.jpg" }) {
+    NavyaAgarwal1: file(relativePath: { eq: "NavyaAgarwal.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    TimGriesser: file(relativePath: { eq: "TimGriesser.jpg" }) {
+    TimGriesser1: file(relativePath: { eq: "TimGriesser.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    RajatKhare: file(relativePath: { eq: "RajatKhare.jpeg" }) {
+    RajatKhare1: file(relativePath: { eq: "RajatKhare.jpeg" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    RichardThelkard: file(relativePath: { eq: "RichardThelkard.jpg" }) {
+    RichardThelkard1: file(relativePath: { eq: "RichardThelkard.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    RobertZhu: file(relativePath: { eq: "RobertZhu.jpg" }) {
+    RobertZhu1: file(relativePath: { eq: "RobertZhu.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    SidharthaChatterjee: file(relativePath: { eq: "SidharthaChatterjee.jpg" }) {
+    SidharthaChatterjee1: file(relativePath: { eq: "SidharthaChatterjee.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    TanayPratap: file(relativePath: { eq: "TanayPratap.jpg" }) {
+    TanayPratap1: file(relativePath: { eq: "TanayPratap.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    TanmaiGopal: file(relativePath: { eq: "TanmaiGopal.jpg" }) {
+    TanmaiGopal1: file(relativePath: { eq: "TanmaiGopal.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    RichardThrelkeld: file(relativePath: { eq: "RichardThrelkeld.jpg" }) {
+    RichardThrelkeld1: file(relativePath: { eq: "RichardThrelkeld.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    TobiasMeixner: file(relativePath: { eq: "tobias-meixner.jpg" }) {
+    TobiasMeixner1: file(relativePath: { eq: "tobias-meixner.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    PeterThomas: file(relativePath: { eq: "PeterThomas.png" }) {
+    PeterThomas1: file(relativePath: { eq: "PeterThomas.png" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
