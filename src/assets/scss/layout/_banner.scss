@@ -356,10 +356,6 @@
 		}
 		.content
 		{
-
-		}
-		.content
-		{
 			margin-bottom: 0 !important;
 			padding-top: 20px !important;
 			p
@@ -395,9 +391,11 @@
 				{
 					font-size: 20px;
 					padding-bottom: 20px;
+					text-align: left;
 				}
 				.actions
 				{
+					text-align: left;
 					li
 					{
 						position: relative;
@@ -477,9 +475,11 @@
 				{
 					font-size: 16px;
 					padding-bottom: 20px;
+					text-align: left;
 				}
 				.actions
 				{
+					text-align: left;
 					li
 					{
 						position: relative;

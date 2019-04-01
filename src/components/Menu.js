@@ -2,19 +2,19 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 
-const Menu = (props) => (
+const Menu = ({props}) => (
     <div id="newmenu">
         <div className="inner">
-            <ul className="links">                
+            <ul className="links">
                 {/* <li className="open" onClick={props.onToggleMenu}><span className="icon alt fa-hamburger"/></li> */}
                 {/* <li className="desktop"><Link  to="/speakers">Speakers</Link></li> */}
-                <li><Link to="/agenda">Agenda</Link></li>                
-                <li><Link to="/venue">Venue</Link></li>
-                <li className="desktop"><Link to="/tickets">Tickets</Link></li>
-                <li><Link to="/workshops">Workshops</Link></li>
+                <li><Link className={ window.location.pathname === '/agenda' ? 'active' : ''} to="/agenda">Agenda</Link></li>
+                <li><Link className={ window.location.pathname === '/venue' ? 'active' : ''} to="/venue">Venue</Link></li>
+                <li className="desktop"><Link className={ window.location.pathname === '/tickets' ? 'active' : ''} to="/tickets">Tickets</Link></li>
+                <li><Link className={ window.location.pathname === '/workshops' ? 'active' : ''} to="/workshops">Workshops</Link></li>
                 {/* <li><a target="_blank" rel="noopener noreferrer" href="https://www.townscript.com/e/graphql-asia-020103/booking">Tickets</a></li>                 */}
-                <li><Link to="/sponsor">Sponsors</Link></li>
-                <li className="desktop"><Link to="#contact-us">Contact</Link></li>
+                <li><Link className={ window.location.pathname === '/sponsor' ? 'active' : ''} to="/sponsor">Sponsors</Link></li>
+                <li className="desktop"><Link className={ window.location.hash === '#contact-us' ? 'active' : ''} to="#contact-us">Contact</Link></li>
             </ul>
             <ul className="actions vertical">
                 {/* <li><a href="#" className="button special fit">Get Started</a></li> */}

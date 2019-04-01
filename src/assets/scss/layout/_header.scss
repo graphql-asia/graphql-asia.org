@@ -10,7 +10,10 @@
 		0% { top: -4em; opacity: 0; }
 		100% { top: 0; opacity: 1; }
 	}
-
+	.active
+	{
+		color: #ff00a9 !important;
+	}
 	.links {
 		text-transform: capitalize;
 		padding-right: 20px;
