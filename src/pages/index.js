@@ -71,7 +71,7 @@ class HomeIndex extends React.Component {
                                       <img style={{
                                           // background: 'white',
                                           // height: '150px',
-                                          width: '100px',
+                                          width: '150px',
                                           objectFit: 'contain',
                                           padding: '.5em'
                                       }} src={hasgeekLogo} alt="HasGeek" />
