@@ -8,8 +8,7 @@ import Sponsors from '../components/Sponsors'
 // import Img from "gatsby-image"
 import { graphql } from 'gatsby'
 import graphqlconfLogo from '../assets/images/graphqlconf-logo-color.png'
-import hasGeek from '../assets/images/HasGeek Logo.svg'
-
+import hasgeekLogo from '../assets/images/hasgeek-logo.png'
 class HomeIndex extends React.Component {
     render() {
 
@@ -68,16 +67,16 @@ class HomeIndex extends React.Component {
                                   <li>
                                       <a style={{
                                           border:'none'
-                                      }} href="https://www.graphqlconf.org/">
+                                      }} href="https://hasgeek.com/">
                                       <img style={{
                                           // background: 'white',
                                           // height: '150px',
-                                          width: '160px',
+                                          width: '150px',
                                           objectFit: 'contain',
                                           padding: '.5em'
-                                      }} src={hasGeek} alt="HasGeek logo" />
+                                      }} src={hasgeekLogo} alt="HasGeek" />
                                       </a>
-                                    </li>
+                                  </li>
                               </ul>
                             </div>
                             <p>

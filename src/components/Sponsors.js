@@ -2,6 +2,7 @@ import React from 'react'
 import DigitalOceanLogo from "../assets/images/DO_Logo_horizontal_blue.svg"
 import GithubLogo from "../assets/images/GitHub_Logo.png"
 import TokopediaLogo from "../assets/images/tokopedia.png"
+import AWSAmplifyLogo from "../assets/images/aws-amplify-logo-large.png"
 // import AtlassianLogo from "../assets/images/atlassian.png"
 const Sponsors = (props) => (
     <div>
@@ -22,6 +23,19 @@ const Sponsors = (props) => (
                 }} src={DigitalOceanLogo} alt="Digital Ocean" />
                 </a>
             </li>
+            <li>
+                <a style={{
+                    border:'none'
+                }} href="https://aws.amazon.com/amplify/">
+                <img style={{
+                    // background: 'white',
+                    height: '65px',
+                    // width: '275px',
+                    objectFit: 'contain',
+                    // padding: '.5em'
+                }} src={AWSAmplifyLogo} alt="AWS Amplify" />
+                </a>
+            </li>            
         </ul>
         <h3>
           Bronze
@@ -34,7 +48,7 @@ const Sponsors = (props) => (
                 <img style={{
                     // background: 'white',
                     // height: '100px',
-                    width: '150px',
+                    width: '110px',
                     objectFit: 'contain',
                     // padding: '.5em'
                 }} src={GithubLogo} alt="Github" />
@@ -47,7 +61,7 @@ const Sponsors = (props) => (
                 <img style={{
                     // background: 'white',
                     // height: '100px',
-                    width: '200px',
+                    width: '170px',
                     objectFit: 'contain',
                     // padding: '.5em'
                 }} src={TokopediaLogo} alt="Tokopedia" />
