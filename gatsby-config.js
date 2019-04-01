@@ -40,6 +40,17 @@ module.exports = {
   },
   plugins: [
     ...productionPlugins,
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Roboto`,
+            
+          },
+        ],
+      },
+    },
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-fullstory`,

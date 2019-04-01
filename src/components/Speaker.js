@@ -25,15 +25,14 @@ class Speaker extends React.Component {
                 {speakerProps.talkTitle}
                 {
                     speakerProps.speakerDescription ?
-                    <a
-                    target="_blank"
+                    <Link
                     className="infoIcon icon"
                     style={{
                         marginLeft: '1em',
                         display: 'inline-block',
-                    }} href={`/speaker/${speakerProps.speakerId}`}>
+                    }} to={`/speaker/${speakerProps.speakerId}`}>
                     <img src={information} alt="icon"/>
-                    </a>
+                    </Link>
                     :null
                 }
                 </h2>
