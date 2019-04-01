@@ -11,7 +11,32 @@
 			text-align: center;
 		}
 	}
-
+	.removePaddBottom
+	{
+		padding-bottom: 0 !important;
+	}
+	.removeMarBottom
+	{
+		margin-bottom: 0 !important;
+	}
+	.pinkCircle
+	{
+		width: 40px;
+		height: 40px;
+		background-color: #e535ab;
+		border-radius: 50%;
+		display: inline-block;
+    margin-right: 8px;
+	}
+	.pinkCircleSmall
+	{
+		width: 20px;
+		height: 20px;
+		background-color: #e535ab;
+		border-radius: 50%;
+		display: inline-block;
+    margin-right: 8px;
+	}
 	header {
 		&.major {
 			width: -moz-max-content;
@@ -29,7 +54,8 @@
 					content: '';
 					background-color: _palette(fg-bold);
 					display: block;
-					height: 2px;
+					// height: 2px;
+					height: 0;
 					margin: 0.325em 0 0.5em 0;
 					width: 100%;
 				}

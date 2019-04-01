@@ -1,23 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
-import GraphlQLAsiaLogo from '../assets/images/GraphlQLAsiaLogo.png'
+import GraphlQLAsiaLogo from '../assets/images/GraphlQLAsiaLogo.jpg'
 import Menu from './Menu'
 const Header = (props) => (
     <header id="header" className="">        
-        <span>GraphQL</span>
-        <Link to="/" className="logo">
-            
-            <img style={{
-                width: '100%',
-                height: '100%',
-                display: 'inline',
-                verticalAlign: 'middle',                                             
-                objectFit: 'contain',
-                padding: '.5vh'
-            }} src={GraphlQLAsiaLogo} alt="GraphQL Asia Logo" />              
+        <span><Link to="/">Home</Link></span>
+        <Link to="/" className="logo">            
+            <img src={GraphlQLAsiaLogo} alt="GraphQL Asia Logo" />              
+            <span> GraphQL Asia </span>
         </Link>
-        <span>Asia</span>          
+        <span><Link to="/tickets">Tickets</Link></span>
         <nav>
             <Menu />
             {/* <a className="menu-link" onClick={props.onToggleMenu} href="javascript:;">Menu</a> */}
