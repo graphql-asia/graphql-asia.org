@@ -52,24 +52,6 @@ class HomeIndex extends React.Component {
                             </header>
                             <div>
                               <ul className="actions">
-                                <li>
-                                    <a style={{
-                                        border:'none'
-                                    }} href="https://www.graphqlconf.org/">
-                                    <img style={{
-                                        // background: 'white',
-                                        // height: '150px',
-                                        width: '200px',
-                                        objectFit: 'contain',
-                                        padding: '.5em'
-                                    }} src={hasGeek} alt="HasGeek logo" />
-                                    </a>
-                                  </li>
-                              </ul>
-                              <h3>
-                                GraphQL Conf, Berlin, June 20-21 2019
-                              </h3>
-                              <ul className="actions">
                                   <li>
                                       <a style={{
                                           border:'none'
@@ -83,6 +65,19 @@ class HomeIndex extends React.Component {
                                       }} src={graphqlconfLogo} alt="Graphql Conf" />
                                       </a>
                                   </li>
+                                  <li>
+                                      <a style={{
+                                          border:'none'
+                                      }} href="https://www.graphqlconf.org/">
+                                      <img style={{
+                                          // background: 'white',
+                                          // height: '150px',
+                                          width: '160px',
+                                          objectFit: 'contain',
+                                          padding: '.5em'
+                                      }} src={hasGeek} alt="HasGeek logo" />
+                                      </a>
+                                    </li>
                               </ul>
                             </div>
                             <p>

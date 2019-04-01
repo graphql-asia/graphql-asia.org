@@ -28,11 +28,13 @@ const SpeakerPage = (props) => {
             <div className="inner">
                 <header style={{
                     width: '100%',
-                    minHeight: '300px'
+                    minHeight: '300px',
+                    display: 'flex',
                 }} className="major">
-                    <div className="image left" style={{
-                        width:'100%',
-                        height:'100%',
+                    <div className="image workleft" style={{
+                        width:'225px',
+                        height:'225px',
+                        minWidth: '225px',
                         objectFit: 'cover',
                         maxWidth: '300px',
                     }}>
@@ -48,23 +50,25 @@ const SpeakerPage = (props) => {
                       <h1
                       style={{
                           margin: '0',
+                          paddingTop: '50px',
                       }}
                       >{speakerName}
-                      {
-                          props.pageContext.twitter ?
-                          <a style={{
-                              textIndent: '-1000px',
-                              paddingLeft: '20px',
-                              fontSize: '26px',
-                          }} rel="noopener noreferrer" target="_blank" href={`https://twitter.com/${props.pageContext.twitter}`} className="fa-twitter icon">&nbsp;</a>
-                          :null
-                      }
+
                       </h1>
                       <h3 style={{
                           fontSize: '18px',
                       }}>{props.pageContext.speakerPosition}</h3>
+                      {
+                          props.pageContext.twitter ?
+                          <a style={{
+                              textIndent: '-1000px',
+                              fontSize: '26px',
+                          }} rel="noopener noreferrer" target="_blank" href={`https://twitter.com/${props.pageContext.twitter}`} className="fa-twitter icon">&nbsp;</a>
+                          :null
+                      }
                       <h2 style={{
                           fontSize: '18px',
+                          color: '#e535ab',
                       }}>About</h2>
                       <p>
                       {props.pageContext.speakerDescription}
@@ -72,7 +76,16 @@ const SpeakerPage = (props) => {
                       {/* <p>Day {props.pageContext.day} at {props.pageContext.time}</p> */}
                       <h2 style={{
                           fontSize: '18px',
-                      }}>Talk</h2>
+                          color: '#e535ab',
+                          position: 'relative',
+                      }}>Workshop
+                      <div style={{
+                          left: '-40px',
+                          top: '5px',
+                          position: 'absolute',
+                      }}
+                      className="pinkCircleSmall"></div>
+                      </h2>
                       <h3 style={{
                           fontSize: '18px',
                       }}>{props.pageContext.talkTitle}</h3>

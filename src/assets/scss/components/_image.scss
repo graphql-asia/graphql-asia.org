@@ -34,7 +34,15 @@
 			margin: 0 1.5em 1.25em 0;
 			top: 0.25em;
 		}
-
+		&.workleft
+		{
+			margin: 0 35px 1.25em 0;
+			top: 0.25em;
+			img
+			{
+				border-radius: 50%;
+			}
+		}
 		&.right {
 			float: right;
 			margin: 0 0 1.25em 1.5em;

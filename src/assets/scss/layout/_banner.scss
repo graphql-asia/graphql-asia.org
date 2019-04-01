@@ -176,9 +176,14 @@
 						letter-spacing: _font(letter-spacing-normal);
 						line-height: _font(line-height);
 						height: auto;
+						box-shadow: inset 0 0 0 2px _palette(bg);
 						padding: 14px 30px;
 						padding-right: 4.5em;
 						border-radius: 40px;
+						&:hover, &:active {
+							box-shadow: inset 0 0 0 2px _palette(highlight);
+							color: _palette(highlight);
+						}
 						&:before {
 							background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36px" height="24px" viewBox="0 0 36 24" zoomAndPan="disable"><style>line { stroke: #{_palette(fg-btn-bold)}; stroke-width: 2px; }</style><line x1="0" y1="12" x2="34" y2="12" /><line x1="25" y1="4" x2="34" y2="12.5" /><line x1="25" y1="20" x2="34" y2="11.5" /></svg>');
 						}
@@ -536,7 +541,7 @@
 			}
 			.speakerProfile
 			{
-				margin-top: 46px;
+				margin-top: 10px;
 				.profileWrapper
 				{
 					display: flex;
@@ -571,7 +576,6 @@
 				}
 				.profielBio
 				{
-					margin-top: 8px;
 			    font-size: 16px;
 			    line-height: 1.45;
 			    color: #000;
