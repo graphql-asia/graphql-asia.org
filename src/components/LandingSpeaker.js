@@ -34,12 +34,11 @@ const Speaker = (props) => {
 };
 const LandingSpeaker = ({data}) => {
   var speakerList = []
-  const sortedSpeakers = speakerData.sort((a,b)=>a.sortOrder-b.sortOrder)
-  console.log('sortedSpeakers', sortedSpeakers)
+  const sortedSpeakers = speakerData.filter((v=>v.featured===true)).sort((a,b)=>a.sortOrder-b.sortOrder)  
   sortedSpeakers.forEach(speaker => {
     const speakerData =  speaker
     try {
-    if(speakerData.featured===true&&data[speakerData.speakerPicture+'1']){
+    if(data[speakerData.speakerPicture+'1']){
       speakerList.push(
       <Speaker 
         speakerId={speakerData.speakerId}
