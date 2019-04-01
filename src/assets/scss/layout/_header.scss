@@ -227,7 +227,12 @@
 
 		@include breakpoint(small) {
 			height: 2.75em;
-			line-height: 2.75em;
+			// line-height: 2.75em;
+			#newmenu
+			{
+				background-color: _palette(fg);
+				border-top: 1px solid #ccc;
+			}
 			.inner{
 				margin: 0 auto;
 			}
@@ -249,11 +254,19 @@
 				background: _palette(bg-alt);
 				width: 100%;
 				text-align: center;
+				.links
+				{
+					li
+					{
+						padding: 0 10px;
+					}
+				}
 				a {
 					padding: 0 0.5em;
-
+					color: _palette(bg-alt);
 					&:last-child {
-						padding-right: 1em;
+						padding-right: 0;
+						font-size: 15px;
 					}
 
 					&.menu-link {

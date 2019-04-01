@@ -3,18 +3,18 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import Img from "gatsby-image"
 
-const SpeakerPage = (props) => {    
+const SpeakerPage = (props) => {
     var speakerName = ''
     var speakerPicture = null
     try {
     speakerPicture = props.data[props.pageContext.speakerPicture].childImageSharp.fluid
     } catch (error) {
-    
+
     }
     try {
         speakerName = props.pageContext.speakerName
     } catch (error) {
-        
+
     }
     console.log(speakerPicture)
     return(
@@ -30,52 +30,63 @@ const SpeakerPage = (props) => {
                     width: '100%',
                     minHeight: '300px'
                 }} className="major">
-                    <span className="image left" style={{
+                    <div className="image left" style={{
                         width:'100%',
                         height:'100%',
                         objectFit: 'cover',
-                        maxWidth: '300px',                        
+                        maxWidth: '300px',
                     }}>
                     {
                         speakerPicture ?
-                        <Img style={{                               
-                            
+                        <Img style={{
+
                         }} fluid={speakerPicture} alt={speakerName} />
                         :null
-                    }                    
-                    </span>
-                    <h1
-                    style={{
-                        margin: 0
-                    }}
-                    >{speakerName}                                        
-                    </h1>            
-                    <h3 style={{
-                        margin: 0                     
-                    }}>{props.pageContext.speakerPosition}</h3>
-                    {
-                        props.pageContext.twitter ?
-                        <a style={{
-                            textIndent: '-1000px'
-                        }} rel="noopener noreferrer" target="_blank" href={`https://twitter.com/${props.pageContext.twitter}`} className="fa-twitter icon">&nbsp;</a>                         
-                        :null
-                    }                    
+                    }
+                    </div>
+                    <div>
+                      <h1
+                      style={{
+                          margin: '0',
+                      }}
+                      >{speakerName}
+                      {
+                          props.pageContext.twitter ?
+                          <a style={{
+                              textIndent: '-1000px',
+                              paddingLeft: '20px',
+                              fontSize: '26px',
+                          }} rel="noopener noreferrer" target="_blank" href={`https://twitter.com/${props.pageContext.twitter}`} className="fa-twitter icon">&nbsp;</a>
+                          :null
+                      }
+                      </h1>
+                      <h3 style={{
+                          fontSize: '18px',
+                      }}>{props.pageContext.speakerPosition}</h3>
+                      <h2 style={{
+                          fontSize: '18px',
+                      }}>About</h2>
+                      <p>
+                      {props.pageContext.speakerDescription}
+                      </p>
+                      {/* <p>Day {props.pageContext.day} at {props.pageContext.time}</p> */}
+                      <h2 style={{
+                          fontSize: '18px',
+                      }}>Talk</h2>
+                      <h3 style={{
+                          fontSize: '18px',
+                      }}>{props.pageContext.talkTitle}</h3>
+                      <div>{props.pageContext.talkAbstract}</div>
+                    </div>
                     </header>
-                    
+
                     <div style={{
                         clear:'both'
                         }} />
-                    <h2>About</h2>
-                    <p>
-                    {props.pageContext.speakerDescription}
-                    </p>
-                    {/* <p>Day {props.pageContext.day} at {props.pageContext.time}</p> */}
-                    <h2>Talk</h2>                    
-                    <h3>{props.pageContext.talkTitle}</h3>                    
-                    <div>{props.pageContext.talkAbstract}</div>
+
             </div>
         </section>
-        
+
     </div>
   </Layout >
 )
@@ -150,7 +161,7 @@ export const query1 = graphql`
           ...GatsbyImageSharpFluid
         }
       }
-    }    
+    }
     DigitalOcean: file(relativePath: { eq: "DO.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
@@ -297,7 +308,7 @@ export const query1 = graphql`
           ...GatsbyImageSharpFluid
         }
       }
-    }    
+    }
     RajatKhare: file(relativePath: { eq: "RajatKhare.jpeg" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
@@ -377,4 +388,3 @@ export const query1 = graphql`
     }
   }
 `
-
