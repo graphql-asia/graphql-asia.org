@@ -25,10 +25,10 @@ const Venue = (props) => (
                       1. Intro to GraphQL and Advanced GraphQL concepts
                     </h3>
                     <div className="grid-wrapper">
-                        <div className="col-3">
-                        <span className="image fit"><img src={Kiran} alt="Kiran" /></span>
+                        <div className="col-2">
+                        <span className="image smallImg"><img src={Kiran} alt="Kiran" /></span>
                         </div>
-                        <div className="col-9">
+                        <div className="col-10">
                             <strong>Day 1 - 8:30 - 10:00</strong>
                             <p>
                                 Kiran Kumar Abburi, Co-Organiser of React Bangalore, will be giving you an introduction to GraphQL and advanced concepts of GraphQL.
@@ -42,10 +42,10 @@ const Venue = (props) => (
                       2. React + GraphQL using Apollo Client and Typescript
                     </h3>
                     <div className="grid-wrapper">
-                        <div className="col-3">
-                        <span className="image fit"><img src={LucasMunhoz} alt="Lucas Munhoz" /></span>
+                        <div className="col-2">
+                        <span className="image smallImg"><img src={LucasMunhoz} alt="Lucas Munhoz" /></span>
                         </div>
-                        <div className="col-9">
+                        <div className="col-10">
                         <strong>Day 1 - 1:30 - 3:00</strong>
                             <p>
                               Lucas Munhoz, full-stack developer and organiser of GraphQL Bangkok meetup, will be teaching you on getting started with React and GraphQL using Apollo Client.
@@ -58,10 +58,10 @@ const Venue = (props) => (
                     <br/>
                     <h3>3. Building your first Fullstack Serverless App with AWS Amplify</h3>
                     <div className="grid-wrapper">
-                        <div className="col-3">
-                        <span className="image fit"><img src={GerardSans} alt="Gerard Sans" /></span>
+                        <div className="col-2">
+                        <span className="image smallImg"><img src={GerardSans} alt="Gerard Sans" /></span>
                         </div>
-                        <div className="col-9">
+                        <div className="col-10">
                             <strong>Day 2 - 8:30 - 10:00</strong>
                             <p>
                             Gerard Sans will be introducing AWS Amplify, a modern toolchain, libraries and UI components to build modern Fullstack Serverless Apps. You will be building a fully featured application from development to production.
@@ -72,10 +72,10 @@ const Venue = (props) => (
                       4. Building realtime application with GraphQL subscriptions using Hasura
                     </h3>
                     <div className="grid-wrapper">
-                        <div className="col-3">
-                        <span className="image fit"><img src={Hasura} alt="Hasura" /></span>
+                        <div className="col-2">
+                        <span className="image smallImg"><img src={Hasura} alt="Hasura" /></span>
                         </div>
-                        <div className="col-9">
+                        <div className="col-10">
                         <strong>Day 2 - 1:30 - 3:00</strong>
                             <p>
                                 In this workshop you will be building realtime applications with GraphQL subscriptions using Hasura.

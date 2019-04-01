@@ -15,7 +15,7 @@
 			max-width: 100%;
 			height: auto;
 		}
-		
+
 		img {
 			display: block;
 		}
@@ -34,7 +34,15 @@
 			margin: 0 1.5em 1.25em 0;
 			top: 0.25em;
 		}
-
+		&.workleft
+		{
+			margin: 0 35px 1.25em 25px;
+			top: 0.25em;
+			img
+			{
+				border-radius: 50%;
+			}
+		}
 		&.right {
 			float: right;
 			margin: 0 0 1.25em 1.5em;
@@ -50,7 +58,17 @@
 				width: 100%;
 			}
 		}
-
+		&.smallImg
+		{
+			padding: 15px;
+			padding-top: 0;
+			img
+			{
+				width: 100px;
+				height: 100px;
+				border-radius: 50%;
+			}
+		}
 		&.main {
 			display: block;
 			margin: (_size(element-margin) * 1.25) 0;

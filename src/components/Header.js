@@ -4,10 +4,10 @@ import { Link } from 'gatsby'
 import GraphlQLAsiaLogo from '../assets/images/GraphlQLAsiaLogo.jpg'
 import Menu from './Menu'
 const Header = (props) => (
-    <header id="header" className="">        
+    <header id="header" className="">
         <span><Link to="/">Home</Link></span>
-        <Link to="/" className="logo">            
-            <img src={GraphlQLAsiaLogo} alt="GraphQL Asia Logo" />              
+        <Link to="/" className="logo">
+            <img src={GraphlQLAsiaLogo} alt="GraphQL Asia Logo" />
             <span> GraphQL Asia </span>
         </Link>
         <span><Link to="/tickets">Tickets</Link></span>

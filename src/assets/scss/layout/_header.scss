@@ -10,7 +10,10 @@
 		0% { top: -4em; opacity: 0; }
 		100% { top: 0; opacity: 1; }
 	}
-
+	.active
+	{
+		color: #ff00a9 !important;
+	}
 	.links {
 		text-transform: capitalize;
 		padding-right: 20px;
@@ -224,7 +227,20 @@
 
 		@include breakpoint(small) {
 			height: 2.75em;
-			line-height: 2.75em;
+			// line-height: 2.75em;
+			#newmenu
+			{
+				background-color: _palette(fg);
+				border-top: 1px solid #ccc;
+				.inner
+				{
+					width: 100%;
+					ul li
+					{
+						flex: none;
+					}
+				}
+			}
 			.inner{
 				margin: 0 auto;
 			}
@@ -246,11 +262,24 @@
 				background: _palette(bg-alt);
 				width: 100%;
 				text-align: center;
+				.links
+				{
+					padding-bottom: 20px;
+					text-align: center;
+					justify-content: center;
+					padding-left: 0;
+					padding-right: 0;
+					li
+					{
+						padding: 0 10px;
+					}
+				}
 				a {
 					padding: 0 0.5em;
-
+					color: _palette(bg-alt);
 					&:last-child {
-						padding-right: 1em;
+						padding-right: 0;
+						font-size: 13px;
 					}
 
 					&.menu-link {
