@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import Img from "gatsby-image"
+import{Link} from 'gatsby'
 
 const SpeakerPage = (props) => {
     var speakerName = ''
@@ -77,7 +78,11 @@ const SpeakerPage = (props) => {
                           fontSize: '18px',
                           color: '#e535ab',
                           position: 'relative',
-                      }}>Workshop
+                      }}>
+                      {
+                        props.pageContext.type==='workshop'?
+                        'Workshop':'Talk'
+                      }
                       <div style={{
                           left: '-40px',
                           top: '5px',
@@ -89,7 +94,9 @@ const SpeakerPage = (props) => {
                           fontSize: '18px',
                       }}>{props.pageContext.talkTitle}</h3>
                       <div>{props.pageContext.talkAbstract}</div>
-                    </div>
+                      <h4>Timings: {props.pageContext.time} (Day {props.pageContext.day})</h4>
+                      <p>&lt; <Link to="/agenda">Back to agenda page</Link></p>
+                    </div>                    
                     </header>
 
                     <div style={{
