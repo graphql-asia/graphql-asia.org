@@ -232,9 +232,18 @@
 			{
 				background-color: _palette(fg);
 				border-top: 1px solid #ccc;
+				.inner
+				{
+					width: 100%;
+					ul li
+					{
+						flex: none;
+					}
+				}
 			}
 			.inner{
 				margin: 0 auto;
+
 			}
 			> span {
 				color: #000;
@@ -257,6 +266,8 @@
 				.links
 				{
 					padding-bottom: 20px;
+					text-align: center;
+					justify-content: center;
 					li
 					{
 						padding: 0 10px;
@@ -267,7 +278,7 @@
 					color: _palette(bg-alt);
 					&:last-child {
 						padding-right: 0;
-						font-size: 15px;
+						font-size: 16px;
 					}
 
 					&.menu-link {
