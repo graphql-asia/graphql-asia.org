@@ -8,6 +8,7 @@ import Sponsors from '../components/Sponsors'
 // import Img from "gatsby-image"
 import { graphql } from 'gatsby'
 import graphqlconfLogo from '../assets/images/graphqlconf-logo-color.png'
+import hasGeek from '../assets/images/HasGeek Logo.svg'
 
 class HomeIndex extends React.Component {
     render() {
@@ -50,6 +51,21 @@ class HomeIndex extends React.Component {
                                 </h2>
                             </header>
                             <div>
+                              <ul className="actions">
+                                <li>
+                                    <a style={{
+                                        border:'none'
+                                    }} href="https://www.graphqlconf.org/">
+                                    <img style={{
+                                        // background: 'white',
+                                        // height: '150px',
+                                        width: '200px',
+                                        objectFit: 'contain',
+                                        padding: '.5em'
+                                    }} src={hasGeek} alt="HasGeek logo" />
+                                    </a>
+                                  </li>
+                              </ul>
                               <h3>
                                 GraphQL Conf, Berlin, June 20-21 2019
                               </h3>
