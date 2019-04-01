@@ -49,7 +49,7 @@ class HomeIndex extends React.Component {
                                   Partners
                                 </h2>
                             </header>
-                            <div>                              
+                            <div>
                               <ul className="actions">
                                   <li>
                                       <a style={{

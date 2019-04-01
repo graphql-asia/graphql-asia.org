@@ -5,7 +5,10 @@
 ///
 
 /* Spotlights */
-
+	.workshopDetails
+	{
+		display: flex;
+	}
 	.spotlights {
 		border-top: 0 !important;
 		width: 50%;
@@ -150,6 +153,7 @@
 				font-size: 100%;
 				font-weight: bold;
 				display: flex;
+				font-size: 18px;
 			}
 			.talkAbstract{
 				font-size: 80%;
@@ -166,7 +170,7 @@
 				display: block;
 				position: relative;
 				width: 30%;
-
+				padding-bottom: 10px;
 				img, .placeholder {
 					border-radius: 0;
 					display: block;
@@ -323,6 +327,10 @@
 		}
 
 		@include breakpoint(small) {
+			.workshopDetails
+			{
+				display: block;
+			}
 			width: 100%;
 			float: none;
 			> section {
@@ -345,6 +353,16 @@
 	}
 }
 @media screen and (max-width: 480px) {
+	.workshopDetails
+	{
+		display: block;
+		text-align: center;
+	}
+	.pinkCircleSmall1
+	{
+		left: 10px;
+		display: none;
+	}
 	.spotlights
 	{
 		.agendaItem {
