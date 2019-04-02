@@ -14,10 +14,12 @@
 */
 @font-face {
 	font-family: 'MyFutura';
+	font-display: auto;
 	src: url('../fonts/FuturaBold.otf') format("opentype");
 }
 @font-face {
 	font-family: 'MyFuturaSemi';
+	font-display: auto;
 	src: url('../fonts/Futura-Medium.otf') format("opentype");
 }
 	@include skel-breakpoints((
