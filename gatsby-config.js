@@ -48,6 +48,10 @@ module.exports = {
             family: `Roboto`,
             
           },
+          {
+            family: `Nunito`,
+            variants: [`400`,`800`,`800i`,`900`,`900i`]
+          }
         ],
       },
     },

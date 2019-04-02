@@ -83,8 +83,8 @@
           "day":1
         },
         {          
-          "speakerPicture": "Coffee",
-          "speakerName": "Coffee break",
+          "speakerPicture": "Break",
+          "speakerName": "Break",
           "speakerId": "break-2-day-1",
           "isLightningTalk":false,
           "time":"12:00 - 12:10",
@@ -229,7 +229,7 @@
           "speakerDescription":"",
           "speakerPosition":"Senior Software Engineer, Twitter",
           "type":"talk",
-          "talkTitle":"Error handling with GraphQL",
+          "talkTitle":"200 OK! Error Handling in GraphQL",
           "featured": true,
           "sortOrder": 20,
           "twitter":"sachee",
@@ -271,8 +271,8 @@
           "day":1
         },    
         {          
-          "speakerPicture": "Coffee",
-          "speakerName": "Coffee break",
+          "speakerPicture": "Break",
+          "speakerName": "Break",
           "speakerId": "break-3-day-1",
           "isLightningTalk":false,
           "time":"17:00 - 17:10",
@@ -403,8 +403,8 @@
           "day":2
         },  
         {          
-          "speakerPicture": "Coffee",
-          "speakerName": "Coffee break",
+          "speakerPicture": "Break",
+          "speakerName": "Break",
           "speakerId": "break-0-day-2",
           "isLightningTalk":false,
           "time":"12:00 - 12:10",
@@ -584,8 +584,8 @@
           "day":2
         },
         {          
-          "speakerPicture": "Coffee",
-          "speakerName": "Coffee break",
+          "speakerPicture": "Break",
+          "speakerName": "Break",
           "speakerId": "break-4-day-2",
           "isLightningTalk":false,
           "time":"16:30 - 16:40",

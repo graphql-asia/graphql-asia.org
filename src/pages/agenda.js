@@ -90,6 +90,14 @@ export const agendaQuery = graphql`
         }
       }
     }
+
+    Break: file(relativePath: { eq: "Break.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 200) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
     # https://unsplash.com/photos/Ww8eQWjMJWk
     Lunch: file(relativePath: { eq: "lunch.jpg" }) {
       childImageSharp {
