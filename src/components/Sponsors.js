@@ -3,7 +3,7 @@ import DigitalOceanLogo from "../assets/images/DO_Logo_horizontal_blue.svg"
 import GithubLogo from "../assets/images/GitHub_Logo.png"
 import TokopediaLogo from "../assets/images/tokopedia.png"
 import AWSAmplifyLogo from "../assets/images/aws-amplify-logo-large.png"
-// import AtlassianLogo from "../assets/images/atlassian.png"
+import AtlassianLogo from "../assets/images/atlassian.png"
 const Sponsors = (props) => (
     <div>
         <h3>
@@ -67,21 +67,20 @@ const Sponsors = (props) => (
                 }} src={TokopediaLogo} alt="Tokopedia" />
                 </a>
             </li>
-            {/*
+            
             <li>
                 <a style={{
                     border:'none'
                 }} href="https://www.atlassian.com/">
                 <img style={{
                     background: 'white',
-                    height: '100px',
-                    width: '100px',
+                    height: '47px',                    
                     objectFit: 'contain',
                     padding: '.5em'
                 }} src={AtlassianLogo} alt="Atlassian" />
                 </a>
             </li>
-            */}
+           
         </ul>
     </div>
 )
