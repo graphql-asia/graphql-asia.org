@@ -9,6 +9,7 @@ import Sponsors from '../components/Sponsors'
 import { graphql } from 'gatsby'
 import graphqlconfLogo from '../assets/images/graphqlconf-logo-color.png'
 import hasgeekLogo from '../assets/images/hasgeek-logo.png'
+import sheroes from '../assets/images/sheroes.png';
 class HomeIndex extends React.Component {
     render() {
 
@@ -75,6 +76,19 @@ class HomeIndex extends React.Component {
                                           objectFit: 'contain',
                                           padding: '.5em'
                                       }} src={hasgeekLogo} alt="HasGeek" />
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a style={{
+                                          border:'none'
+                                      }} href="https://sheroes.com/">
+                                      <img style={{
+                                          // background: 'white',
+                                          // height: '150px',
+                                          width: '170px',
+                                          objectFit: 'contain',
+                                          padding: '.5em'
+                                      }} src={sheroes} alt="Sheroes" />
                                       </a>
                                   </li>
                               </ul>
