@@ -57,6 +57,8 @@ const SpeakerPage = (props) => {
                       </h1>
                       <h3 style={{
                           fontSize: '18px',
+                          color: "#777",
+                          textTransform: 'uppercase',
                       }}>{props.pageContext.speakerPosition}</h3>
                       {
                           props.pageContext.twitter ?
@@ -69,6 +71,7 @@ const SpeakerPage = (props) => {
                       <h2 style={{
                           fontSize: '18px',
                           color: '#e535ab',
+                          textTransform: 'uppercase',
                       }}>About</h2>
                       <p>
                       {props.pageContext.speakerDescription}
@@ -78,6 +81,7 @@ const SpeakerPage = (props) => {
                           fontSize: '18px',
                           color: '#e535ab',
                           position: 'relative',
+                          textTransform: 'uppercase',
                       }}>
                       {
                         props.pageContext.type==='workshop'?
@@ -93,9 +97,9 @@ const SpeakerPage = (props) => {
                       <h3 style={{
                           fontSize: '18px',
                       }}>{props.pageContext.talkTitle}</h3>
-                      <div>{props.pageContext.talkAbstract}</div>
-                      <h4>Timings: {props.pageContext.time} (Day {props.pageContext.day})</h4>
-                      <p>&lt; <Link to="/agenda">Back to agenda page</Link></p>
+                      <p>{props.pageContext.talkAbstract}</p>
+                      <h5>Timings: {props.pageContext.time} (Day {props.pageContext.day})</h5>
+                      <p>&lt; <Link to="/agenda">Back to Agenda page</Link></p>
                     </div>                    
                     </header>
 
