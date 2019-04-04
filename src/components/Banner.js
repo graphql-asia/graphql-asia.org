@@ -18,8 +18,9 @@ const Banner = (props) => (
           </div>
         </div>
         <div className="inner">
+            <div className="presents"><a href="https://hasura.io/">Hasura</a> & <a href="https://www.brikl.io/">Brikl</a> present:</div>
             <header className="major">
-                <h1>GraphQL Asia 2019</h1>
+                <h1>GraphQL Asia <br/>2019</h1>
                 <h2>
                   BENGALURU
                   <div className="whiteCircle">
