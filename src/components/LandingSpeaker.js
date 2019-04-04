@@ -272,6 +272,13 @@ const query = graphql`
         }
       }
     }
+    ShawnSwyxWang1: file(relativePath: { eq: "ShawnSwyxWang.jpeg" }) {
+      childImageSharp {
+        fluid(maxWidth: 500) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }    
   }
 `
 
