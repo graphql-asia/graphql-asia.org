@@ -48,9 +48,9 @@
 	    right: 20px;
 	    top: 65px;
 			font-family: _font(family-fixed);
-			font-size: 20px;
+			font-size: 16px;
 			font-weight: _font(weight-bold);
-			text-align: center;
+			text-align: right;
 			color: _palette(bg);
 			.datetile
 			{
@@ -66,7 +66,7 @@
 					width: 14px;
 					height: 14px;
 					right: 0;
-					top: 35px;
+					top: 30px;
 				}
 			}
 		}
@@ -209,9 +209,10 @@
 					// font-size: 0.7em;
 					font-family: _font(family-fixed);
 					// font-weight: _font(weight-bold);
-					font-weight: _font(weight-bold);
+					font-weight: _font(weight-semi-bold);
 					line-height: _font(line-height);
-					font-size: 30px;
+					padding-top: 30px;
+					font-size: 24px;
 					padding-bottom: 20px;
 					color: _palette(bg);
 					// letter-spacing: _font(letter-spacing-alt);
@@ -409,6 +410,7 @@
 					font-size: 20px;
 					padding-bottom: 20px;
 					text-align: left;
+					padding-top: 0;
 				}
 				.actions
 				{
@@ -460,7 +462,7 @@
 			{
 				width: 15px;
 		    height: 15px;
-		    left: 100px;
+		    left: 120px;
 		    top: 20px;
 			}
 		}
