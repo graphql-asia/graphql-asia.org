@@ -40,7 +40,7 @@
 			position: absolute;
 			z-index: 100;
 	    right: 20px;
-	    top: 60px;
+	    top: 65px;
 			font-family: _font(family-fixed);
 			font-size: 20px;
 			font-weight: _font(weight-bold);
@@ -88,7 +88,7 @@
 		h1 {
 			// font-size: 3.25em;
 			font-size: 100px;
-			font-family: 'MyFutura', sans-serif;
+			font-family: _font(family);
 			font-weight: _font(weight-bold);
 			line-height: 110px;
 			text-transform: _font(text-transform);
@@ -96,7 +96,7 @@
 		}
 		h2 {
 			font-size: 64px;
-			font-family: 'MyFuturaSemi', sans-serif;
+			font-family: _font(family);
 			font-weight: _font(weight-semi-bold);
 			margin-bottom: 40px;
 			position: relative;
