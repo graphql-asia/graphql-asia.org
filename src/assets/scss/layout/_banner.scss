@@ -21,7 +21,7 @@
 		@include vendor('align-items', 'center');
 		// @include vendor('background-image', 'url("../images/bengaluru-castle.png")');
 		@include vendor('display', 'flex');
-		@include padding(4em, 0, (2em, 0, 0, 0));
+		@include padding(0em, 0, (0em, 0, 0, 0));
 		background-attachment: fixed;
 		background-position: center;
 		background-repeat: no-repeat;
@@ -35,16 +35,41 @@
 		min-height: 22em;
 		position: relative;
 		top: -3.25em;
+		.inner
+		{
+			margin: 0 0 !important;
+			max-width: 100% !important;
+			width: 100% !important;
+		}
+		.presents
+		{
+			padding-top: 0px;
+	    padding-left: 25px;
+	    color: _palette(bg);
+			font-size: 16px;
+			font-family: _font(family);
+			font-weight: _font(weight-bold-semi);
+			z-index: 10000;
+			padding-top: 30px;
+			a
+			{
+				border-bottom: 1px dotted #fff;
+			}
+			a:hover
+			{
+				color: #fff !important;
+			}
+		}
 		.datedisplay
 		{
 			position: absolute;
 			z-index: 100;
 	    right: 20px;
-	    top: 60px;
+	    top: 65px;
 			font-family: _font(family-fixed);
-			font-size: 20px;
+			font-size: 16px;
 			font-weight: _font(weight-bold);
-			text-align: center;
+			text-align: right;
 			color: _palette(bg);
 			.datetile
 			{
@@ -60,7 +85,7 @@
 					width: 14px;
 					height: 14px;
 					right: 0;
-					top: 35px;
+					top: 30px;
 				}
 			}
 		}
@@ -88,19 +113,23 @@
 		h1 {
 			// font-size: 3.25em;
 			font-size: 100px;
-			font-family: 'MyFutura', sans-serif;
+			font-family: _font(family);
 			font-weight: _font(weight-bold);
-			line-height: 110px;
+			line-height: 100px;
 			text-transform: _font(text-transform);
 			color: _palette(bg);
+			padding-left: 20px;
+			z-index: -1;
+			padding-top: 15px;
 		}
 		h2 {
 			font-size: 64px;
-			font-family: 'MyFuturaSemi', sans-serif;
+			font-family: _font(family);
 			font-weight: _font(weight-semi-bold);
 			margin-bottom: 40px;
 			position: relative;
 			color: _palette(bg);
+			padding-left: 20px;
 			.whiteCircle
 			{
 				width: 40px;
@@ -201,9 +230,10 @@
 					// font-size: 0.7em;
 					font-family: _font(family-fixed);
 					// font-weight: _font(weight-bold);
-					font-weight: _font(weight-bold);
+					font-weight: _font(weight-semi-bold);
 					line-height: _font(line-height);
-					font-size: 30px;
+					padding-top: 30px;
+					font-size: 24px;
 					padding-bottom: 20px;
 					color: _palette(bg);
 					// letter-spacing: _font(letter-spacing-alt);
@@ -296,7 +326,13 @@
 
 @media screen and (max-width: 1680px) {
 	#banner {
+		.presents
+		{
+			padding-top: 50px;
+		}
 		> .inner {
+			margin: 0 0 !important;
+			max-width: 100% !important;
 			.datedisplay {
 				top: -35px;
     	right: -100px;
@@ -317,7 +353,7 @@
 @media screen and (max-width: 1020px) {
 	#banner.major
 	{
-		min-height: 26em;
+		min-height: 32em;
 	}
 	#banner {
 		h1 {
@@ -328,10 +364,10 @@
 			font-size: 1.5em;
 			.whiteCircle
 			{
-				top: 25px;
+				top: 30px;
 				width: 25px;
 				height: 25px;
-				left: 150px
+				left: 165px
 			}
 		}
 	}
@@ -341,11 +377,11 @@
 		height: 30em;
     min-height: 30em;
     max-height: none;
-		padding: 5em 0 4em 0;
+		padding: 5em 0 0em 0;
 	}
 	#banner {
 		h1 {
-			padding-top: 50px;
+			padding-top: 5px;
 			line-height: normal;
 			font-size: 2.5em;
 		}
@@ -355,14 +391,15 @@
 			{
 				width: 25px;
 		    height: 25px;
-		    left: 145px;
-		    top: 27px;
+		    left: 165px;
+		    top: 30px;
 			}
 		}
 		.content
 		{
 			margin-bottom: 0 !important;
 			padding-top: 20px !important;
+			padding-left: 20px !important;
 			p
 			{
 				padding-bottom: 0;
@@ -398,6 +435,7 @@
 					font-size: 20px;
 					padding-bottom: 20px;
 					text-align: left;
+					padding-top: 0;
 				}
 				.actions
 				{
@@ -431,7 +469,7 @@
 		height: 28em;
     min-height: 28em;
     max-height: none;
-		padding: 5em 0 4em 0;
+		padding: 5em 0 0 0;
 	}
 	header.major
 	{
@@ -449,7 +487,7 @@
 			{
 				width: 15px;
 		    height: 15px;
-		    left: 100px;
+		    left: 120px;
 		    top: 20px;
 			}
 		}
