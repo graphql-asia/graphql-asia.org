@@ -21,7 +21,7 @@
 		@include vendor('align-items', 'center');
 		// @include vendor('background-image', 'url("../images/bengaluru-castle.png")');
 		@include vendor('display', 'flex');
-		@include padding(4em, 0, (2em, 0, 0, 0));
+		@include padding(0em, 0, (0em, 0, 0, 0));
 		background-attachment: fixed;
 		background-position: center;
 		background-repeat: no-repeat;
@@ -46,9 +46,11 @@
 			padding-top: 0px;
 	    padding-left: 30px;
 	    color: _palette(bg);
-			font-size: 14px;
-			font-weight: _font(weight-semi-bold);
+			font-size: 16px;
+			font-family: _font(family);
+			font-weight: _font(weight-bold-semi);
 			z-index: 10000;
+			padding-top: 30px;
 			a
 			{
 				border-bottom: 0;
@@ -114,6 +116,7 @@
 			color: _palette(bg);
 			padding-left: 20px;
 			z-index: -1;
+			padding-top: 10px;
 		}
 		h2 {
 			font-size: 64px;
