@@ -41,6 +41,19 @@
 			max-width: 100% !important;
 			width: 100% !important;
 		}
+		.presents
+		{
+			padding-top: 0px;
+	    padding-left: 30px;
+	    color: _palette(bg);
+			font-size: 14px;
+			font-weight: _font(weight-semi-bold);
+			z-index: 10000;
+			a
+			{
+				border-bottom: 0;
+			}
+		}
 		.datedisplay
 		{
 			position: absolute;
@@ -96,10 +109,11 @@
 			font-size: 100px;
 			font-family: _font(family);
 			font-weight: _font(weight-bold);
-			line-height: 110px;
+			line-height: 100px;
 			text-transform: _font(text-transform);
 			color: _palette(bg);
 			padding-left: 20px;
+			z-index: -1;
 		}
 		h2 {
 			font-size: 64px;
