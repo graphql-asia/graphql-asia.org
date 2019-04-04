@@ -326,6 +326,10 @@
 
 @media screen and (max-width: 1680px) {
 	#banner {
+		.presents
+		{
+			padding-top: 50px;
+		}
 		> .inner {
 			margin: 0 0 !important;
 			max-width: 100% !important;
@@ -349,7 +353,7 @@
 @media screen and (max-width: 1020px) {
 	#banner.major
 	{
-		min-height: 26em;
+		min-height: 32em;
 	}
 	#banner {
 		h1 {
@@ -373,11 +377,11 @@
 		height: 30em;
     min-height: 30em;
     max-height: none;
-		padding: 5em 0 4em 0;
+		padding: 5em 0 0em 0;
 	}
 	#banner {
 		h1 {
-			padding-top: 50px;
+			padding-top: 30px;
 			line-height: normal;
 			font-size: 2.5em;
 		}
