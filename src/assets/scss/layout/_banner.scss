@@ -147,8 +147,9 @@
 			));
 			padding: 0 !important;
 			position: relative;
-			z-index: 2;
-
+			z-index: 2;			
+			margin: 0 auto!important;
+			max-width: 70%!important;
 			.image {
 				display: none;
 			}
@@ -331,8 +332,8 @@
 			padding-top: 50px;
 		}
 		> .inner {
-			margin: 0 0 !important;
-			max-width: 100% !important;
+			margin: 0 auto!important;
+			max-width: 75%!important;
 			.datedisplay {
 				top: -35px;
     	right: -100px;
@@ -380,6 +381,7 @@
 		padding: 5em 0 0em 0;
 	}
 	#banner {
+
 		h1 {
 			padding-top: 5px;
 			line-height: normal;
@@ -428,6 +430,7 @@
 			}
 		}
 		> .inner {
+			max-width: 90%!important;
 			.content
 			{
 				p
