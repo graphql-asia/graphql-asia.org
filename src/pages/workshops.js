@@ -51,8 +51,7 @@ const Venue = (props) => (
                                 Lucas Munhoz, full-stack developer and organiser of GraphQL Bangkok meetup, will be teaching you on getting started with React and GraphQL using Apollo Client.
                             </p>
                             <p>
-                                Lucas will introducing how you can easily get started to
-                                integrate your apps with GraphQL endpoints. You will learn step
+                                Lucas will be introducing how you can easily integrate your apps with GraphQL endpoints. You will learn step
                                 by step how to setup the Apollo Client with React, run queries,
                                 mutations, optimistic updates and much more!
                             </p>
