@@ -329,7 +329,7 @@
                 "speakerId": "workshop-aws-amplify",                
                 "speakerDescription":"Gerard is a Developer Advocate at AWS. He is very excited about the future of the Web and JavaScript. Always happy Computer Science Engineer and humble Angular GDE. He loves to share his learnings by giving talks, trainings and writing about cool technologies. He loves running AngularZone and GraphQL London, mentoring students and giving back to the community.",
                 "speakerPosition":"Developer Advocate, AWS",
-                "type":"workshop",
+                "type":"talk",
                 "talkTitle":"Workshop: Building your first Fullstack Serverless App with AWS Amplify",
                 "featured": true,
                 "sortOrder": 1000,
