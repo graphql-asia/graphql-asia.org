@@ -337,5 +337,12 @@ export const agendaQuery = graphql`
         }
       }
     }
+    PeriNikhil: file(relativePath: { eq: "PeriNikhil.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 200) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }  
   }
 `

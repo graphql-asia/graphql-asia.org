@@ -409,5 +409,13 @@ export const query1 = graphql`
         }
       }
     }
+    
+    PeriNikhil: file(relativePath: { eq: "PeriNikhil.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 500) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }  
   }
 `

@@ -278,7 +278,22 @@ const query = graphql`
           ...GatsbyImageSharpFluid
         }
       }
-    }    
+    }
+    GerardSans1: file(relativePath: { eq: "GerardSans.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 500) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    PeriNikhil1: file(relativePath: { eq: "PeriNikhil.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 500) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }  
+      
   }
 `
 

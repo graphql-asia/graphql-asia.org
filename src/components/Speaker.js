@@ -36,19 +36,39 @@ class Speaker extends React.Component {
                     :null
                 }
                 </h2>
-                <div className="newImage">
+                <div className="newImage" style={{
+                    position:'relative'
+                }}>
                     {
                         speakerProps.speakerPicture ?
                         <Img fluid={speakerProps.speakerPicture} alt={speakerProps.speakerName} />
                         :
                         <span className="placeholder"/>
-                    }
+                    } 
+                     {
+                        speakerProps.merger ?
+                        <Img style={{
+                            top:'0',
+                            left: '65px',
+                            position:'absolute'
+                        }} fluid={speakerProps.merger.speakerPicture} alt={speakerProps.merger.speakerName} />
+                        :
+                        null
+                    
+                    }                   
                 </div>
+                
+               
 
 
                     <header className="major">
                         <h5>
                         {speakerProps.speakerName}
+                        {
+                            speakerProps.merger ?
+                            ` & ${speakerProps.merger.speakerName}`
+                            :null
+                        }
                         </h5>
                     </header>
                     <div>

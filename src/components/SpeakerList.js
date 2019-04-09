@@ -8,9 +8,15 @@ const SpeakerList = (props) => {
   var day2 = []
   try {
     speakerData.forEach(speaker => {
+      // skip if has mergeWith attribute
+      if(speaker.mergeWith) return
       var speakerPicture = null
       try {
+        speaker.merger = speakerData.find((s)=>s.mergeWith===speaker.speakerId)        
         speakerPicture = props.data[speaker.speakerPicture].childImageSharp.fluid
+        if(speaker.merger){
+          speaker.merger.speakerPicture = props.data[speaker.merger.speakerPicture].childImageSharp.fluid
+        }
       } catch (error) {
 
       }
