@@ -332,7 +332,7 @@
                 "type":"workshop",
                 "talkTitle":"Workshop: Building your first Fullstack Serverless App with AWS Amplify",
                 "featured": true,
-                "sortOrder": 1,
+                "sortOrder": 1000,
                 "talkAbstract": "In this workshop we will be introducing AWS Amplify a modern toolchain, libraries and UI components to build modern Fullstack Serverless Apps. You will be building a fully featured Application from development to production. ",
                 "isLightningTalk":false,
                 "time":"8:30 - 10:00",
