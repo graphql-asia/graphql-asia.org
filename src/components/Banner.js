@@ -5,14 +5,17 @@ import Img from "gatsby-image"
 const date1 = new Date("4/12/2019");
 const date2 = new Date();
 const timeDiff = Math.abs(date2.getTime() - date1.getTime());
-const diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
+let diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
+if (diffDays < 0) {
+    diffDays = 0;
+}
 
 const Banner = (props) => (
     <section id="banner" className="major">
         <div className="datedisplay">
           <div className="datetile">{diffDays}</div>
           <div className="daysleft">
-            days left
+            { `${diffDays > 1 ? 'days' : 'day'} left` }
             <div className="whiteCircle">
             </div>
           </div>
