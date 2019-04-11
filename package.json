@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Tobias Meixner",
   "dependencies": {
+    "dom-to-image": "^2.6.0",
     "gatsby": "^2.0.76",
     "gatsby-image": "^2.0.29",
     "gatsby-plugin-facebook-pixel": "^1.0.3",
