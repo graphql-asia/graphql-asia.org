@@ -19,7 +19,7 @@ const Banner = (props) => (
                 <p>Asia’s first GraphQL conference is happening <br/>On 12th &amp; 13th April, Bengaluru</p>
                 <ul className="actions">
                     <li>
-                        <Link className="button bannerButton next" to="/tickets">Get your tickets now</Link>
+                        <Link className="button bannerButton next" to="/agenda">View agenda</Link>
                         <div className="whiteCircle">
                         </div>
                         {/* <a className="button next scrolly" target="_blank" rel="noopener noreferrer" href="https://www.townscript.com/e/graphql-asia-020103/booking">Tickets</a> */}

@@ -10,7 +10,7 @@ const Menu = ({props}) => (
                 {/* <li className="desktop"><Link  to="/speakers">Speakers</Link></li> */}
                 <li><Link className={ typeof window !== 'undefined' && window && window.location.pathname === '/agenda' ? 'active' : ''} to="/agenda">Agenda</Link></li>
                 <li><Link className={ typeof window !== 'undefined' && window && window.location.pathname === '/venue' ? 'active' : ''} to="/venue">Venue</Link></li>
-                <li className="desktop"><Link className={ typeof window !== 'undefined' && window && window.location.pathname === '/tickets' ? 'active' : ''} to="/tickets">Tickets</Link></li>
+                {/* <li className="desktop"><Link className={ typeof window !== 'undefined' && window && window.location.pathname === '/tickets' ? 'active' : ''} to="/tickets">Tickets</Link></li> */}
                 <li><Link className={ typeof window !== 'undefined' && window && window.location.pathname === '/workshops' ? 'active' : ''} to="/workshops">Workshops</Link></li>
                 {/* <li><a target="_blank" rel="noopener noreferrer" href="https://www.townscript.com/e/graphql-asia-020103/booking">Tickets</a></li>                 */}
                 <li><Link className={ typeof window !== 'undefined' && window && window.location.pathname === '/sponsor' ? 'active' : ''} to="/sponsor">Sponsors</Link></li>
