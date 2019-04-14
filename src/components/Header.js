@@ -10,7 +10,7 @@ const Header = (props) => (
             <img src={GraphlQLAsiaLogo} alt="GraphQL Asia Logo" />
             <span> GraphQL Asia </span>
         </Link>
-        <span><Link to="/tickets">Tickets</Link></span>
+        <span><Link to="/agenda">Agenda</Link></span>
         <nav>
             <Menu />
             {/* <a className="menu-link" onClick={props.onToggleMenu} href="javascript:;">Menu</a> */}

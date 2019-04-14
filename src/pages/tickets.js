@@ -38,7 +38,7 @@ const Tickets = (props) => (
                     </p>
                     <div>
                         <ul className="actions">
-                            <li><a rel="noopener noreferrer" target="_blank" href="https://www.townscript.com/e/graphql-asia-020103/booking" className="button special">Get your ticket</a></li>
+                            {/* <li><a rel="noopener noreferrer" target="_blank" href="https://www.townscript.com/e/graphql-asia-020103/booking" className="button special">Get your ticket</a></li> */}
                         </ul>
                     </div>
                 </div>

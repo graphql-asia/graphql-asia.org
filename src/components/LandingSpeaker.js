@@ -41,6 +41,7 @@ const LandingSpeaker = ({data}) => {
     if(data[speakerData.speakerPicture+'1']){
       landingSpeakerList.push(
       <Speaker 
+        key={'s'+speakerData.speakerId}
         speakerId={speakerData.speakerId}
         speakerName={speakerData.speakerName} 
         speakerImage={data[speakerData.speakerPicture+'1'].childImageSharp.fluid.src} 
