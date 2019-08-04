@@ -8,6 +8,7 @@ import Sponsors from '../components/Sponsors'
 // import Img from "gatsby-image"
 import { graphql } from 'gatsby'
 import graphqlconfLogo from '../assets/images/graphqlconf-logo-color.png'
+import brikLogo from '../assets/images/brikl-logo.png'
 import hasgeekLogo from '../assets/images/hasgeek-logo.png'
 import sheroes from '../assets/images/sheroes.png';
 import girlScriptLogo from '../assets/images/girlscript-logo.png'
@@ -19,7 +20,7 @@ class HomeIndex extends React.Component {
                 <Helmet
                     title="GraphQL Asia - Conference"
                     meta={[
-                        { name: 'description', content: 'GraphQL Asia is going to be the first Asian GraphQL conference, with 2 full days of everything GraphQL. Location: Bangalore, India Date: April 12-13, 2019' },
+                        { name: 'description', content: 'GraphQL Asia is going to be the second edition Asian GraphQL conference, with 2 full days of everything GraphQL. Location: Bangalore, India Date: Feb 20-22, 2020' },
                         { name: 'keywords', content: 'GraphQL, Asia, Conference, Tech, Event, India, Bangalore' },
                         { name: 'google-site-verification', content: '0swMWogAzErcNEr2q0dVwCn9zI16r0fMi37eb7S-jz8' },
                     ]}
@@ -53,6 +54,19 @@ class HomeIndex extends React.Component {
                             </header>
                             <div>
                               <ul className="actions">
+                              <li>
+                                      <a style={{
+                                          border:'none'
+                                      }} href="https://www.brikl.io/">
+                                      <img style={{
+                                          // background: 'white',
+                                          // height: '150px',
+                                          width: '100px',
+                                          objectFit: 'contain',
+                                          padding: '.5em'
+                                      }} src=brikLogo alt="BrikL" />
+                                      </a>
+                                  </li>
                                   <li>
                                       <a style={{
                                           border:'none'
