@@ -20,7 +20,7 @@ const Venue = (props) => (
                             GraphQL Workshops
                         </h1>
                     </header>
-                    <p>We will be offering several workshops alongside the conference from beginner to advanced workshops free to attend with your conference ticket.</p>
+                    <p>In 2019. we offered several workshops alongside the conference from beginner to advanced workshops free to attend with your conference ticket.</p>
                     <h3>
                         1. Intro to GraphQL and Advanced GraphQL concepts
                     </h3>
