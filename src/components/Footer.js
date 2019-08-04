@@ -19,7 +19,7 @@ const Footer = (props) => (
                 </ul>
             </div>
             <div className="flex2">
-                <p>GraphQL Asia is brought to you by Hasura and BrikL.</p>
+                <p>GraphQL Asia is brought to you by Hasura.</p>
                 <ul className="actions">
                     <li>
                         <a style={{
