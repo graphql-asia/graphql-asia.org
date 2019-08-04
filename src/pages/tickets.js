@@ -29,14 +29,12 @@ const Tickets = (props) => (
                         Should you have any issues purchasing your ticket or any questions, do contact us below or on Twitter.
                     </p>
                     <p>
-                        Diversity tickets are available <a href="https://docs.google.com/forms/d/e/1FAIpQLSfwpLgjzCRXRT1ZJLkbUNiH2EtBBMkFxJTvCy_owrppvO0mHw/viewform?usp=sf_link">here</a>
-                        <br/>
-                        Student tickets are available <a href="https://docs.google.com/forms/d/e/1FAIpQLSerKReSGDq_sjEKlrYm9HvVzmuUEQA2SlEb_cR-Ga6wVG9fBQ/viewform?usp=sf_link">here</a>
+                        Tickets for GraphQL Asia 2020 conference will go live soon. Be the first one to take advantage of 'Early Bird' offer!
                     </p>
                     <p>
-                        We look forward to seeing you soon!
+                        We look forward to seeing you in 2020 too.
                     </p>
-                    <div>
+                    #<div>
                         <ul className="actions">
                             {/* <li><a rel="noopener noreferrer" target="_blank" href="https://www.townscript.com/e/graphql-asia-020103/booking" className="button special">Get your ticket</a></li> */}
                         </ul>
