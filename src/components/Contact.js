@@ -32,7 +32,7 @@ const Contact = (props) => (
                     <div className="contact-method">
                         <span className="icon alt fa-envelope"></span>
                         <h3>Email</h3>
-                        <a href="mailto:info@graphql-asia.org">info@graphql-asia.org</a>
+                        <a href="mailto:info@graphql-asia.org">anubha@hasura.io</a>
                     </div>
                 </section>
                 <section>
@@ -46,8 +46,7 @@ const Contact = (props) => (
                     <div className="contact-method">
                         <span className="icon alt fa-home"></span>
                         <h3>Venue</h3>
-                        <span>The Chancery Pavillion<br />
-                        135, Residency Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560025<br />
+                        <span>Bengaluru, Karnataka<br />
                         India</span>
                     </div>
                 </section>
