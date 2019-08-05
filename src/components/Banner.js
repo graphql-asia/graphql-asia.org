@@ -7,8 +7,7 @@ const Banner = (props) => (
         <div className="inner">
             <div className="presents"><a href="https://hasura.io/">Hasura</a> presents:</div>
             <header className="major">
-                <h1>GraphQL Asia <br/>
-                     2020</h1>
+                <h1>GraphQL Asia</br>2020</h1>
                 <h2>
                   BENGALURU
                   <div className="whiteCircle">
@@ -20,7 +19,7 @@ const Banner = (props) => (
                 <p>Second edition of Asia’s first GraphQL conference is happening <br/>On 21st &amp; 22nd February, Bengaluru</p>
                 <ul className="actions">
                     <li>
-                        <Link className="button bannerButton next" to="/Twitter">Follow us on Twitter</Link>
+                        <a className="button bannerButton" href="https://www.twitter.com/HasuraHQ">Follow us on Twitter</a>
                         <div className="whiteCircle">
                         </div>
                         {/* <a className="button next scrolly" target="_blank" rel="noopener noreferrer" href="https://www.townscript.com/e/graphql-asia-020103/booking">Tickets</a> */}
