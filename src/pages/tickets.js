@@ -23,11 +23,9 @@ const Tickets = (props) => (
                       Tickets
                     </h1>
                     </header>
-                    <p>
                     <h2>COMING SOON!</h2>
-                    </p>
                     <p>
-                        We look forward to seeing you in 2020 too.
+                        We look forward to meet you again in 2020.
                     </p>
                     #<div>
                         <ul className="actions">
