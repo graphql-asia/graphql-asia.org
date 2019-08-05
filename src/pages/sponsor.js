@@ -7,7 +7,7 @@ import Sponsors from '../components/Sponsors'
 const Sponsor = (props) => (
     <Layout>
         <Helmet>
-            <title>Sponsors</title>
+            <title>Past Sponsors</title>
             <meta name="description" content="Sponsor" />
         </Helmet>
 
