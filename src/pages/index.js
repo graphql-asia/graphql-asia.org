@@ -77,7 +77,7 @@ class HomeIndex extends React.Component {
                                           width: '100px',
                                           objectFit: 'contain',
                                           padding: '.5em'
-                                      }} src=BrikL alt="BrikL" />
+                                      }} src=BrikLogo alt="BrikL" />
                                       </a>
                                   </li>
                                   <li>
