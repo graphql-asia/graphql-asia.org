@@ -24,7 +24,8 @@ const Venue = (props) => (
                     <p>Named the most dynamic city by the World Economic Forum in 2017, Bengaluru is home to the 3rd highest number of tech startups globally, including unicorns such as Flipkart, Ola & Swiggy as well as several large MNCs and enterprises.</p>
                     <p>If you would like to stay at the hotel, please do reach out to the bookings team with your conference ticket for a <strong>special conference discount!</strong></p>
                     <p>
-                    We will be soon updating hotel suggestions curated for 2020 conference attendees. 
+                    We will be soon updating hotel suggestions curated for 2020 conference attendees.
+                    </p> 
                 </div>
             </section>
         </div>
