@@ -8,7 +8,6 @@ import Sponsors from '../components/Sponsors'
 // import Img from "gatsby-image"
 import { graphql } from 'gatsby'
 import graphqlconfLogo from '../assets/images/graphqlconf-logo-color.png'
-import briklLogo from '../assets/images/brikl-logo.png'
 import hasgeekLogo from '../assets/images/hasgeek-logo.png'
 import sheroes from '../assets/images/sheroes.png';
 import girlScriptLogo from '../assets/images/girlscript-logo.png'
@@ -54,19 +53,6 @@ class HomeIndex extends React.Component {
                             </header>
                             <div>
                               <ul className="actions">
-                              <li>
-                                      <a style={{
-                                          border:'none'
-                                      }} href="https://www.brikl.io/">
-                                      <img style={{
-                                          // background: 'white',
-                                          // height:'50px',
-                                          width: '100px',
-                                          objectFit: 'contain',
-                                          padding: '.5em'
-                                      }} src=briklLogo alt="BrikL" />
-                                      </a>
-                                  </li>
                                   <li>
                                       <a style={{
                                           border:'none'
