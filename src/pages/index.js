@@ -48,7 +48,7 @@ class HomeIndex extends React.Component {
                         <div className="inner">
                             <header className="major">
                                 <h2>
-                                  Partners
+                                  Past Partners
                                 </h2>
                             </header>
                             <div>
