@@ -7,7 +7,7 @@ const Banner = (props) => (
         <div className="inner">
             <div className="presents"><a href="https://hasura.io/">Hasura</a> presents:</div>
             <header className="major">
-                <h1>GraphQL Asia <br/> 2020</h1>
+                <h1>GraphQL Asia <br/>2020</h1>
                 <h2>
                   BENGALURU
                   <div className="whiteCircle">
