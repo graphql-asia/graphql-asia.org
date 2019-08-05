@@ -23,13 +23,8 @@ const Tickets = (props) => (
                       Tickets
                     </h1>
                     </header>
-                    <p>All tickets give you access to both conference days and workshops along the conference.
-                        <br/>
-                        We have group ticket discounts available with 5 or more tickets (10% off), 10 or more (20% off) and 25 or more (30% off).<br/>
-                        Should you have any issues purchasing your ticket or any questions, do contact us below or on Twitter.
-                    </p>
                     <p>
-                        Tickets for GraphQL Asia 2020 conference will go live soon. Be the first one to take advantage of 'Early Bird' offer!
+                    <h2>COMING SOON!</h2>
                     </p>
                     <p>
                         We look forward to seeing you in 2020 too.
