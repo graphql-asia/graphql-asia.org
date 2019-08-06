@@ -32,7 +32,7 @@ const Contact = (props) => (
                     <div className="contact-method">
                         <span className="icon alt fa-envelope"></span>
                         <h3>Email</h3>
-                        <a href="mailto:info@graphql-asia.org">anubha@hasura.io</a>
+                        <a href="mailto:anubha@hasura.io">anubha@hasura.io</a>
                     </div>
                 </section>
                 <section>
