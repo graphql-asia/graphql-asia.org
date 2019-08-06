@@ -35,7 +35,7 @@ class HomeIndex extends React.Component {
                         <div className="inner">
                             <header className="major">
                                 <h2>
-                                Sponsors
+                                Past Sponsors
                                 </h2>
                             </header>
                             <Sponsors />

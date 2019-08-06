@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import Img from "gatsby-image"
 
 const Banner = (props) => (
@@ -19,7 +18,7 @@ const Banner = (props) => (
                 <p>Second edition of the GraphQL Asia conference is happening <br/>On 21st &amp; 22nd February, Bengaluru</p>
                 <ul className="actions">
                     <li>
-                        <a className="button" color={'#FFFFFF'} href="https://www.twitter.com/graphqlasia">Follow us on Twitter</a>
+                        <a className="button" href="https://www.twitter.com/graphqlasia">Follow us on Twitter</a>
                         <div className="whiteCircle">
                         </div>
                         {/* <a className="button next scrolly" target="_blank" rel="noopener noreferrer" href="https://www.townscript.com/e/graphql-asia-020103/booking">Tickets</a> */}
