@@ -16,7 +16,7 @@ const Banner = (props) => (
 
             </header>
             <div className="content">
-                <p>Second edition of the GraphQL Asia conference is happening<br/>On 21st &amp; 22nd February, Bengaluru</p>
+                <p>Second edition of the GraphQL Asia conference is happening <br/>On 21st &amp; 22nd February, Bengaluru</p>
                 <ul className="actions">
                     <li>
                         <a className="button" color={'#FFFFFF'} href="https://www.twitter.com/graphqlasia">Follow us on Twitter</a>
