@@ -19,7 +19,7 @@ class HomeIndex extends React.Component {
                 <Helmet
                     title="GraphQL Asia - Conference"
                     meta={[
-                        { name: 'description', content: 'GraphQL Asia is going to be the first Asian GraphQL conference, with 2 full days of everything GraphQL. Location: Bangalore, India Date: April 12-13, 2019' },
+                        { name: 'description', content: 'GraphQL Asia is going to be the second edition Asian GraphQL conference, with 2 full days of everything GraphQL. Location: Bangalore, India Date: Feb 20-22, 2020' },
                         { name: 'keywords', content: 'GraphQL, Asia, Conference, Tech, Event, India, Bangalore' },
                         { name: 'google-site-verification', content: '0swMWogAzErcNEr2q0dVwCn9zI16r0fMi37eb7S-jz8' },
                     ]}
@@ -35,7 +35,7 @@ class HomeIndex extends React.Component {
                         <div className="inner">
                             <header className="major">
                                 <h2>
-                                Sponsors
+                                Past Sponsors
                                 </h2>
                             </header>
                             <Sponsors />
@@ -48,7 +48,7 @@ class HomeIndex extends React.Component {
                         <div className="inner">
                             <header className="major">
                                 <h2>
-                                  Partners
+                                  Past Partners
                                 </h2>
                             </header>
                             <div>

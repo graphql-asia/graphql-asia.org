@@ -1,13 +1,12 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import Img from "gatsby-image"
 
 const Banner = (props) => (
     <section id="banner" className="major">
         <div className="inner">
-            <div className="presents"><a href="https://hasura.io/">Hasura</a> & <a href="https://www.brikl.io/">Brikl</a> present:</div>
+            <div className="presents"><a href="https://hasura.io/">Hasura</a> presents:</div>
             <header className="major">
-                <h1>GraphQL Asia <br/>2019</h1>
+                <h1>GraphQL Asia 2020</h1>
                 <h2>
                   BENGALURU
                   <div className="whiteCircle">
@@ -16,10 +15,10 @@ const Banner = (props) => (
 
             </header>
             <div className="content">
-                <p>Asia’s first GraphQL conference is happening <br/>On 12th &amp; 13th April, Bengaluru</p>
+                <p>Second edition of the GraphQL Asia conference is happening <br/>On 21st &amp; 22nd February, Bengaluru</p>
                 <ul className="actions">
                     <li>
-                        <Link className="button bannerButton next" to="/agenda">View agenda</Link>
+                        <a className="button" href="https://www.twitter.com/graphqlasia">Follow us on Twitter</a>
                         <div className="whiteCircle">
                         </div>
                         {/* <a className="button next scrolly" target="_blank" rel="noopener noreferrer" href="https://www.townscript.com/e/graphql-asia-020103/booking">Tickets</a> */}

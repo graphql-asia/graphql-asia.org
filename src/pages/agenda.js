@@ -8,7 +8,7 @@ import SpeakerList from '../components/SpeakerList'
 const Speakers = (props) => (
   <Layout>
     <Helmet>
-      <title>Agenda - GraphQL Asia</title>
+      <title>Past Agenda - GraphQL Asia</title>
       <meta name="description" content="GraphQL Asia Agenda" />
     </Helmet>
     <div id="main" className="alt">

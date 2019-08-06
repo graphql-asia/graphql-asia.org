@@ -36,8 +36,6 @@ const CodeOfConduct = (props) => (
                     <p><strong>Need Help?</strong></p>
                     <p>Please reach out to one of the following people:
                     <br/>
-                    Tobias Meixner, Organiser, GraphQL Asia at +66-909842509, tobias@brikl.io
-                    <br/>
                     Rajoshi Ghosh, Organiser, GraphQL Asia at +91-9962512098, rajoshi@hasura.io
                     </p>
                 </div>

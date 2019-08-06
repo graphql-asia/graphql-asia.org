@@ -1,5 +1,4 @@
 import React from 'react'
-import BrikLogo from "../assets/images/white-brikl-logo.png"
 import HasuraLogo from "../assets/images/white-logo.svg"
 import { Link } from 'gatsby'
 const Footer = (props) => (
@@ -19,7 +18,7 @@ const Footer = (props) => (
                 </ul>
             </div>
             <div className="flex2">
-                <p>GraphQL Asia is brought to you by Hasura and BrikL.</p>
+                <p>GraphQL Asia is brought to you by Hasura.</p>
                 <ul className="actions">
                     <li>
                         <a style={{
@@ -32,20 +31,6 @@ const Footer = (props) => (
                             objectFit: 'contain',
                             // padding: '.5em'
                         }} src={HasuraLogo} alt="Hasura" />
-                        </a>
-                    </li>
-                    <li>
-                        <a style={{
-                            border:'none'
-                        }} href="https://www.brikl.io" rel="noopener noreferrer">
-                        <img style={{
-                            // background: 'white',
-                            // height: '150px',
-                            width: '150px',
-                            objectFit: 'contain',
-                            // padding: '.5em'
-                        }} src={BrikLogo} alt="BrikL" />
-                        {/* <Img fixed={this.props.data.file.childImageSharp.fixed} /> */}
                         </a>
                     </li>
                 </ul>

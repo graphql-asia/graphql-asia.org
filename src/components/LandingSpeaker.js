@@ -58,7 +58,7 @@ const LandingSpeaker = ({data}) => {
       <div className="inner">
         <header className="major">
             <h2>
-              Speakers 2019
+              Past Speakers
             </h2>
         </header>
         <div className="speakerListWrppar">
