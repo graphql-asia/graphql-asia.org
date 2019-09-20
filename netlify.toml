@@ -1,4 +1,10 @@
 [[redirects]]
+  from = "*"
+  to = "https://graphql.asia/"
+  status = 301
+  force = false
+
+[[redirects]]
   from = "/*"
   to = "https://graphql.asia/"
   status = 301
